@@ -129,7 +129,7 @@ public class CakeItem : MonoBehaviour
 
                 if (i >= other.GetComponent<StageTrigger>().person.Count - 1)
                 {
-                    other.GetComponent<Collider>().enabled = false;
+                    //other.GetComponent<Collider>().enabled = false;
                 }
                 if (i >= cakePieces.Count-1)
                 {
@@ -145,8 +145,8 @@ public class CakeItem : MonoBehaviour
 
         for(int i = 0; i < mouthPoints.Count; i++)
         {
-            cakePieces.RemoveAt(i);
-            mouthPoints.RemoveAt(i);
+            //cakePieces.RemoveAt(i);
+            //mouthPoints.RemoveAt(i);
         }
     }
 

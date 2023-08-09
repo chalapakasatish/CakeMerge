@@ -2526,7 +2526,7 @@ GameObject:
   - component: {fileID: 354507214}
   - component: {fileID: 354507215}
   m_Layer: 0
-  m_Name: mutilpiergate (1)
+  m_Name: MultiplierGate
   m_TagString: Multiplier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11085,8 +11085,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -11109,7 +11109,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -17765,7 +17765,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1001 &1026129225027635506
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17923,14 +17923,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5132892314326444472}
-  m_LocalRotation: {x: 0.0000000754979, y: 1, z: 0.000000021855698, w: -0.00000004371139}
+  m_LocalRotation: {x: -1, y: -0, z: 0, w: 0}
   m_LocalPosition: {x: -0, y: 0.98609143, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalScale: {x: 70.33, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6827898772475253545}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 180}
 --- !u!23 &2161058162564403104
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18464,12 +18464,12 @@ GameObject:
   - component: {fileID: 6827898772475253546}
   - component: {fileID: 6827898772475253547}
   m_Layer: 0
-  m_Name: mutilpiergate
+  m_Name: MultiplierGate
   m_TagString: Multiplier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!23 &6405635828980860877
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18520,7 +18520,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6163810978112129427}
   m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
-  m_LocalPosition: {x: 0, y: 0.41, z: 11.04}
+  m_LocalPosition: {x: 0, y: 0.41, z: 12.191}
   m_LocalScale: {x: 1, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -18565,7 +18565,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2422192481251407058}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -1.057234, y: 1.0188086, z: 0.000003074063}
+  m_LocalPosition: {x: -0.713, y: 1.0188086, z: 0.000003074063}
   m_LocalScale: {x: 8.590448, y: 8.590448, z: 103.27314}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18622,7 +18622,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5964818903229646502}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 1.0537099, y: 1.0188086, z: 0.000003074063}
+  m_LocalPosition: {x: 0.699, y: 1.0188086, z: 0.000003074063}
   m_LocalScale: {x: 8.590448, y: 8.590448, z: 103.27314}
   m_ConstrainProportionsScale: 0
   m_Children: []
