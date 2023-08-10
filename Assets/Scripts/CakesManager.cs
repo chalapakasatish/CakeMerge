@@ -110,7 +110,6 @@ public class CakesManager : MonoBehaviour
         {
             cakesInstantiate[i] = Instantiate(spawnPoints[i]);
             cakesInstantiate[i].GetComponent<Holder>().MoveToBelt();
-            //spawnPoints[i].GetComponent<Holder>().cake.gameObject.SetActive(false);
             points.gameObject.SetActive(false);
         }
         StartCoroutine(WaitForEnableCakes());

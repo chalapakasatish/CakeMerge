@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System.Diagnostics;
+using UnityEngine.UI;
 
 public class CurrencyManager : MonoBehaviour
 {
@@ -44,6 +45,10 @@ public class CurrencyManager : MonoBehaviour
         if (coins <= 0)
         {
             coins = 0;
+        }
+        if (coins <= CakesManager.instance.Price)
+        {
+            CakesManager.instance.spawnCakeButton.GetComponent<Button>().interactable = false;
         }
         currencytext.text = coins.ToString();
         PlayerPrefs.SetInt("Coins", coins);

@@ -68,12 +68,13 @@ public class CakeItem : MonoBehaviour
                     {
                         lastPos = CakesManager.instance.spawnPoints[i].transform.position;
                         CakesManager.instance.cakeExists[holder] = false;
+                        CakesManager.instance.cakeExists[i] = true;
                         transform.SetParent(CakesManager.instance.spawnPoints[i].transform);
                         CakesManager.instance.spawnPoints[holder].GetComponent<Holder>().cake = null;
                         CakesManager.instance.spawnPoints[i].GetComponent<Holder>().cake = gameObject;
                         holder = i;
                         int mNum = id + 1;
-                        CakesManager.instance.SpawnNextCake(mNum, CakesManager.instance.spawnPoints[i].transform, holder);
+                        CakesManager.instance.SpawnNextCake(mNum, CakesManager.instance.spawnPoints[holder].transform, holder);
                         Destroy(CakesManager.instance.spawnPoints[i].transform.GetChild(0).gameObject);
                         Destroy(CakesManager.instance.spawnPoints[i].transform.GetChild(1).gameObject);
                     }  
@@ -86,12 +87,15 @@ public class CakeItem : MonoBehaviour
                         CakesManager.instance.cakeExists[holder] = false;
                         CakesManager.instance.cakeExists[i] = true;
                         transform.SetParent(CakesManager.instance.spawnPoints[holder].transform);
+                        CakesManager.instance.spawnPoints[holder].GetComponent<Holder>().cake = null;
+                        CakesManager.instance.spawnPoints[i].GetComponent<Holder>().cake = gameObject;
+                        //holder = i;
                         return;
                     }
                     lastPos = CakesManager.instance.spawnPoints[i].transform.position;
                     CakesManager.instance.cakeExists[holder] = false;
                     CakesManager.instance.cakeExists[i] = true;
-                    transform.SetParent(CakesManager.instance.spawnPoints[holder].transform);
+                    transform.SetParent(CakesManager.instance.spawnPoints[i].transform);
                     CakesManager.instance.spawnPoints[holder].GetComponent<Holder>().cake = null;
                     CakesManager.instance.spawnPoints[i].GetComponent<Holder>().cake = gameObject;
                     holder = i;
@@ -143,7 +147,7 @@ public class CakeItem : MonoBehaviour
         yield return new WaitForSeconds(.01f);
 
 
-        for(int i = 0; i < mouthPoints.Count; i++)
+        for (int i = 0; i < mouthPoints.Count; i++)
         {
             cakePieces.RemoveAt(i);
             mouthPoints.RemoveAt(i);

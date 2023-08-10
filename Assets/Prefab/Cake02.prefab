@@ -446,9 +446,10 @@ MonoBehaviour:
   tablePersons: {fileID: 0}
   plate: {fileID: 6939718447527689866}
   Exoffset: {x: 0, y: -12, z: 0}
+  isDragging: 0
   mouthPoints: []
-  alreadyTook: 00000000
-  completedPieces: 00000000
+  alreadyTook: 
+  completedPieces: 
 --- !u!65 &4773463914251389030
 BoxCollider:
   m_ObjectHideFlags: 0
