@@ -2698,6 +2698,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coins: 10
   currencytext: {fileID: 2068729986}
+  howManyClicksText: {fileID: 493916366}
+  PriceCakeText: {fileID: 689863284}
+  howManyClicks: 0
 --- !u!4 &360220596
 Transform:
   m_ObjectHideFlags: 0
@@ -5248,7 +5251,7 @@ GameObject:
   - component: {fileID: 689863285}
   - component: {fileID: 689863284}
   m_Layer: 5
-  m_Name: 'BuyText '
+  m_Name: 'PriceCakeText '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

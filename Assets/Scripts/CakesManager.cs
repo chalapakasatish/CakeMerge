@@ -25,16 +25,21 @@ public class CakesManager : MonoBehaviour
     public GameObject points;
     [SerializeField]private int price;
 
+    public int Price { get => price; set => price = value; }
+
     private void Awake()
     {
         instance = this;
+    }
+    private void Start()
+    {
+        price = PlayerPrefs.GetInt("PriceCake", price);
     }
     public void SpawnCake()
     {
         if (IsAvailableHolders())
         {
-            GetCake(0,price);
-
+            GetCake(0);
         }
         
     }
@@ -51,11 +56,13 @@ public class CakesManager : MonoBehaviour
         return false;
     }
 
-    public void GetCake(int num,int price)
+    public void GetCake(int num)
     {
-
-        CurrencyManager.Instance.Coins -= price;
-        CurrencyManager.Instance.currencytext.text = CurrencyManager.Instance.Coins.ToString();
+        CurrencyManager.Instance.AddHowManyClicks(1);
+        CurrencyManager.Instance.RemoveCurrency(price);
+        Price += 1;
+        PlayerPrefs.SetInt("PriceCake", Price);
+        CurrencyManager.Instance.PriceCakeText.text = PlayerPrefs.GetInt("PriceCake").ToString();
         if (CurrencyManager.Instance.Coins <= 0)
         {
             spawnCakeButton.GetComponent<Button>().interactable = false;
@@ -111,6 +118,10 @@ public class CakesManager : MonoBehaviour
     }
     public void CameraresetPosition()
     {
+        belt1.isServe = false;
+        belt2.isServe = false;
+        belt3.isServe = false;
+
         continueButton.gameObject.SetActive(false);
         serveButton.gameObject.GetComponent<Button>().interactable = true;
         spawnCakeButton.GetComponent<Button>().interactable = true;

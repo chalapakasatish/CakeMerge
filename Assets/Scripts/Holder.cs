@@ -39,19 +39,19 @@ public class Holder : MonoBehaviour
                 case TypeOfRow.first:
                     tweenSpeed = .4f;
                     tweenEndSpeed = .5f;
-                    CakesManager.instance.belt1.isServe = true;
                     break;
                 case TypeOfRow.second:
                     tweenSpeed = .6f;
                     tweenEndSpeed = 2.5f;
-                    CakesManager.instance.belt2.isServe = true;
                     break;
                 case TypeOfRow.third:
                     tweenSpeed = .8f;
                     tweenEndSpeed = 4.5f;
-                    CakesManager.instance.belt3.isServe = true;
                     break;
             }
+            CakesManager.instance.belt1.isServe = true;
+            CakesManager.instance.belt2.isServe = true;
+            CakesManager.instance.belt3.isServe = true;
 
             cake.transform.DOMove(beltPoint.position, tweenSpeed).OnComplete(() => cake.transform.DOMove(endPoint.position, 10f));
             cake.GetComponent<CakeItem>().tablePersons = beltPoint.parent.GetComponent<TablePersons>();
