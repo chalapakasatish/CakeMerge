@@ -11,10 +11,10 @@ public class CameraController : MonoBehaviour
 
     public void MoveDestination()
     {
-        transform.DOMoveZ(destination.localPosition.z, 15);
+        transform.DOMoveZ(destination.localPosition.z, 10);
     }
     public void StartDestination()
     {
-        transform.DOMoveZ(startPosition.localPosition.z, 5);
+        transform.DOMoveZ(startPosition.localPosition.z, 2);
     }
 }

@@ -59,7 +59,6 @@ public class CakeItem : MonoBehaviour
             
             if (dis <= .8f && i != holder)
             {
-
                 if (CakesManager.instance.spawnPoints[i].GetComponent<Holder>().cake)
                 {
                     otherId = CakesManager.instance.spawnPoints[i].GetComponent<Holder>().cake.GetComponent<CakeItem>().id;
@@ -77,21 +76,10 @@ public class CakeItem : MonoBehaviour
                         CakesManager.instance.SpawnNextCake(mNum, CakesManager.instance.spawnPoints[holder].transform, holder);
                         Destroy(CakesManager.instance.spawnPoints[i].transform.GetChild(0).gameObject);
                         Destroy(CakesManager.instance.spawnPoints[i].transform.GetChild(1).gameObject);
-                    }  
+                    }
                 }
                 else
                 {
-                    if (id != otherId)
-                    {
-                        lastPos = CakesManager.instance.spawnPoints[i].transform.position;
-                        CakesManager.instance.cakeExists[holder] = false;
-                        CakesManager.instance.cakeExists[i] = true;
-                        transform.SetParent(CakesManager.instance.spawnPoints[holder].transform);
-                        CakesManager.instance.spawnPoints[holder].GetComponent<Holder>().cake = null;
-                        CakesManager.instance.spawnPoints[i].GetComponent<Holder>().cake = gameObject;
-                        //holder = i;
-                        return;
-                    }
                     lastPos = CakesManager.instance.spawnPoints[i].transform.position;
                     CakesManager.instance.cakeExists[holder] = false;
                     CakesManager.instance.cakeExists[i] = true;
