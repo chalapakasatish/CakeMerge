@@ -13,6 +13,7 @@ public class CurrencyManager : MonoBehaviour
     public TMP_Text howManyClicksText;
     public TMP_Text PriceCakeText;
     [SerializeField] private int howManyClicks;
+    [SerializeField] private int howManyClicksTextRep;
 
     public int Coins 
     {
@@ -20,6 +21,7 @@ public class CurrencyManager : MonoBehaviour
         set => coins = value; 
     }
     public int HowManyClicks { get => howManyClicks; set => howManyClicks = value; }
+    public int HowManyClicksTextRep { get => howManyClicksTextRep; set => howManyClicksTextRep = value; }
 
     private void Awake()
     {
@@ -30,7 +32,6 @@ public class CurrencyManager : MonoBehaviour
         coins = PlayerPrefs.GetInt("Coins",coins);
         howManyClicks = PlayerPrefs.GetInt("HowManyClicks",howManyClicks);
         currencytext.text = Coins.ToString();
-        howManyClicksText.text = HowManyClicks.ToString() + "/" + "45";
         PriceCakeText.text = PlayerPrefs.GetInt("PriceCake",CakesManager.instance.Price).ToString();
     }
     public void AddCurrency(int num)
@@ -57,7 +58,7 @@ public class CurrencyManager : MonoBehaviour
     public void AddHowManyClicks(int num) 
     {
         howManyClicks += num;
-        howManyClicksText.text = howManyClicks.ToString() + "/" + "45";
         PlayerPrefs.SetInt("HowManyClicks", howManyClicks);
+        howManyClicksText.text = howManyClicks.ToString() + "/" + HowManyClicksTextRep.ToString();
     }
 }

@@ -24,8 +24,11 @@ public class CakesManager : MonoBehaviour
     public List<GameObject> cakesInstantiate = new List<GameObject>();
     public GameObject points;
     [SerializeField]private int price;
-
+    [SerializeField]private int cakePriceChange;
+    public int cakeNumber = 0;
+    public int[] targetClicks;
     public int Price { get => price; set => price = value; }
+    public int CakePriceChange { get => cakePriceChange; set => cakePriceChange = value; }
 
     private void Awake()
     {
@@ -34,14 +37,48 @@ public class CakesManager : MonoBehaviour
     private void Start()
     {
         price = PlayerPrefs.GetInt("PriceCake", price);
+        CheckTargetClicks();
+    }
+    public void CheckTargetClicks()
+    {
+        int number = PlayerPrefs.GetInt("HowManyClicks");
+        CurrencyManager.Instance.howManyClicksText.text = number + "/" + PlayerPrefs.GetInt("TargetClicks", targetClicks[0]).ToString();
+
+        switch (number)
+        {
+            case 4:
+                cakeNumber = 1;
+                CakePriceChange = 2;
+                CurrencyManager.Instance.HowManyClicksTextRep = targetClicks[1];
+                PlayerPrefs.SetInt("TargetClicks", CurrencyManager.Instance.HowManyClicksTextRep);
+                break;
+            case 9:
+                cakeNumber = 2;
+                CakePriceChange = 3;
+                CurrencyManager.Instance.HowManyClicksTextRep = targetClicks[2];
+                PlayerPrefs.SetInt("TargetClicks", CurrencyManager.Instance.HowManyClicksTextRep);
+                break;
+            case 14:
+                cakeNumber = 3;
+                CakePriceChange = 4;
+                CurrencyManager.Instance.HowManyClicksTextRep = targetClicks[3];
+                PlayerPrefs.SetInt("TargetClicks", CurrencyManager.Instance.HowManyClicksTextRep);
+                break;
+            case 19:
+                cakeNumber = 4;
+                CakePriceChange = 5;
+                CurrencyManager.Instance.HowManyClicksTextRep = targetClicks[4];
+                PlayerPrefs.SetInt("TargetClicks", CurrencyManager.Instance.HowManyClicksTextRep);
+                break;
+        }
     }
     public void SpawnCake()
     {
+        CheckTargetClicks();
         if (IsAvailableHolders())
         {
-            GetCake(0);
+            GetCake(cakeNumber);
         }
-        
     }
     bool IsAvailableHolders()
     {
@@ -60,7 +97,7 @@ public class CakesManager : MonoBehaviour
     {
         CurrencyManager.Instance.AddHowManyClicks(1);
         CurrencyManager.Instance.RemoveCurrency(price);
-        Price += 1;
+        Price += CakePriceChange;
         PlayerPrefs.SetInt("PriceCake", Price);
         CurrencyManager.Instance.PriceCakeText.text = PlayerPrefs.GetInt("PriceCake").ToString();
         if (CurrencyManager.Instance.Coins <= 0)
@@ -104,6 +141,10 @@ public class CakesManager : MonoBehaviour
 
     public void ServeCakes()
     {
+        for (int i = 0; i < spawnPoints.Count; i++)
+        {
+            cakesInstantiate.Add(gameObject);
+        }
         serveButton.gameObject.GetComponent<Button>().interactable = false;
         spawnCakeButton.GetComponent<Button>().interactable = false;
         for (int i = 0; i < spawnPoints.Count; i++)
@@ -126,8 +167,16 @@ public class CakesManager : MonoBehaviour
         spawnCakeButton.GetComponent<Button>().interactable = true;
         points.gameObject.SetActive(true);
         cameraController.StartDestination();
+        DeactivateCakesInstantiate();
     }
-
+    public void DeactivateCakesInstantiate()
+    {
+        foreach (var item in cakesInstantiate)
+        {
+            Destroy(item);
+        }
+        cakesInstantiate.Clear();
+    }
     public void SpawnEffect(GameObject DollerType, Transform target)
     {
         GameObject mObject = Instantiate(DollerType);

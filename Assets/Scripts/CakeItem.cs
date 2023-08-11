@@ -25,11 +25,33 @@ public class CakeItem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         lastPos = transform.position;
         transform.DOScale(2.5f, .1f);
-        
     }
+    //private void Update()
+    //{
+    //    //Touch Controls
+    //    if (Input.touchCount > 0)
+    //    {
+    //        touch = Input.GetTouch(0);
+    //        if (touch.phase == TouchPhase.Began)
+    //        {
+    //            offset = gameObject.transform.position - GetMouseWorldPos();
+    //            isDragging = true;
+    //        }
+    //        else if (touch.phase == TouchPhase.Moved)
+    //        {
+    //            transform.position = new Vector3(Mathf.Clamp((GetMouseWorldPos().x + offset.x), -3f, 3f), transform.position.y, Mathf.Clamp((GetMouseWorldPos().z + offset.z), -2f, 2f));
+    //        }
+    //        else if (touch.phase == TouchPhase.Ended)
+    //        {
+    //            MergePart();
+    //            transform.DOMove(lastPos, .2f);
+    //            CakesManager.instance.SpawnEffect(CakesManager.instance.holderEffect, transform);
+    //            isDragging = false;
+    //        }
+    //    }
+    //}
 
     private void OnMouseDown()
     {
@@ -39,7 +61,7 @@ public class CakeItem : MonoBehaviour
 
     private void OnMouseDrag()
     {
-        transform.position = new Vector3(Mathf.Clamp((GetMouseWorldPos().x + offset.x), -3f, 3f), transform.position.y,Mathf.Clamp((GetMouseWorldPos().z + offset.z),-2f,2f));
+        transform.position = new Vector3(Mathf.Clamp((GetMouseWorldPos().x + offset.x), -3f, 3f), transform.position.y, Mathf.Clamp((GetMouseWorldPos().z + offset.z), -2f, 2f));
     }
 
     private void OnMouseUp()
@@ -106,7 +128,8 @@ public class CakeItem : MonoBehaviour
     public List<bool> alreadyTook = new List<bool>();
 
 
-    public List<bool> completedPieces = new List<bool>(); 
+    public List<bool> completedPieces = new List<bool>();
+    private Touch touch;
 
     IEnumerator  DistributePieces(Collider other)
     {
