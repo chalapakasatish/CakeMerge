@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -22,22 +24,35 @@ public class CakesManager : MonoBehaviour
     public Belt belt1,belt2,belt3;
     public Button spawnCakeButton,continueButton,serveButton;
     public List<GameObject> cakesInstantiate = new List<GameObject>();
+    public List<int> cakeNumberRemember = new List<int>();
     public GameObject points;
     [SerializeField]private int price;
     [SerializeField]private int cakePriceChange;
-    public int cakeNumber = 0;
+    private int cakeNumber = 0;
     public int[] targetClicks;
     public int Price { get => price; set => price = value; }
     public int CakePriceChange { get => cakePriceChange; set => cakePriceChange = value; }
+    public int CakeNumber { get => cakeNumber; set => cakeNumber = value; }
 
     private void Awake()
     {
         instance = this;
+
+        //if (PlayerPrefs.HasKey("FirstTimeOpenGame"))
+        //{
+        //    return;
+        //}
+        //else
+        //{
+
+        //}
     }
     private void Start()
     {
         price = PlayerPrefs.GetInt("PriceCake", price);
+        cakeNumber = PlayerPrefs.GetInt("CakeNumber", cakeNumber);
         CheckTargetClicks();
+        //SavedGame();
     }
     public void CheckTargetClicks()
     {
@@ -51,30 +66,35 @@ public class CakesManager : MonoBehaviour
                 CakePriceChange = 2;
                 CurrencyManager.Instance.HowManyClicksTextRep = targetClicks[1];
                 PlayerPrefs.SetInt("TargetClicks", CurrencyManager.Instance.HowManyClicksTextRep);
+                PlayerPrefs.SetInt("CakeNumber", cakeNumber);
                 break;
             case 9:
                 cakeNumber = 2;
                 CakePriceChange = 3;
                 CurrencyManager.Instance.HowManyClicksTextRep = targetClicks[2];
                 PlayerPrefs.SetInt("TargetClicks", CurrencyManager.Instance.HowManyClicksTextRep);
+                PlayerPrefs.SetInt("CakeNumber", cakeNumber);
                 break;
             case 14:
                 cakeNumber = 3;
                 CakePriceChange = 4;
                 CurrencyManager.Instance.HowManyClicksTextRep = targetClicks[3];
                 PlayerPrefs.SetInt("TargetClicks", CurrencyManager.Instance.HowManyClicksTextRep);
+                PlayerPrefs.SetInt("CakeNumber", cakeNumber);
                 break;
             case 19:
                 cakeNumber = 4;
                 CakePriceChange = 5;
                 CurrencyManager.Instance.HowManyClicksTextRep = targetClicks[4];
                 PlayerPrefs.SetInt("TargetClicks", CurrencyManager.Instance.HowManyClicksTextRep);
+                PlayerPrefs.SetInt("CakeNumber", cakeNumber);
                 break;
         }
     }
     public void SpawnCake()
     {
         CheckTargetClicks();
+
         if (IsAvailableHolders())
         {
             GetCake(cakeNumber);
@@ -112,14 +132,16 @@ public class CakesManager : MonoBehaviour
                 currentPoint = spawnPoints[i];
                 cakeExists[i] = true;
                 GameObject mObject = Instantiate(cakes[num]);
+                cakeNumberRemember[i] = num;
+                PlayerPrefs.SetInt("CakeNumberRemember" + i, cakeNumberRemember[i]);
                 mObject.transform.position = currentPoint.transform.position;
                 mObject.GetComponent<CakeItem>().holder = i;
                 mObject.transform.SetParent(spawnPoints[i].transform);
                 spawnPoints[i].GetComponent<Holder>().cake = mObject;
+                PlayerPrefs.SetString("Holder" + i, "Holder" + i.ToString());
                 break;
             } 
         }
-        
     }
 
 
@@ -186,5 +208,33 @@ public class CakesManager : MonoBehaviour
     {
         yield return new WaitForSeconds(10f);
         continueButton.gameObject.SetActive(true);
+    }
+    private void OnApplicationQuit()
+    {
+        SavedGame();
+    }
+    private void OnApplicationFocus(bool focus)
+    {
+        SavedGame();
+    }
+    public void SavedGame()
+    {
+        for (int i = 0; i < spawnPoints.Count; i++)
+        {
+            if (spawnPoints[i] && !cakeExists[i])
+            {
+                if (PlayerPrefs.GetString("Holder" + i.ToString()) == "Holder" + i.ToString())
+                {
+                    currentPoint = spawnPoints[i];
+                    cakeExists[i] = true;
+                    GameObject mObject = Instantiate(cakes[PlayerPrefs.GetInt("CakeNumberRemember" + i)]);
+                    Debug.Log(PlayerPrefs.GetInt("CakeNumberRemember" + i));
+                    mObject.transform.position = currentPoint.transform.position;
+                    mObject.GetComponent<CakeItem>().holder = i;
+                    mObject.transform.SetParent(spawnPoints[i].transform);
+                    spawnPoints[i].GetComponent<Holder>().cake = mObject;
+                }
+            }
+        }
     }
 }

@@ -2553,7 +2553,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3527fa93df9f9974c8074f6d26304f69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coins: 10
+  coins: 1000
   currencytext: {fileID: 2068729986}
   howManyClicksText: {fileID: 493916366}
   PriceCakeText: {fileID: 689863284}
@@ -3677,7 +3677,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0/5
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -15613,10 +15613,10 @@ MonoBehaviour:
   continueButton: {fileID: 414867248}
   serveButton: {fileID: 1935451341}
   cakesInstantiate: []
+  cakeNumberRemember: 000000000000000000000000000000000000000000000000000000000000000000000000
   points: {fileID: 339410312}
   price: 10
   cakePriceChange: 1
-  cakeNumber: 0
   targetClicks: 050000000a0000000f0000001400000019000000
 --- !u!4 &2059588641
 Transform:

@@ -89,28 +89,35 @@ public class CakeItem : MonoBehaviour
                     {
                         lastPos = CakesManager.instance.spawnPoints[i].transform.position;
                         CakesManager.instance.cakeExists[holder] = false;
+                        PlayerPrefs.DeleteKey("Holder" + holder);
                         CakesManager.instance.cakeExists[i] = true;
                         transform.SetParent(CakesManager.instance.spawnPoints[i].transform);
                         CakesManager.instance.spawnPoints[holder].GetComponent<Holder>().cake = null;
                         CakesManager.instance.spawnPoints[i].GetComponent<Holder>().cake = gameObject;
                         holder = i;
                         int mNum = id + 1;
+                        PlayerPrefs.SetInt("CakeNumberRemember" + i, mNum);
                         CakesManager.instance.SpawnNextCake(mNum, CakesManager.instance.spawnPoints[holder].transform, holder);
+
                         Destroy(CakesManager.instance.spawnPoints[i].transform.GetChild(0).gameObject);
                         Destroy(CakesManager.instance.spawnPoints[i].transform.GetChild(1).gameObject);
+                        PlayerPrefs.SetString("Holder" + i, "Holder" + i.ToString());
                     }
                 }
                 else
                 {
                     lastPos = CakesManager.instance.spawnPoints[i].transform.position;
                     CakesManager.instance.cakeExists[holder] = false;
+                    PlayerPrefs.DeleteKey("Holder" + holder);
                     CakesManager.instance.cakeExists[i] = true;
                     transform.SetParent(CakesManager.instance.spawnPoints[i].transform);
                     CakesManager.instance.spawnPoints[holder].GetComponent<Holder>().cake = null;
                     CakesManager.instance.spawnPoints[i].GetComponent<Holder>().cake = gameObject;
                     holder = i;
+                    PlayerPrefs.SetString("Holder" + i, "Holder" + i.ToString());
                 }
             }
+            
         }
     }
 
