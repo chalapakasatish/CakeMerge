@@ -58,7 +58,7 @@ public class CakesManager : MonoBehaviour
     {
         int number = PlayerPrefs.GetInt("HowManyClicks");
         CurrencyManager.Instance.howManyClicksText.text = number + "/" + PlayerPrefs.GetInt("TargetClicks", targetClicks[0]).ToString();
-
+        CurrencyManager.Instance.HowManyClicksTextRep = targetClicks[0];
         switch (number)
         {
             case 4:
