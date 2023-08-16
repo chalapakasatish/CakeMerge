@@ -88,11 +88,14 @@ public class CakesManager : MonoBehaviour
     }
     public void SpawnCake()
     {
-        CheckTargetClicks();
-
         if (IsAvailableHolders())
         {
+            CheckTargetClicks();
             GetCake(cakeNumber);
+        }
+        else
+        {
+            spawnCakeButton.GetComponent<Button>().interactable = false;
         }
     }
     bool IsAvailableHolders()
@@ -104,7 +107,6 @@ public class CakesManager : MonoBehaviour
                 return true;
             }
         }
-
         return false;
     }
 

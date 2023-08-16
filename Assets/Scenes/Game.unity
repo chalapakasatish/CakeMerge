@@ -2553,7 +2553,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3527fa93df9f9974c8074f6d26304f69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coins: 1000
+  coins: 10
   currencytext: {fileID: 2068729986}
   howManyClicksText: {fileID: 493916366}
   PriceCakeText: {fileID: 689863284}
@@ -2586,7 +2586,7 @@ GameObject:
   - component: {fileID: 370492912}
   - component: {fileID: 370492911}
   m_Layer: 5
-  m_Name: CakeImage
+  m_Name: CakeImage1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
