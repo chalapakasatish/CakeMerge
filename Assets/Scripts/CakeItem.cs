@@ -98,7 +98,6 @@ public class CakeItem : MonoBehaviour
                         int mNum = id + 1;
                         PlayerPrefs.SetInt("CakeNumberRemember" + i, mNum);
                         CakesManager.instance.SpawnNextCake(mNum, CakesManager.instance.spawnPoints[holder].transform, holder);
-
                         Destroy(CakesManager.instance.spawnPoints[i].transform.GetChild(0).gameObject);
                         Destroy(CakesManager.instance.spawnPoints[i].transform.GetChild(1).gameObject);
                         PlayerPrefs.SetString("Holder" + i, "Holder" + i.ToString());

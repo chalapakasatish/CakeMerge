@@ -42,17 +42,12 @@ public class CakesManager : MonoBehaviour
         //{
         //    return;
         //}
-        //else
-        //{
-
-        //}
     }
     private void Start()
     {
         price = PlayerPrefs.GetInt("PriceCake", price);
         cakeNumber = PlayerPrefs.GetInt("CakeNumber", cakeNumber);
         CheckTargetClicks();
-        //SavedGame();
     }
     public void CheckTargetClicks()
     {
