@@ -9,6 +9,7 @@ public class PieceMove : MonoBehaviour
     {
         transform.DOLocalMove(target.localPosition, .3f).OnComplete(()=> FinishCallBack());
         transform.DOScale(.1f, 1f);
+        Destroy(gameObject,2f);
     }
     
 
