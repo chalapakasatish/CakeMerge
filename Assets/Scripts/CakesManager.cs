@@ -28,7 +28,7 @@ public class CakesManager : MonoBehaviour
     public GameObject points;
     [SerializeField]private int price;
     [SerializeField]private int cakePriceChange;
-    private int cakeNumber = 0;
+    [SerializeField] private int cakeNumber = 0;
     public int[] targetClicks;
     public int Price { get => price; set => price = value; }
     public int CakePriceChange { get => cakePriceChange; set => cakePriceChange = value; }

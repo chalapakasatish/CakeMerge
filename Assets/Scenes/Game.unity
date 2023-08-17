@@ -2234,6 +2234,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destination: {fileID: 906019751}
   startPosition: {fileID: 1244707610}
+  targetCamera: {fileID: 330585545}
+  targetFOV: 80
+  changeDuration: 5
 --- !u!1 &338982388
 GameObject:
   m_ObjectHideFlags: 0
@@ -2553,7 +2556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3527fa93df9f9974c8074f6d26304f69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coins: 10
+  coins: 1000
   currencytext: {fileID: 2068729986}
   howManyClicksText: {fileID: 493916366}
   PriceCakeText: {fileID: 689863284}
@@ -15617,7 +15620,10 @@ MonoBehaviour:
   points: {fileID: 339410312}
   price: 10
   cakePriceChange: 1
+  cakeNumber: 0
   targetClicks: 050000000a0000000f0000001400000019000000
+  plates: {fileID: 0}
+  gameStart: 0
 --- !u!4 &2059588641
 Transform:
   m_ObjectHideFlags: 0
@@ -16397,7 +16403,7 @@ GameObject:
   - component: {fileID: 543450653623837397}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Multiplier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

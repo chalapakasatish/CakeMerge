@@ -606,6 +606,7 @@ MonoBehaviour:
   tablePersons: {fileID: 0}
   plate: {fileID: 1591345009273064026}
   Exoffset: {x: 0, y: -12, z: 0}
+  isDragging: 0
   mouthPoints: []
   alreadyTook: 
   completedPieces: 
@@ -817,7 +818,7 @@ GameObject:
   - component: {fileID: 3006340998396101396}
   m_Layer: 0
   m_Name: Plat_001 (1)
-  m_TagString: Untagged
+  m_TagString: Plate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

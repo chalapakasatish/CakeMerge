@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using Unity.VisualScripting;
 
 public class CakeItem : MonoBehaviour
 {
@@ -139,8 +140,15 @@ public class CakeItem : MonoBehaviour
 
     IEnumerator  DistributePieces(Collider other)
     {
-        mouthPoints = other.GetComponent<StageTrigger>().person;
-        for (int i = 0; i < other.GetComponent<StageTrigger>().person.Count; i++)
+        for (int i = 0; i < other.transform.childCount; i++)
+        {
+            mouthPoints.Add(other.transform.GetChild(i).gameObject);
+            if (mouthPoints.Count >= cakePieces.Count)
+            {
+                break;
+            }
+        }
+        for (int i = 0; i < mouthPoints.Count; i++)
         {
             if (cakePieces[i])
             {
@@ -148,27 +156,31 @@ public class CakeItem : MonoBehaviour
                 cakePieces[i].AddComponent<PieceMove>();
                 cakePieces[i].GetComponent<PieceMove>().MovePiece(mouthPoints[i].transform);
 
-                if (i >= other.GetComponent<StageTrigger>().person.Count - 1)
+                //if (i >= other.GetComponent<StageTrigger>().person.Count - 1)
+                //{
+                    other.GetComponent<Collider>().enabled = false;
+                //}
+                if (i >= cakePieces.Count - 1)
                 {
                     other.GetComponent<Collider>().enabled = false;
-                }
-                if (i >= cakePieces.Count-1)
-                {
                     GetComponent<Collider>().enabled = false;
                     Invoke("DeativatePlate", 0.5f);
                 }
             }
-
         }
-
-        yield return new WaitForSeconds(.01f);
-
-
-        for (int i = 0; i < mouthPoints.Count; i++)
+        yield return new WaitForSeconds(5f);
+        other.GetComponent<Collider>().enabled = true;
+        foreach (var item in mouthPoints)
         {
-            cakePieces.RemoveAt(i);
-            mouthPoints.RemoveAt(i);
+            //Destroy(item);
         }
+        mouthPoints.Clear();
+        //GetComponent<Collider>().enabled = true;
+        //for (int i = 0; i < mouthPoints.Count; i++)
+        //{
+        //    cakePieces.RemoveAt(i);
+        //    mouthPoints.RemoveAt(i);
+        //}
     }
 
 

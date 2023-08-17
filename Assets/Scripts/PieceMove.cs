@@ -16,7 +16,7 @@ public class PieceMove : MonoBehaviour
     {
         GetComponent<MeshRenderer>().enabled = false;
         CakesManager.instance.SpawnEffect(CakesManager.instance.dollerEffect, transform);
-        CurrencyManager.Instance.AddCurrency(10);
+        CurrencyManager.Instance.AddCurrency(7);
         GameObject emoji = Instantiate(CakesManager.instance.emojis);
         emoji.transform.position = transform.position + new Vector3(0, 1, 0);
     }
