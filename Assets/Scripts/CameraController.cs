@@ -13,7 +13,7 @@ public class CameraController : MonoBehaviour
     {
         StartCoroutine(ChangeCameraFOV(80, 5));
         transform.DOLocalRotate(new Vector3(60, 0, 0),1f);
-        transform.DOMoveZ(destination.localPosition.z, 10);
+        transform.DOMoveZ(destination.localPosition.z, 5);
     }
     public void StartDestination()
     {

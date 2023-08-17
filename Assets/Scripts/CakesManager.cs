@@ -204,7 +204,7 @@ public class CakesManager : MonoBehaviour
     }
     public IEnumerator WaitForEnableCakes()
     {
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(5f);
         continueButton.gameObject.SetActive(true);
     }
     private void OnApplicationQuit()
