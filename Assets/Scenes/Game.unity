@@ -2556,7 +2556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3527fa93df9f9974c8074f6d26304f69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coins: 10
+  coins: 1000
   currencytext: {fileID: 2068729986}
   howManyClicksText: {fileID: 493916366}
   PriceCakeText: {fileID: 689863284}
@@ -8238,7 +8238,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1139418868}
   m_Layer: 0
-  m_Name: Stages (2)
+  m_Name: Stages 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10772,7 +10772,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1368908673}
   m_Layer: 0
-  m_Name: Stages (1)
+  m_Name: Stages 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14263,7 +14263,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1914000313}
   m_Layer: 0
-  m_Name: Stages
+  m_Name: Stages 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14970,7 +14970,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2011254270}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.84, y: 0, z: 31.068}
+  m_LocalPosition: {x: -4.84, y: 0, z: 31.834}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

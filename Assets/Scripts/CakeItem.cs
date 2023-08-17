@@ -168,7 +168,7 @@ public class CakeItem : MonoBehaviour
                 }
             }
         }
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(5f);
         other.GetComponent<Collider>().enabled = true;
         foreach (var item in mouthPoints)
         {
@@ -188,8 +188,15 @@ public class CakeItem : MonoBehaviour
     {
         for(int i = 0; i < cakePieces.Count; i++)
         {
-            cakePieces[i].AddComponent<PieceMove>();
-            cakePieces[i].GetComponent<PieceMove>().MovePiece(other.GetComponent<StageTrigger>().person[0].transform);
+            if (cakePieces[i] == null)
+            {
+                Debug.Log("Some Pieces Deleted");
+            }else
+            {
+                cakePieces[i].AddComponent<PieceMove>();
+                cakePieces[i].GetComponent<PieceMove>().MovePiece(other.GetComponent<StageTrigger>().person[0].transform);
+            }
+            
         }
     }
 
