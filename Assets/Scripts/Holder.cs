@@ -38,15 +38,15 @@ public class Holder : MonoBehaviour
             {
                 case TypeOfRow.first:
                     tweenSpeed = .4f;
-                    tweenEndSpeed = .5f;
+                    tweenEndSpeed = 1f;
                     break;
                 case TypeOfRow.second:
-                    tweenSpeed = .6f;
-                    tweenEndSpeed = 3f;
+                    tweenSpeed = .8f;
+                    tweenEndSpeed = 1f;
                     break;
                 case TypeOfRow.third:
-                    tweenSpeed = .8f;
-                    tweenEndSpeed = 5f;
+                    tweenSpeed = .12f;
+                    tweenEndSpeed = 1f;
                     break;
             }
             CakesManager.instance.belt1.isServe = true;

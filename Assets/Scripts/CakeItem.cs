@@ -195,7 +195,7 @@ public class CakeItem : MonoBehaviour
 
     void DeativatePlate()
     {
-        plate.SetActive(false);
+        Destroy(plate);
     }
 
 

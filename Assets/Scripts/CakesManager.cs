@@ -172,8 +172,9 @@ public class CakesManager : MonoBehaviour
             cakesInstantiate[i].GetComponent<Holder>().MoveToBelt();
             points.gameObject.SetActive(false);
         }
-        StartCoroutine(WaitForEnableCakes());
         cameraController.MoveDestination();
+        StartCoroutine(WaitForEnableCakes());
+        
     }
     public void CameraresetPosition()
     {

@@ -2556,7 +2556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3527fa93df9f9974c8074f6d26304f69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coins: 1000
+  coins: 10
   currencytext: {fileID: 2068729986}
   howManyClicksText: {fileID: 493916366}
   PriceCakeText: {fileID: 689863284}
@@ -6715,7 +6715,7 @@ SphereCollider:
   m_GameObject: {fileID: 906019747}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -6777,7 +6777,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 906019747}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 23.28}
+  m_LocalPosition: {x: 0, y: 0, z: 15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15622,8 +15622,6 @@ MonoBehaviour:
   cakePriceChange: 1
   cakeNumber: 0
   targetClicks: 050000000a0000000f0000001400000019000000
-  plates: {fileID: 0}
-  gameStart: 0
 --- !u!4 &2059588641
 Transform:
   m_ObjectHideFlags: 0
