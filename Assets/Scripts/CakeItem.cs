@@ -168,7 +168,7 @@ public class CakeItem : MonoBehaviour
                 }
             }
         }
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(4f);
         other.GetComponent<Collider>().enabled = true;
         foreach (var item in mouthPoints)
         {

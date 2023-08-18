@@ -37,15 +37,15 @@ public class Holder : MonoBehaviour
             switch (typeOfRow)
             {
                 case TypeOfRow.first:
-                    tweenSpeed = .4f;
+                    tweenSpeed = 0.5f;
                     tweenEndSpeed = 1f;
                     break;
                 case TypeOfRow.second:
-                    tweenSpeed = .8f;
+                    tweenSpeed = 1f;
                     tweenEndSpeed = 4f;
                     break;
                 case TypeOfRow.third:
-                    tweenSpeed = .12f;
+                    tweenSpeed = 1.5f;
                     tweenEndSpeed = 7f;
                     break;
             }
