@@ -11,6 +11,7 @@ TagManager:
   - FinalPerson
   - Multiplier
   - Plate
+  - Person
   layers:
   - Default
   - TransparentFX

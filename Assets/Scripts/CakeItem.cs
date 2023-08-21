@@ -136,54 +136,34 @@ public class CakeItem : MonoBehaviour
 
 
     public List<bool> completedPieces = new List<bool>();
-    private Touch touch;
-
-    IEnumerator  DistributePieces(Collider other)
+    IEnumerator DistributePieces(Collider other, int wantCakes)
     {
-        for (int i = 0; i < other.transform.childCount; i++)
+        for (int i = 0; i < wantCakes; i++)
         {
-            mouthPoints.Add(other.transform.GetChild(i).gameObject);
-            if (mouthPoints.Count >= cakePieces.Count)
+            if (0 < cakePieces.Count && other.GetComponent<Person>().Ate >= 0)
             {
-                break;
+                cakePieces[0].transform.SetParent(other.transform);
+                cakePieces[0].AddComponent<PieceMove>();
+                cakePieces[0].GetComponent<PieceMove>().MovePiece(other.GetComponent<Person>().mouthPoint[0]);
+                cakePieces.RemoveAt(0);
+                other.GetComponent<Person>().Ate -= 1;
+            }
+            if (other.GetComponent<Person>().Ate <= 0)
+            {
+                other.GetComponent<Collider>().enabled = false;
+            }
+            if (cakePieces.Count <= 0)
+            {
+                GetComponent<Collider>().enabled = false;
+                Invoke("DeativatePlate", 0.2f);
             }
         }
-        for (int i = 0; i < mouthPoints.Count; i++)
-        {
-            if (cakePieces[i])
-            {
-                cakePieces[i].transform.SetParent(other.transform);
-                cakePieces[i].AddComponent<PieceMove>();
-                cakePieces[i].GetComponent<PieceMove>().MovePiece(mouthPoints[i].transform);
 
-                //if (i >= other.GetComponent<StageTrigger>().person.Count - 1)
-                //{
-                    other.GetComponent<Collider>().enabled = false;
-                //}
-                if (i >= cakePieces.Count - 1)
-                {
-                    other.GetComponent<Collider>().enabled = false;
-                    GetComponent<Collider>().enabled = false;
-                    Invoke("DeativatePlate", 0.5f);
-                }
-            }
-        }
-        yield return new WaitForSeconds(4f);
+
+        yield return new WaitForSeconds(3f);
         other.GetComponent<Collider>().enabled = true;
-        foreach (var item in mouthPoints)
-        {
-            //Destroy(item);
-        }
-        mouthPoints.Clear();
-        //GetComponent<Collider>().enabled = true;
-        //for (int i = 0; i < mouthPoints.Count; i++)
-        //{
-        //    cakePieces.RemoveAt(i);
-        //    mouthPoints.RemoveAt(i);
-        //}
+        other.GetComponent<Person>().Ate = other.GetComponent<Person>().count;
     }
-
-
     public void MoveAllPieces(GameObject other)
     {
         for(int i = 0; i < cakePieces.Count; i++)
@@ -211,9 +191,12 @@ public class CakeItem : MonoBehaviour
     {
         switch (other.gameObject.tag)
         {
-            case "stage1":
-                StartCoroutine(DistributePieces(other));
+            case "Person":
+                StartCoroutine(DistributePieces(other, other.GetComponent<Person>().Ate));
                 break;
+            //case "stage1":
+            //    StartCoroutine(DistributePieces(other));
+            //    break;
             case "Gift":
                 Destroy(other.gameObject);
                 CakesManager.instance.SpawnEffect(CakesManager.instance.confettiEffect, other.transform);
