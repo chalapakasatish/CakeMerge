@@ -142,11 +142,13 @@ public class CakeItem : MonoBehaviour
         {
             if (0 < cakePieces.Count && other.GetComponent<Person>().Ate >= 0)
             {
+
                 cakePieces[0].transform.SetParent(other.transform);
                 cakePieces[0].AddComponent<PieceMove>();
                 cakePieces[0].GetComponent<PieceMove>().MovePiece(other.GetComponent<Person>().mouthPoint[0]);
                 cakePieces.RemoveAt(0);
                 other.GetComponent<Person>().Ate -= 1;
+                other.GetComponent<Person>().countText.text = other.GetComponent<Person>().Ate.ToString();
             }
             if (other.GetComponent<Person>().Ate <= 0)
             {
@@ -163,6 +165,7 @@ public class CakeItem : MonoBehaviour
         yield return new WaitForSeconds(3f);
         other.GetComponent<Collider>().enabled = true;
         other.GetComponent<Person>().Ate = other.GetComponent<Person>().count;
+        other.GetComponent<Person>().countText.text = other.GetComponent<Person>().Ate.ToString();
     }
     public void MoveAllPieces(GameObject other)
     {

@@ -137,7 +137,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6289547736708754501
 Transform:
   m_ObjectHideFlags: 0
@@ -481,7 +481,6 @@ MonoBehaviour:
   - {fileID: 4334941730230721828}
   - {fileID: 7674144124132378508}
   - {fileID: 676872800899602704}
-  - {fileID: 3835535209622605755}
   tablePersons: {fileID: 0}
   plate: {fileID: 4020933947894704196}
   Exoffset: {x: 0, y: -12, z: 0}
