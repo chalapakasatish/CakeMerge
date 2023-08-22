@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using Unity.VisualScripting;
+using TMPro;
 
 public class CakeItem : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class CakeItem : MonoBehaviour
     public Vector3 Exoffset;
 
     public bool isDragging = false;
+    public TMP_Text countText;
 
 
     // Start is called before the first frame update
@@ -28,6 +30,7 @@ public class CakeItem : MonoBehaviour
     {
         lastPos = transform.position;
         transform.DOScale(2.5f, .1f);
+        countText.text = cakePieces.Count.ToString();
     }
     //private void Update()
     //{
@@ -142,13 +145,13 @@ public class CakeItem : MonoBehaviour
         {
             if (0 < cakePieces.Count && other.GetComponent<Person>().Ate >= 0)
             {
-
                 cakePieces[0].transform.SetParent(other.transform);
                 cakePieces[0].AddComponent<PieceMove>();
                 cakePieces[0].GetComponent<PieceMove>().MovePiece(other.GetComponent<Person>().mouthPoint[0]);
                 cakePieces.RemoveAt(0);
                 other.GetComponent<Person>().Ate -= 1;
                 other.GetComponent<Person>().countText.text = other.GetComponent<Person>().Ate.ToString();
+                countText.text = cakePieces.Count.ToString();
             }
             if (other.GetComponent<Person>().Ate <= 0)
             {
@@ -166,6 +169,7 @@ public class CakeItem : MonoBehaviour
         other.GetComponent<Collider>().enabled = true;
         other.GetComponent<Person>().Ate = other.GetComponent<Person>().count;
         other.GetComponent<Person>().countText.text = other.GetComponent<Person>().Ate.ToString();
+        countText.text = cakePieces.Count.ToString();
     }
     public void MoveAllPieces(GameObject other)
     {
