@@ -23,6 +23,7 @@ public class CakeItem : MonoBehaviour
 
     public bool isDragging = false;
     public TMP_Text countText;
+    public GameObject canvas;
 
 
     // Start is called before the first frame update
@@ -160,6 +161,7 @@ public class CakeItem : MonoBehaviour
             if (cakePieces.Count <= 0)
             {
                 GetComponent<Collider>().enabled = false;
+                canvas.gameObject.SetActive(false);
                 Invoke("DeativatePlate", 0.2f);
             }
         }
@@ -170,20 +172,22 @@ public class CakeItem : MonoBehaviour
         other.GetComponent<Person>().Ate = other.GetComponent<Person>().count;
         other.GetComponent<Person>().countText.text = other.GetComponent<Person>().Ate.ToString();
         countText.text = cakePieces.Count.ToString();
+        //canvas.gameObject.SetActive(true);
     }
     public void MoveAllPieces(GameObject other)
     {
         for(int i = 0; i < cakePieces.Count; i++)
         {
-            if (cakePieces[i] == null)
-            {
-                Debug.Log("Some Pieces Deleted");
-            }else
-            {
+            //if (cakePieces[i] == null)
+            //{
+            //    Debug.Log("Some Pieces Deleted");
+            //}else
+            //{
                 cakePieces[i].AddComponent<PieceMove>();
                 cakePieces[i].GetComponent<PieceMove>().MovePiece(other.GetComponent<StageTrigger>().person[0].transform);
-            }
-            
+                canvas.gameObject.SetActive(false);
+            //}
+
         }
     }
 

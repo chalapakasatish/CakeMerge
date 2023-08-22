@@ -992,7 +992,7 @@ MonoBehaviour:
   - {fileID: 1586589634}
   - {fileID: 1586589634}
   countText: {fileID: 897245261}
-  count: 1
+  count: 2
   ate: 0
 --- !u!65 &253968637
 BoxCollider:
@@ -3213,8 +3213,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cake: {fileID: 0}
   typeOfColomn: 2
-  beltPoint: {fileID: 0}
-  endPoint: {fileID: 0}
+  beltPoint: {fileID: 1066323637}
+  endPoint: {fileID: 2128566613}
   tweenSpeed: 0.9
   typeOfRow: 2
 --- !u!1 &602105941
@@ -4169,8 +4169,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cake: {fileID: 0}
   typeOfColomn: 1
-  beltPoint: {fileID: 0}
-  endPoint: {fileID: 0}
+  beltPoint: {fileID: 1944527333}
+  endPoint: {fileID: 1447697954}
   tweenSpeed: 0.7
   typeOfRow: 1
 --- !u!1 &767956692
@@ -5807,8 +5807,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cake: {fileID: 0}
   typeOfColomn: 1
-  beltPoint: {fileID: 0}
-  endPoint: {fileID: 0}
+  beltPoint: {fileID: 1944527333}
+  endPoint: {fileID: 1447697954}
   tweenSpeed: 0.7
   typeOfRow: 2
 --- !u!1 &1045737378
@@ -5997,7 +5997,7 @@ MonoBehaviour:
   - {fileID: 1330721967}
   - {fileID: 1330721967}
   countText: {fileID: 365472077}
-  count: 1
+  count: 2
   ate: 0
 --- !u!65 &1069575309
 BoxCollider:
@@ -7901,7 +7901,7 @@ MonoBehaviour:
   mouthPoint:
   - {fileID: 838097201}
   countText: {fileID: 881255752}
-  count: 5
+  count: 2
   ate: 0
 --- !u!1 &1402731786
 GameObject:
@@ -8875,8 +8875,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cake: {fileID: 0}
   typeOfColomn: 2
-  beltPoint: {fileID: 0}
-  endPoint: {fileID: 0}
+  beltPoint: {fileID: 1066323637}
+  endPoint: {fileID: 2128566613}
   tweenSpeed: 0.9
   typeOfRow: 0
 --- !u!1 &1716947954
@@ -10331,8 +10331,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cake: {fileID: 0}
   typeOfColomn: 1
-  beltPoint: {fileID: 0}
-  endPoint: {fileID: 0}
+  beltPoint: {fileID: 1944527333}
+  endPoint: {fileID: 1447697954}
   tweenSpeed: 0.7
   typeOfRow: 0
 --- !u!1 &1935451337
@@ -11457,8 +11457,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cake: {fileID: 0}
   typeOfColomn: 2
-  beltPoint: {fileID: 0}
-  endPoint: {fileID: 0}
+  beltPoint: {fileID: 1066323637}
+  endPoint: {fileID: 2128566613}
   tweenSpeed: 0.9
   typeOfRow: 1
 --- !u!1 &2127891113

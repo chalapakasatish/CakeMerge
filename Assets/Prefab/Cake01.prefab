@@ -659,6 +659,7 @@ MonoBehaviour:
   Exoffset: {x: 0, y: -12, z: 0}
   isDragging: 0
   countText: {fileID: 1668006541}
+  canvas: {fileID: 578819035}
   mouthPoints: []
   alreadyTook: 
   completedPieces: 
