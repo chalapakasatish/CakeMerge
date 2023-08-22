@@ -30,6 +30,8 @@ public class CakesManager : MonoBehaviour
     [SerializeField]private int cakePriceChange;
     [SerializeField] private int cakeNumber = 0;
     public int[] targetClicks;
+    public bool serveStarted;
+
     public int Price { get => price; set => price = value; }
     public int CakePriceChange { get => cakePriceChange; set => cakePriceChange = value; }
     public int CakeNumber { get => cakeNumber; set => cakeNumber = value; }
@@ -52,32 +54,38 @@ public class CakesManager : MonoBehaviour
     public void CheckTargetClicks()
     {
         int number = PlayerPrefs.GetInt("HowManyClicks");
-        CurrencyManager.Instance.howManyClicksText.text = number + "/" + PlayerPrefs.GetInt("TargetClicks", targetClicks[0]).ToString();
-        CurrencyManager.Instance.HowManyClicksTextRep = targetClicks[0];
+        CurrencyManager.Instance.howManyClicksText.text = number + "/" + PlayerPrefs.GetInt("TargetClicks").ToString();
         switch (number)
         {
-            case 4:
+            case 0:
+                cakeNumber = 0;
+                CakePriceChange = 1;
+                CurrencyManager.Instance.HowManyClicksTextRep = targetClicks[0];
+                PlayerPrefs.SetInt("TargetClicks", targetClicks[0]);
+                PlayerPrefs.SetInt("CakeNumber", cakeNumber);
+                break;
+            case 5:
                 cakeNumber = 1;
                 CakePriceChange = 2;
                 CurrencyManager.Instance.HowManyClicksTextRep = targetClicks[1];
                 PlayerPrefs.SetInt("TargetClicks", CurrencyManager.Instance.HowManyClicksTextRep);
                 PlayerPrefs.SetInt("CakeNumber", cakeNumber);
                 break;
-            case 9:
+            case 10:
                 cakeNumber = 2;
                 CakePriceChange = 3;
                 CurrencyManager.Instance.HowManyClicksTextRep = targetClicks[2];
                 PlayerPrefs.SetInt("TargetClicks", CurrencyManager.Instance.HowManyClicksTextRep);
                 PlayerPrefs.SetInt("CakeNumber", cakeNumber);
                 break;
-            case 14:
+            case 15:
                 cakeNumber = 3;
                 CakePriceChange = 4;
                 CurrencyManager.Instance.HowManyClicksTextRep = targetClicks[3];
                 PlayerPrefs.SetInt("TargetClicks", CurrencyManager.Instance.HowManyClicksTextRep);
                 PlayerPrefs.SetInt("CakeNumber", cakeNumber);
                 break;
-            case 19:
+            case 20:
                 cakeNumber = 4;
                 CakePriceChange = 5;
                 CurrencyManager.Instance.HowManyClicksTextRep = targetClicks[4];
@@ -85,6 +93,7 @@ public class CakesManager : MonoBehaviour
                 PlayerPrefs.SetInt("CakeNumber", cakeNumber);
                 break;
         }
+        CurrencyManager.Instance.howManyClicksText.text = number + "/" + PlayerPrefs.GetInt("TargetClicks").ToString();
     }
     public void SpawnCake()
     {
@@ -160,6 +169,7 @@ public class CakesManager : MonoBehaviour
 
     public void ServeCakes()
     {
+        serveStarted = true;
         for (int i = 0; i < spawnPoints.Count; i++)
         {
             cakesInstantiate.Add(gameObject);
@@ -171,9 +181,11 @@ public class CakesManager : MonoBehaviour
             cakesInstantiate[i] = Instantiate(spawnPoints[i]);
             cakesInstantiate[i].GetComponent<Holder>().MoveToBelt();
             points.gameObject.SetActive(false);
+            
         }
+        
         cameraController.MoveDestination();
-        StartCoroutine(WaitForEnableCakes());
+        //StartCoroutine(WaitForEnableCakes());
         
     }
     public void CameraresetPosition()
@@ -226,7 +238,6 @@ public class CakesManager : MonoBehaviour
                     currentPoint = spawnPoints[i];
                     cakeExists[i] = true;
                     GameObject mObject = Instantiate(cakes[PlayerPrefs.GetInt("CakeNumberRemember" + i)]);
-                    Debug.Log(PlayerPrefs.GetInt("CakeNumberRemember" + i));
                     mObject.transform.position = currentPoint.transform.position;
                     mObject.GetComponent<CakeItem>().holder = i;
                     mObject.transform.SetParent(spawnPoints[i].transform);

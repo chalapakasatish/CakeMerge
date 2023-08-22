@@ -59,6 +59,7 @@ public class CurrencyManager : MonoBehaviour
     {
         howManyClicks += num;
         PlayerPrefs.SetInt("HowManyClicks", howManyClicks);
-        howManyClicksText.text = howManyClicks.ToString() + "/" + HowManyClicksTextRep.ToString();
+        howManyClicksText.text = PlayerPrefs.GetInt("HowManyClicks").ToString() + "/" + PlayerPrefs.GetInt("TargetClicks").ToString();
+        CakesManager.instance.CheckTargetClicks();
     }
 }

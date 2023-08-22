@@ -33,6 +33,7 @@ public class CakeItem : MonoBehaviour
         transform.DOScale(2.5f, .1f);
         countText.text = cakePieces.Count.ToString();
     }
+    
     //private void Update()
     //{
     //    //Touch Controls
@@ -172,22 +173,20 @@ public class CakeItem : MonoBehaviour
         other.GetComponent<Person>().Ate = other.GetComponent<Person>().count;
         other.GetComponent<Person>().countText.text = other.GetComponent<Person>().Ate.ToString();
         countText.text = cakePieces.Count.ToString();
-        //canvas.gameObject.SetActive(true);
     }
     public void MoveAllPieces(GameObject other)
     {
         for(int i = 0; i < cakePieces.Count; i++)
         {
-            //if (cakePieces[i] == null)
-            //{
-            //    Debug.Log("Some Pieces Deleted");
-            //}else
-            //{
-                cakePieces[i].AddComponent<PieceMove>();
-                cakePieces[i].GetComponent<PieceMove>().MovePiece(other.GetComponent<StageTrigger>().person[0].transform);
-                canvas.gameObject.SetActive(false);
-            //}
-
+            cakePieces[i].AddComponent<PieceMove>();
+            cakePieces[i].GetComponent<PieceMove>().MovePiece(other.GetComponent<StageTrigger>().person[0].transform);
+            cakePieces.RemoveAt(0);
+        }
+        if (cakePieces.Count <= 0)
+        {
+            GetComponent<Collider>().enabled = false;
+            canvas.gameObject.SetActive(false);
+            Invoke("DeativatePlate", 0.2f);
         }
     }
 
@@ -205,9 +204,6 @@ public class CakeItem : MonoBehaviour
             case "Person":
                 StartCoroutine(DistributePieces(other, other.GetComponent<Person>().Ate));
                 break;
-            //case "stage1":
-            //    StartCoroutine(DistributePieces(other));
-            //    break;
             case "Gift":
                 Destroy(other.gameObject);
                 CakesManager.instance.SpawnEffect(CakesManager.instance.confettiEffect, other.transform);
@@ -218,7 +214,7 @@ public class CakeItem : MonoBehaviour
             case "Multiplier":
                 other.gameObject.SetActive(false);
                 GameObject mObject = Instantiate(gameObject);
-                mObject.transform.position = transform.position + new Vector3(0, 1f, 0);
+                mObject.transform.position = transform.position + new Vector3(0, 0f, 1.5f);
                 mObject.transform.SetParent(transform.parent);
                 mObject.transform.localRotation = Quaternion.Euler(transform.localEulerAngles);
                 //mObject.transform.localRotation = Quaternion.Euler(0, 0, 0);
