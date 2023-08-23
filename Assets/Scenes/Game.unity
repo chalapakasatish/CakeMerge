@@ -1708,7 +1708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3527fa93df9f9974c8074f6d26304f69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coins: 1000
+  coins: 10
   currencytext: {fileID: 2068729986}
   howManyClicksText: {fileID: 493916366}
   PriceCakeText: {fileID: 689863284}
@@ -7407,7 +7407,7 @@ MonoBehaviour:
   price: 10
   cakePriceChange: 1
   cakeNumber: 0
-  targetClicks: 050000000a0000000f0000001400000019000000
+  targetClicks: 2d0000005a00000087000000b4000000e1000000
   serveStarted: 0
 --- !u!4 &2059588641
 Transform:

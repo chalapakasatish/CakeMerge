@@ -39,11 +39,6 @@ public class CakesManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
-
-        //if (PlayerPrefs.HasKey("FirstTimeOpenGame"))
-        //{
-        //    return;
-        //}
     }
     private void Start()
     {
@@ -51,8 +46,32 @@ public class CakesManager : MonoBehaviour
         cakeNumber = PlayerPrefs.GetInt("CakeNumber", cakeNumber);
         CheckTargetClicks();
     }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Backspace))
+        {
+            Application.Quit();
+        }
+    }
     public void CheckTargetClicks()
     {
+        if (PlayerPrefs.GetInt("HowManyClicks") >= 1)
+        {
+            serveButton.GetComponent<Button>().interactable = true;
+        }
+        else
+        {
+            serveButton.GetComponent<Button>().interactable = false;
+        }
+
+        if (IsAvailableHolders() && CurrencyManager.Instance.Coins >= price)
+        {
+            spawnCakeButton.GetComponent<Button>().interactable = true;
+        }
+        else
+        {
+            spawnCakeButton.GetComponent<Button>().interactable = false;
+        }
         int number = PlayerPrefs.GetInt("HowManyClicks");
         CurrencyManager.Instance.howManyClicksText.text = number + "/" + PlayerPrefs.GetInt("TargetClicks").ToString();
         switch (number)
@@ -64,28 +83,28 @@ public class CakesManager : MonoBehaviour
                 PlayerPrefs.SetInt("TargetClicks", targetClicks[0]);
                 PlayerPrefs.SetInt("CakeNumber", cakeNumber);
                 break;
-            case 5:
+            case 45:
                 cakeNumber = 1;
                 CakePriceChange = 2;
                 CurrencyManager.Instance.HowManyClicksTextRep = targetClicks[1];
                 PlayerPrefs.SetInt("TargetClicks", CurrencyManager.Instance.HowManyClicksTextRep);
                 PlayerPrefs.SetInt("CakeNumber", cakeNumber);
                 break;
-            case 10:
+            case 90:
                 cakeNumber = 2;
                 CakePriceChange = 3;
                 CurrencyManager.Instance.HowManyClicksTextRep = targetClicks[2];
                 PlayerPrefs.SetInt("TargetClicks", CurrencyManager.Instance.HowManyClicksTextRep);
                 PlayerPrefs.SetInt("CakeNumber", cakeNumber);
                 break;
-            case 15:
+            case 135:
                 cakeNumber = 3;
                 CakePriceChange = 4;
                 CurrencyManager.Instance.HowManyClicksTextRep = targetClicks[3];
                 PlayerPrefs.SetInt("TargetClicks", CurrencyManager.Instance.HowManyClicksTextRep);
                 PlayerPrefs.SetInt("CakeNumber", cakeNumber);
                 break;
-            case 20:
+            case 180:
                 cakeNumber = 4;
                 CakePriceChange = 5;
                 CurrencyManager.Instance.HowManyClicksTextRep = targetClicks[4];
@@ -97,19 +116,12 @@ public class CakesManager : MonoBehaviour
     }
     public void SpawnCake()
     {
-        if (IsAvailableHolders())
-        {
-            CheckTargetClicks();
-            GetCake(cakeNumber);
-        }
-        else
-        {
-            spawnCakeButton.GetComponent<Button>().interactable = false;
-        }
+        CheckTargetClicks();
+        GetCake(cakeNumber);
     }
-    bool IsAvailableHolders()
+    public bool IsAvailableHolders()
     {
-        for (int i = 0; i < 9; i++)
+        for (int i = 0; i < cakeExists.Count; i++)
         {
             if (cakeExists[i] == false)
             {
@@ -126,11 +138,15 @@ public class CakesManager : MonoBehaviour
         Price += CakePriceChange;
         PlayerPrefs.SetInt("PriceCake", Price);
         CurrencyManager.Instance.PriceCakeText.text = PlayerPrefs.GetInt("PriceCake").ToString();
-        if (CurrencyManager.Instance.Coins <= 0)
+        if (IsAvailableHolders() && CurrencyManager.Instance.Coins >= price)
+        {
+            spawnCakeButton.GetComponent<Button>().interactable = true;
+        }
+        else
         {
             spawnCakeButton.GetComponent<Button>().interactable = false;
         }
-        
+
         for (int i = 0; i < spawnPoints.Count; i++)
         {
             if(spawnPoints[i] && !cakeExists[i])
@@ -222,7 +238,7 @@ public class CakesManager : MonoBehaviour
     {
         SavedGame();
     }
-    private void OnApplicationFocus(bool focus)
+    private void OnApplicationFocus()
     {
         SavedGame();
     }

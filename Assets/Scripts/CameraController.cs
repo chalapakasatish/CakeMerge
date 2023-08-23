@@ -8,12 +8,13 @@ public class CameraController : MonoBehaviour
 {
     public Transform destination;
     public Transform startPosition;
+    public bool isForwardMove = false,isBackwardMove = false;
     public void MoveDestination()
     {
+        isForwardMove = true;   
         //StartCoroutine(ChangeCameraFOV(60, 5));
         //transform.DOLocalRotate(new Vector3(60, 0, 0),1f);
-        transform.DOMoveZ(destination.localPosition.z, 8);
-        //transform.position = Vector3.Lerp(transform.position,new Vector3( destination.position.x, destination.position.y, destination.position.z), 5f);
+        //transform.DOMoveZ(destination.localPosition.z, 8);
         //transform.position += destination.position;
     }
     public void StartDestination()
@@ -35,6 +36,14 @@ public class CameraController : MonoBehaviour
     }
     private void Update()
     {
+        if (isForwardMove)
+        {
+            transform.position = Vector3.Lerp(transform.position, new Vector3(destination.position.x, destination.position.y, destination.position.z), 0.3f * Time.deltaTime);
+        }
+        else if(isBackwardMove)
+        {
+            transform.position = Vector3.Lerp(transform.position, new Vector3(startPosition.position.x, startPosition.position.y, startPosition.position.z), 3f * Time.deltaTime);
+        }
         if (CakesManager.instance.serveStarted == true)
         {
             go = GameObject.FindGameObjectsWithTag("Plate");
@@ -50,9 +59,11 @@ public class CameraController : MonoBehaviour
                     CakesManager.instance.points.gameObject.SetActive(true);
                     CakesManager.instance.DeactivateCakesInstantiate();
                     //transform.DOLocalRotate(new Vector3(50, 0, 0), 1f);
-                    transform.DOMoveZ(startPosition.localPosition.z, 4);
+                    //transform.DOMoveZ(startPosition.localPosition.z, 4);
                     //transform.position = Vector3.Lerp(transform.position, startPosition.position, 1f);
                     CakesManager.instance.serveStarted = false;
+                    isForwardMove = false;
+                    isBackwardMove = true;
                 }
             }
         }
