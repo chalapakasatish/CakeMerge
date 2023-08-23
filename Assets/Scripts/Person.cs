@@ -9,7 +9,7 @@ public class Person : MonoBehaviour
     public TMP_Text countText;
     public int count;
     [SerializeField] private int ate;
-    private float countdown = 3f;
+    private float countdown = 2f;
 
     public int Ate { get { return ate; } set { ate = value; } }
     private void Awake()
@@ -26,7 +26,7 @@ public class Person : MonoBehaviour
                 ate = count;
                 countText.text = ate.ToString();
                 GetComponent<Collider>().enabled = true;
-                countdown = 3f;
+                countdown = 2f;
             }
             else
             {
