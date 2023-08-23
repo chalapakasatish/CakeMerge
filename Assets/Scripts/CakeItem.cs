@@ -166,28 +166,29 @@ public class CakeItem : MonoBehaviour
                 Invoke("DeativatePlate", 0.2f);
             }
         }
-
-
-        yield return new WaitForSeconds(3f);
-        other.GetComponent<Collider>().enabled = true;
-        other.GetComponent<Person>().Ate = other.GetComponent<Person>().count;
-        other.GetComponent<Person>().countText.text = other.GetComponent<Person>().Ate.ToString();
-        countText.text = cakePieces.Count.ToString();
+        CakesManager.instance.serveStarted = true;
+        yield return new WaitForSeconds(0);
+        //other.GetComponent<Collider>().enabled = true;
+        //other.GetComponent<Person>().Ate = other.GetComponent<Person>().count;
+        //other.GetComponent<Person>().countText.text = other.GetComponent<Person>().Ate.ToString();
+        //countText.text = cakePieces.Count.ToString();
     }
     public void MoveAllPieces(GameObject other)
     {
-        for(int i = 0; i < cakePieces.Count; i++)
+        int num = cakePieces.Count;
+        for(int i = 0; i < num; i++)
         {
-            cakePieces[i].AddComponent<PieceMove>();
-            cakePieces[i].GetComponent<PieceMove>().MovePiece(other.GetComponent<StageTrigger>().person[0].transform);
+            cakePieces[0].AddComponent<PieceMove>();
+            cakePieces[0].GetComponent<PieceMove>().MovePiece(other.GetComponent<StageTrigger>().person[0].transform);
             cakePieces.RemoveAt(0);
+            if (cakePieces.Count <= 0)
+            {
+                GetComponent<Collider>().enabled = false;
+                canvas.gameObject.SetActive(false);
+                Invoke("DeativatePlate", 0.2f);
+            }
         }
-        if (cakePieces.Count <= 0)
-        {
-            GetComponent<Collider>().enabled = false;
-            canvas.gameObject.SetActive(false);
-            Invoke("DeativatePlate", 0.2f);
-        }
+        
     }
 
     void DeativatePlate()

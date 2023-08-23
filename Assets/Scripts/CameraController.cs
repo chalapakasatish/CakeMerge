@@ -10,16 +10,17 @@ public class CameraController : MonoBehaviour
     public Transform startPosition;
     public void MoveDestination()
     {
-        StartCoroutine(ChangeCameraFOV(60, 5));
-        transform.DOLocalRotate(new Vector3(60, 0, 0),1f);
-        transform.DOMoveZ(destination.localPosition.z, 5);
+        //StartCoroutine(ChangeCameraFOV(60, 5));
+        //transform.DOLocalRotate(new Vector3(60, 0, 0),1f);
+        transform.DOMoveZ(destination.localPosition.z, 8);
+        //transform.position = Vector3.Lerp(transform.position,new Vector3( destination.position.x, destination.position.y, destination.position.z), 5f);
+        //transform.position += destination.position;
     }
     public void StartDestination()
     {
         StartCoroutine(ChangeCameraFOV(60, 1));
         transform.DOLocalRotate(new Vector3(50, 0, 0), 1f);
-        transform.DOMoveZ(startPosition.localPosition.z, 5);
-        
+        transform.DOMoveZ(startPosition.localPosition.z, 45f);
     }
 
     public Camera targetCamera;
@@ -34,7 +35,7 @@ public class CameraController : MonoBehaviour
     }
     private void Update()
     {
-        if(CakesManager.instance.serveStarted == true)
+        if (CakesManager.instance.serveStarted == true)
         {
             go = GameObject.FindGameObjectsWithTag("Plate");
             for (int i = 0; i <= go.Length; i++)
@@ -48,14 +49,12 @@ public class CameraController : MonoBehaviour
                     CakesManager.instance.spawnCakeButton.GetComponent<Button>().interactable = true;
                     CakesManager.instance.points.gameObject.SetActive(true);
                     CakesManager.instance.DeactivateCakesInstantiate();
-                    
-                    //StartCoroutine(ChangeCameraFOV(60, 1));
-                    transform.DOLocalRotate(new Vector3(50, 0, 0), 1f);
+                    //transform.DOLocalRotate(new Vector3(50, 0, 0), 1f);
                     transform.DOMoveZ(startPosition.localPosition.z, 4);
+                    //transform.position = Vector3.Lerp(transform.position, startPosition.position, 1f);
                     CakesManager.instance.serveStarted = false;
                 }
             }
-                
         }
     }
     private IEnumerator ChangeCameraFOV(float targetFOV, float duration)

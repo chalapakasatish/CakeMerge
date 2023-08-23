@@ -169,7 +169,7 @@ public class CakesManager : MonoBehaviour
 
     public void ServeCakes()
     {
-        serveStarted = true;
+        
         for (int i = 0; i < spawnPoints.Count; i++)
         {
             cakesInstantiate.Add(gameObject);
@@ -181,7 +181,6 @@ public class CakesManager : MonoBehaviour
             cakesInstantiate[i] = Instantiate(spawnPoints[i]);
             cakesInstantiate[i].GetComponent<Holder>().MoveToBelt();
             points.gameObject.SetActive(false);
-            
         }
         
         cameraController.MoveDestination();
@@ -198,7 +197,7 @@ public class CakesManager : MonoBehaviour
         serveButton.gameObject.GetComponent<Button>().interactable = true;
         spawnCakeButton.GetComponent<Button>().interactable = true;
         points.gameObject.SetActive(true);
-        cameraController.StartDestination();
+        //cameraController.StartDestination();
         DeactivateCakesInstantiate();
     }
     public void DeactivateCakesInstantiate()
