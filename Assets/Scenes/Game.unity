@@ -1560,6 +1560,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destination: {fileID: 906019751}
   startPosition: {fileID: 1244707610}
+  isForwardMove: 0
+  isBackwardMove: 0
   targetCamera: {fileID: 330585545}
   targetFOV: 60
   changeDuration: 5

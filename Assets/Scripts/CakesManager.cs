@@ -133,19 +133,20 @@ public class CakesManager : MonoBehaviour
 
     public void GetCake(int num)
     {
+        //if (IsAvailableHolders() && CurrencyManager.Instance.Coins >= price)
+        //{
+        //    spawnCakeButton.GetComponent<Button>().interactable = true;
+        //}
+        //else
+        //{
+        //    spawnCakeButton.GetComponent<Button>().interactable = false;
+        //}
         CurrencyManager.Instance.AddHowManyClicks(1);
         CurrencyManager.Instance.RemoveCurrency(price);
         Price += CakePriceChange;
         PlayerPrefs.SetInt("PriceCake", Price);
         CurrencyManager.Instance.PriceCakeText.text = PlayerPrefs.GetInt("PriceCake").ToString();
-        if (IsAvailableHolders() && CurrencyManager.Instance.Coins >= price)
-        {
-            spawnCakeButton.GetComponent<Button>().interactable = true;
-        }
-        else
-        {
-            spawnCakeButton.GetComponent<Button>().interactable = false;
-        }
+       
 
         for (int i = 0; i < spawnPoints.Count; i++)
         {
@@ -163,6 +164,14 @@ public class CakesManager : MonoBehaviour
                 PlayerPrefs.SetString("Holder" + i, "Holder" + i.ToString());
                 break;
             } 
+        }
+        if (IsAvailableHolders() && CurrencyManager.Instance.Coins >= price)
+        {
+            spawnCakeButton.GetComponent<Button>().interactable = true;
+        }
+        else
+        {
+            spawnCakeButton.GetComponent<Button>().interactable = false;
         }
     }
 
