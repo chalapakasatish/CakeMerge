@@ -1,0 +1,1869 @@
+fileFormatVersion: 2
+guid: 9a20fc4c674e044b4aa8d5e8ebe3146f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wepon_craft_UI_5
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 2556
+        width: 979
+        height: 1624
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98d6e9f8daddc40578ff5774dc106825
+      internalID: -1217773506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_8
+      rect:
+        serializedVersion: 2
+        x: 1457
+        y: 3113
+        width: 769
+        height: 1067
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e5563d6176244f31b11b2ec5ab52edb
+      internalID: 892845919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_10
+      rect:
+        serializedVersion: 2
+        x: 2975
+        y: 3407
+        width: 492
+        height: 766
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6454cf9607024716b2462c6de87bf3b
+      internalID: 936473433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_13
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 3380
+        width: 558
+        height: 764
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e45d011292f4b3c9aa36a976d33056
+      internalID: 313957200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_15
+      rect:
+        serializedVersion: 2
+        x: 3514
+        y: 3409
+        width: 484
+        height: 717
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8451b714263dd4f3082e3fea9435cc4a
+      internalID: -1894660717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_19
+      rect:
+        serializedVersion: 2
+        x: 4057
+        y: 3451
+        width: 460
+        height: 460
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fab9d83cc22174692b9efa45591915b5
+      internalID: -1804157080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_20
+      rect:
+        serializedVersion: 2
+        x: 4581
+        y: 3409
+        width: 475
+        height: 529
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24aff6c3989e646d4b93deb882969a20
+      internalID: 1417481487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_23
+      rect:
+        serializedVersion: 2
+        x: 5126
+        y: 3409
+        width: 456
+        height: 492
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5253d2874e364c438fe79c9d52cc435
+      internalID: -475741705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_24
+      rect:
+        serializedVersion: 2
+        x: 5610
+        y: 3451
+        width: 435
+        height: 431
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70c9374e1ef1c4b14a72f9ca7938ff98
+      internalID: -1626244663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_25
+      rect:
+        serializedVersion: 2
+        x: 6112
+        y: 3446
+        width: 438
+        height: 436
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8604c8e67da4340db9f327a49f04e1a3
+      internalID: 2236049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_33
+      rect:
+        serializedVersion: 2
+        x: 7206
+        y: 3500
+        width: 401
+        height: 357
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a30f84e711a8471385ff06f9a3b08ef
+      internalID: 202736094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_34
+      rect:
+        serializedVersion: 2
+        x: 7838
+        y: 3411
+        width: 440
+        height: 441
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6f0a9620cc2948288c6ab044d435be8
+      internalID: -665143586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_35
+      rect:
+        serializedVersion: 2
+        x: 8489
+        y: 3427
+        width: 416
+        height: 425
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef394f697e1e243c4bbe99ee6335a563
+      internalID: 1887488595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_37
+      rect:
+        serializedVersion: 2
+        x: 9096
+        y: 3466
+        width: 411
+        height: 362
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12ede4bf3b52a461b88b39286a7f4e04
+      internalID: -1412208625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_60
+      rect:
+        serializedVersion: 2
+        x: 6486
+        y: 2843
+        width: 480
+        height: 363
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99755e7497c364f1e835f70b8224c2de
+      internalID: -582467150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_62
+      rect:
+        serializedVersion: 2
+        x: 7140
+        y: 2704
+        width: 587
+        height: 526
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9092bf3722c44470907a434dc989b9f
+      internalID: -424836396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_63
+      rect:
+        serializedVersion: 2
+        x: 7852
+        y: 2784
+        width: 451
+        height: 451
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52f168ebd4a5d43c38130726beeb68d0
+      internalID: 951083480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_64
+      rect:
+        serializedVersion: 2
+        x: 8464
+        y: 2780
+        width: 451
+        height: 454
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0adc2f2dbb8ae4aa5b1d2334fd2ca0d7
+      internalID: -259060675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_65
+      rect:
+        serializedVersion: 2
+        x: 9082
+        y: 2799
+        width: 440
+        height: 436
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45be2d90071aa41a59629f2f11363ea0
+      internalID: -60114196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_67
+      rect:
+        serializedVersion: 2
+        x: 2409
+        y: 2775
+        width: 512
+        height: 377
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b47595e37eb0b4fd3915094b16f79641
+      internalID: -868904514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_72
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 2907
+        width: 734
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 759746894af294f1284e251d98efb181
+      internalID: 1194081540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_74
+      rect:
+        serializedVersion: 2
+        x: 3220
+        y: 2789
+        width: 680
+        height: 284
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5bf86ca1911b4d51b1ad939196f98d4
+      internalID: -664724583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_75
+      rect:
+        serializedVersion: 2
+        x: 4204
+        y: 2819
+        width: 705
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aee3b5dba5c3547dab0357682d010149
+      internalID: 1285530536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_80
+      rect:
+        serializedVersion: 2
+        x: 5198
+        y: 2858
+        width: 916
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff5557a5b0d764eb4a121c8fc0185572
+      internalID: -218386304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_101
+      rect:
+        serializedVersion: 2
+        x: 1516
+        y: 2486
+        width: 651
+        height: 338
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dc53bf6965ce4e88a2c113354fd2172
+      internalID: 1383042356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_117
+      rect:
+        serializedVersion: 2
+        x: 6520
+        y: 2226
+        width: 490
+        height: 470
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bd0b70419cb540ce96c809a3a2c962c
+      internalID: -1764179904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_120
+      rect:
+        serializedVersion: 2
+        x: 8408
+        y: 2234
+        width: 524
+        height: 470
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83eedc97d5565480592fb01370571764
+      internalID: 2082353347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_123
+      rect:
+        serializedVersion: 2
+        x: 3848
+        y: 2373
+        width: 767
+        height: 244
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97cb7e450bf4b48c79a2a2cc6f092564
+      internalID: -88091720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_124
+      rect:
+        serializedVersion: 2
+        x: 7785
+        y: 2175
+        width: 471
+        height: 507
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f645e56886ed4576867290c50aa0b30
+      internalID: 1955629403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_127
+      rect:
+        serializedVersion: 2
+        x: 9077
+        y: 2204
+        width: 492
+        height: 443
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89dfb9db8a31a45af8a6e65b55127c8c
+      internalID: -1212069626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_129
+      rect:
+        serializedVersion: 2
+        x: 4934
+        y: 2363
+        width: 519
+        height: 235
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d253f31d792ec4009bbf059aba629f3a
+      internalID: 1916402776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_134
+      rect:
+        serializedVersion: 2
+        x: 5815
+        y: 2358
+        width: 296
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c441695747f1d4e669142aa497135a87
+      internalID: -501304065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_136
+      rect:
+        serializedVersion: 2
+        x: 7199
+        y: 2087
+        width: 440
+        height: 472
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21bf96c172d79425f8820a1d6d293ce6
+      internalID: -484410120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_140
+      rect:
+        serializedVersion: 2
+        x: 2534
+        y: 2260
+        width: 1085
+        height: 231
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 656a5351cd6724410b83a92ae893e835
+      internalID: -52366676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_146
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 999
+        width: 1022
+        height: 1442
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a452d4e7ad89455f85e0c7eb04ab1b5
+      internalID: 445131379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_149
+      rect:
+        serializedVersion: 2
+        x: 1438
+        y: 1124
+        width: 885
+        height: 1229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 492992c71660449eca5c5b73f5a0fcf5
+      internalID: -1347479050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_154
+      rect:
+        serializedVersion: 2
+        x: 5815
+        y: 2094
+        width: 296
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a492379e6b77a4c0fb43879a724d1732
+      internalID: 283880504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_156
+      rect:
+        serializedVersion: 2
+        x: 3871
+        y: 2006
+        width: 744
+        height: 274
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37e88aab0b3984d0d9f8cd45f3355069
+      internalID: 2058219601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_157
+      rect:
+        serializedVersion: 2
+        x: 4964
+        y: 2055
+        width: 450
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65c89ea797aee4d1aa082e09b8e1be46
+      internalID: -1061466730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_172
+      rect:
+        serializedVersion: 2
+        x: 5864
+        y: 1918
+        width: 162
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad5518a8b3ba647a58d37c9153992444
+      internalID: -1887767579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_174
+      rect:
+        serializedVersion: 2
+        x: 6501
+        y: 1586
+        width: 475
+        height: 474
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc775354a2f9a47fca9af74f53d31dd2
+      internalID: -1951655942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_176
+      rect:
+        serializedVersion: 2
+        x: 7168
+        y: 1587
+        width: 463
+        height: 443
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb63f7a89a5d044729859e8a1f6fab2a
+      internalID: 1511291309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_178
+      rect:
+        serializedVersion: 2
+        x: 7829
+        y: 1624
+        width: 430
+        height: 431
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eea048a32a08457e8cab6e55df00ebe
+      internalID: -741727929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_179
+      rect:
+        serializedVersion: 2
+        x: 8406
+        y: 1624
+        width: 426
+        height: 431
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5be3798a3a25e4337b2a1edc59461980
+      internalID: -391928404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_187
+      rect:
+        serializedVersion: 2
+        x: 4964
+        y: 1751
+        width: 450
+        height: 196
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec1926a60bc3a4551a12b4f90b24c232
+      internalID: -1761928237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_189
+      rect:
+        serializedVersion: 2
+        x: 3871
+        y: 1682
+        width: 744
+        height: 231
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9622e240dab454332ae76c949b47a8b3
+      internalID: 1599900619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_191
+      rect:
+        serializedVersion: 2
+        x: 5781
+        y: 1785
+        width: 612
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46d814231d44f428f9bbcc5eac2c9eba
+      internalID: -588254644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_195
+      rect:
+        serializedVersion: 2
+        x: 8979
+        y: 1734
+        width: 866
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 065e7b99426c34691a2b9eaa73fe5508
+      internalID: -8927002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_204
+      rect:
+        serializedVersion: 2
+        x: 5781
+        y: 1644
+        width: 612
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 168a6f7c13f2d4a4c969a4b5f11763aa
+      internalID: -1239207313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_210
+      rect:
+        serializedVersion: 2
+        x: 2554
+        y: 1146
+        width: 1001
+        height: 541
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b74d3df7c1e61437b91fe0972f00d4e1
+      internalID: 2146599774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_212
+      rect:
+        serializedVersion: 2
+        x: 4973
+        y: 1438
+        width: 445
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d60279d758f314988bfc7765dff3d52b
+      internalID: 1748437417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_216
+      rect:
+        serializedVersion: 2
+        x: 5781
+        y: 1516
+        width: 612
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22643615b1fdd41138615f6571207ed4
+      internalID: 178837825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_222
+      rect:
+        serializedVersion: 2
+        x: 3891
+        y: 1374
+        width: 705
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5ebb533153a5423187ded6207cd8eb0
+      internalID: -1420346402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_226
+      rect:
+        serializedVersion: 2
+        x: 7757
+        y: 992
+        width: 521
+        height: 465
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfc83c8da65984e4b8b73c9f904378ca
+      internalID: -1940454501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_227
+      rect:
+        serializedVersion: 2
+        x: 8460
+        y: 992
+        width: 474
+        height: 465
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f06d638fce648ce8d36e340846c469
+      internalID: -224342033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_231
+      rect:
+        serializedVersion: 2
+        x: 9109
+        y: 1029
+        width: 412
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f0d06e5e9a6341cdb1634dc01723a67
+      internalID: -1712686932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_236
+      rect:
+        serializedVersion: 2
+        x: 3994
+        y: 1114
+        width: 504
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fe42d99a5ef94918bb8f531b2e9afde
+      internalID: -896726454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_237
+      rect:
+        serializedVersion: 2
+        x: 4875
+        y: 1058
+        width: 881
+        height: 272
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec52fb7def0d54e168b9393279da9a3d
+      internalID: -31342079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_238
+      rect:
+        serializedVersion: 2
+        x: 5935
+        y: 1134
+        width: 1334
+        height: 196
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae8ed6a3a059c41239c0e82d761b9f49
+      internalID: 302420600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_240
+      rect:
+        serializedVersion: 2
+        x: 3994
+        y: 860
+        width: 504
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf0b63f7c467b4c3aae2fa43a7218710
+      internalID: -1678704349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_241
+      rect:
+        serializedVersion: 2
+        x: 5071
+        y: 179
+        width: 485
+        height: 822
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeedc6954638148028d369c3f8e60a19
+      internalID: -1879737773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_244
+      rect:
+        serializedVersion: 2
+        x: 5963
+        y: 904
+        width: 1287
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de9ff05b98296464c86de351b839143a
+      internalID: -1409940841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_256
+      rect:
+        serializedVersion: 2
+        x: 2627
+        y: 130
+        width: 841
+        height: 715
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bbe5379195dc462aa5269a049786ab3
+      internalID: 1738844687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_258
+      rect:
+        serializedVersion: 2
+        x: 6036
+        y: 557
+        width: 1162
+        height: 268
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab57a088e6799421bb55796e501e345f
+      internalID: 975267950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_259
+      rect:
+        serializedVersion: 2
+        x: 7710
+        y: 375
+        width: 505
+        height: 418
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89e7a0595e9cc452c8cb85c8ebe071d0
+      internalID: 1882092047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_263
+      rect:
+        serializedVersion: 2
+        x: 3690
+        y: 470
+        width: 1158
+        height: 235
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad591688584294c888aea201b80269b6
+      internalID: 178700108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_264
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 282
+        width: 739
+        height: 394
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22c08faadd95c473eb32a3463fa1c19a
+      internalID: 539379762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_265
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 265
+        width: 720
+        height: 399
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9da0046fa6598452b95b6f1f7ffb59de
+      internalID: -1470000849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wepon_craft_UI_267
+      rect:
+        serializedVersion: 2
+        x: 6036
+        y: 257
+        width: 1150
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fd47cdcc701d46c7ac2ff55b9fe400e
+      internalID: -2126438772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: d85ec0e6e8748468694b62cf95e1dc76
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Wepon_craft_UI_218: 250809383
+      Wepon_craft_UI_151: 1364911452
+      Wepon_craft_UI_80: -218386304
+      Wepon_craft_UI_4: -637635327
+      Wepon_craft_UI_102: 375098368
+      Wepon_craft_UI_228: 5281850
+      Wepon_craft_UI_123: -88091720
+      Wepon_craft_UI_186: 1078998822
+      Wepon_craft_UI_220: -995389456
+      Wepon_craft_UI_229: 1780495279
+      Wepon_craft_UI_45: -1935615009
+      Wepon_craft_UI_60: -582467150
+      Wepon_craft_UI_148: 1681883431
+      Wepon_craft_UI_121: -195956073
+      Wepon_craft_UI_181: 1458476390
+      Wepon_craft_UI_130: -415888878
+      Wepon_craft_UI_105: 1364963129
+      Wepon_craft_UI_163: 204092631
+      Wepon_craft_UI_248: 123751162
+      Wepon_craft_UI_111: 397103840
+      Wepon_craft_UI_149: -1347479050
+      Wepon_craft_UI_161: -1007081635
+      Wepon_craft_UI_196: -1261674322
+      Wepon_craft_UI_23: -475741705
+      Wepon_craft_UI_222: -1420346402
+      Wepon_craft_UI_87: 1699845326
+      Wepon_craft_UI_119: 347339180
+      Wepon_craft_UI_152: -601383724
+      Wepon_craft_UI_268: -1549830832
+      Wepon_craft_UI_6: 576790839
+      Wepon_craft_UI_29: 1735332953
+      Wepon_craft_UI_174: -1951655942
+      Wepon_craft_UI_246: -2135608575
+      Wepon_craft_UI_259: 1882092047
+      Wepon_craft_UI_208: -381364781
+      Wepon_craft_UI_116: 1105531389
+      Wepon_craft_UI_171: -371761071
+      Wepon_craft_UI_209: -593062832
+      Wepon_craft_UI_254: -571439713
+      Wepon_craft_UI_270: -1203040814
+      Wepon_craft_UI_21: 1905034903
+      Wepon_craft_UI_236: -896726454
+      Wepon_craft_UI_216: 178837825
+      Wepon_craft_UI_67: -868904514
+      Wepon_craft_UI_263: 178700108
+      Wepon_craft_UI_34: -665143586
+      Wepon_craft_UI_50: -861883613
+      Wepon_craft_UI_84: -64549194
+      Wepon_craft_UI_86: -268525838
+      Wepon_craft_UI_176: 1511291309
+      Wepon_craft_UI_219: 796514343
+      Wepon_craft_UI_206: -746991994
+      Wepon_craft_UI_247: -1516139666
+      Wepon_craft_UI_7: -2075300093
+      Wepon_craft_UI_244: -1409940841
+      Wepon_craft_UI_93: 539384007
+      Wepon_craft_UI_71: -2127016822
+      Wepon_craft_UI_202: -2080080664
+      Wepon_craft_UI_199: 1097565721
+      Wepon_craft_UI_153: 1259579789
+      Wepon_craft_UI_59: 1813582651
+      Wepon_craft_UI_178: -741727929
+      Wepon_craft_UI_191: -588254644
+      Wepon_craft_UI_242: 503211418
+      Wepon_craft_UI_92: 2097444850
+      Wepon_craft_UI_117: -1764179904
+      Wepon_craft_UI_9: 1622120861
+      Wepon_craft_UI_154: 283880504
+      Wepon_craft_UI_180: -550163655
+      Wepon_craft_UI_227: -224342033
+      Wepon_craft_UI_120: 2082353347
+      Wepon_craft_UI_183: -161951474
+      Wepon_craft_UI_175: -1955535659
+      Wepon_craft_UI_39: 484787056
+      Wepon_craft_UI_68: 1972397921
+      Wepon_craft_UI_269: -354120096
+      Wepon_craft_UI_125: -1860327250
+      Wepon_craft_UI_53: 892330105
+      Wepon_craft_UI_156: 2058219601
+      Wepon_craft_UI_85: -1476509606
+      Wepon_craft_UI_89: -103600855
+      Wepon_craft_UI_114: 411403621
+      Wepon_craft_UI_261: -865436889
+      Wepon_craft_UI_158: 2036594538
+      Wepon_craft_UI_36: 105310264
+      Wepon_craft_UI_62: -424836396
+      Wepon_craft_UI_90: -281593056
+      Wepon_craft_UI_27: -1984803154
+      Wepon_craft_UI_252: -1374172811
+      Wepon_craft_UI_235: -1059656484
+      Wepon_craft_UI_162: 1486449061
+      Wepon_craft_UI_31: -1102759801
+      Wepon_craft_UI_230: 360500735
+      Wepon_craft_UI_72: 1194081540
+      Wepon_craft_UI_37: -1412208625
+      Wepon_craft_UI_142: -1231322069
+      Wepon_craft_UI_54: 1312562595
+      Wepon_craft_UI_132: -211720621
+      Wepon_craft_UI_232: -171593510
+      Wepon_craft_UI_143: -874180052
+      Wepon_craft_UI_124: 1955629403
+      Wepon_craft_UI_167: -399319705
+      Wepon_craft_UI_239: -1436911630
+      Wepon_craft_UI_22: -1363752582
+      Wepon_craft_UI_179: -391928404
+      Wepon_craft_UI_33: 202736094
+      Wepon_craft_UI_138: 1472255984
+      Wepon_craft_UI_107: -14264882
+      Wepon_craft_UI_249: 1725612261
+      Wepon_craft_UI_257: 1869896250
+      Wepon_craft_UI_65: -60114196
+      Wepon_craft_UI_131: -305277238
+      Wepon_craft_UI_96: -759032976
+      Wepon_craft_UI_225: -677574368
+      Wepon_craft_UI_74: -664724583
+      Wepon_craft_UI_201: -1013992840
+      Wepon_craft_UI_101: 1383042356
+      Wepon_craft_UI_166: -70752709
+      Wepon_craft_UI_231: -1712686932
+      Wepon_craft_UI_144: -1009447470
+      Wepon_craft_UI_118: 2117639034
+      Wepon_craft_UI_260: 424857223
+      Wepon_craft_UI_47: -1959984159
+      Wepon_craft_UI_106: 1143423390
+      Wepon_craft_UI_11: 919058498
+      Wepon_craft_UI_137: -247540605
+      Wepon_craft_UI_172: -1887767579
+      Wepon_craft_UI_233: -854711679
+      Wepon_craft_UI_100: -845605792
+      Wepon_craft_UI_79: -818715965
+      Wepon_craft_UI_141: -117383148
+      Wepon_craft_UI_98: 1941001717
+      Wepon_craft_UI_272: -1404026514
+      Wepon_craft_UI_226: -1940454501
+      Wepon_craft_UI_46: 641445430
+      Wepon_craft_UI_88: -1594212541
+      Wepon_craft_UI_221: 739174082
+      Wepon_craft_UI_128: 493864243
+      Wepon_craft_UI_126: -1623244320
+      Wepon_craft_UI_182: 280587800
+      Wepon_craft_UI_224: -65250947
+      Wepon_craft_UI_255: -1281618450
+      Wepon_craft_UI_256: 1738844687
+      Wepon_craft_UI_212: 1748437417
+      Wepon_craft_UI_51: -1218287163
+      Wepon_craft_UI_12: 661128859
+      Wepon_craft_UI_165: -210186092
+      Wepon_craft_UI_134: -501304065
+      Wepon_craft_UI_83: 767232284
+      Wepon_craft_UI_145: 649079617
+      Wepon_craft_UI_95: 880004525
+      Wepon_craft_UI_25: 2236049
+      Wepon_craft_UI_133: -1623522138
+      Wepon_craft_UI_17: -58129539
+      Wepon_craft_UI_28: 916833657
+      Wepon_craft_UI_52: 2089686989
+      Wepon_craft_UI_251: 1832403064
+      Wepon_craft_UI_264: 539379762
+      Wepon_craft_UI_108: 1946573501
+      Wepon_craft_UI_190: -1196390349
+      Wepon_craft_UI_194: 1107686917
+      Wepon_craft_UI_215: 894807244
+      Wepon_craft_UI_238: 302420600
+      Wepon_craft_UI_140: -52366676
+      Wepon_craft_UI_69: -818885371
+      Wepon_craft_UI_150: -2010067108
+      Wepon_craft_UI_15: -1894660717
+      Wepon_craft_UI_57: 1988456463
+      Wepon_craft_UI_193: 1243665562
+      Wepon_craft_UI_103: -62279610
+      Wepon_craft_UI_24: -1626244663
+      Wepon_craft_UI_26: -1111881113
+      Wepon_craft_UI_177: 942925721
+      Wepon_craft_UI_185: 2120478982
+      Wepon_craft_UI_245: 70704162
+      Wepon_craft_UI_64: -259060675
+      Wepon_craft_UI_104: -1295331838
+      Wepon_craft_UI_3: 220682484
+      Wepon_craft_UI_61: -1078663290
+      Wepon_craft_UI_173: -251245246
+      Wepon_craft_UI_16: -137558066
+      Wepon_craft_UI_1: 524794213
+      Wepon_craft_UI_197: -265303156
+      Wepon_craft_UI_97: -1805709325
+      Wepon_craft_UI_258: 975267950
+      Wepon_craft_UI_13: 313957200
+      Wepon_craft_UI_77: -1398091262
+      Wepon_craft_UI_43: 295864104
+      Wepon_craft_UI_160: 1879540206
+      Wepon_craft_UI_55: 364179011
+      Wepon_craft_UI_63: 951083480
+      Wepon_craft_UI_82: 58240274
+      Wepon_craft_UI_81: -1845369485
+      Wepon_craft_UI_223: -2021758035
+      Wepon_craft_UI_157: -1061466730
+      Wepon_craft_UI_262: 855505017
+      Wepon_craft_UI_184: -1732021972
+      Wepon_craft_UI_135: -730445552
+      Wepon_craft_UI_129: 1916402776
+      Wepon_craft_UI_198: -499760894
+      Wepon_craft_UI_266: 1228069170
+      Wepon_craft_UI_136: -484410120
+      Wepon_craft_UI_8: 892845919
+      Wepon_craft_UI_195: -8927002
+      Wepon_craft_UI_99: -2065752573
+      Wepon_craft_UI_214: -438515438
+      Wepon_craft_UI_267: -2126438772
+      Wepon_craft_UI_207: -1830115588
+      Wepon_craft_UI_18: 988927162
+      Wepon_craft_UI_113: 905971499
+      Wepon_craft_UI_5: -1217773506
+      Wepon_craft_UI_213: -859061553
+      Wepon_craft_UI_155: 162257856
+      Wepon_craft_UI_205: -1236618281
+      Wepon_craft_UI_241: -1879737773
+      Wepon_craft_UI_20: 1417481487
+      Wepon_craft_UI_217: -1834420136
+      Wepon_craft_UI_271: 1779729947
+      Wepon_craft_UI_192: 1783587670
+      Wepon_craft_UI_127: -1212069626
+      Wepon_craft_UI_76: 1820099052
+      Wepon_craft_UI_203: 212441335
+      Wepon_craft_UI_240: -1678704349
+      Wepon_craft_UI_243: 1679308016
+      Wepon_craft_UI_237: -31342079
+      Wepon_craft_UI_187: -1761928237
+      Wepon_craft_UI_210: 2146599774
+      Wepon_craft_UI_44: 1767162528
+      Wepon_craft_UI_30: 2022961103
+      Wepon_craft_UI_147: -2117124580
+      Wepon_craft_UI_40: -1380158020
+      Wepon_craft_UI_91: -207063878
+      Wepon_craft_UI_41: 51585638
+      Wepon_craft_UI_189: 1599900619
+      Wepon_craft_UI_139: -1872337424
+      Wepon_craft_UI_265: -1470000849
+      Wepon_craft_UI_109: 958353716
+      Wepon_craft_UI_38: 1781740513
+      Wepon_craft_UI_35: 1887488595
+      Wepon_craft_UI_211: 1349722733
+      Wepon_craft_UI_32: 1286142945
+      Wepon_craft_UI_48: 1677989212
+      Wepon_craft_UI_56: -845475226
+      Wepon_craft_UI_168: -456310355
+      Wepon_craft_UI_19: -1804157080
+      Wepon_craft_UI_253: 1733909241
+      Wepon_craft_UI_10: 936473433
+      Wepon_craft_UI_112: 1776892695
+      Wepon_craft_UI_66: -1538825816
+      Wepon_craft_UI_115: -229412245
+      Wepon_craft_UI_170: -948945557
+      Wepon_craft_UI_94: -369614498
+      Wepon_craft_UI_159: -1637426043
+      Wepon_craft_UI_110: -256566991
+      Wepon_craft_UI_73: 358993875
+      Wepon_craft_UI_0: 1413762205
+      Wepon_craft_UI_78: 975785548
+      Wepon_craft_UI_75: 1285530536
+      Wepon_craft_UI_250: -2089402819
+      Wepon_craft_UI_200: 1384984940
+      Wepon_craft_UI_164: 1396089115
+      Wepon_craft_UI_2: -187067257
+      Wepon_craft_UI_49: -1622294151
+      Wepon_craft_UI_58: 1893666315
+      Wepon_craft_UI_42: 447757349
+      Wepon_craft_UI_70: 348432279
+      Wepon_craft_UI_204: -1239207313
+      Wepon_craft_UI_146: 445131379
+      Wepon_craft_UI_234: -777652782
+      Wepon_craft_UI_188: -585524905
+      Wepon_craft_UI_14: -1323803369
+      Wepon_craft_UI_122: 1592183582
+      Wepon_craft_UI_169: -2123022242
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

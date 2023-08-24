@@ -610,7 +610,7 @@ GameObject:
   - component: {fileID: 7788524740699130525}
   - component: {fileID: 9146781572878512880}
   m_Layer: 0
-  m_Name: Cake01
+  m_Name: Cake2
   m_TagString: cake
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -646,7 +646,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78f8ba94ddb29494e9e579f97623e13a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 0
+  id: 1
   holder: 0
   offset: {x: -1, y: -10, z: 0}
   speed: 80
