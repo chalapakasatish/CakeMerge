@@ -189,6 +189,9 @@ public class CakeItem : MonoBehaviour
                 GetComponent<Collider>().enabled = false;
                 canvas.gameObject.SetActive(false);
                 Invoke("DeativatePlate", 0.2f);
+                CakesManager.instance.levelManager.LevelCount += 1;
+                PlayerPrefs.SetInt("Levels", CakesManager.instance.levelManager.LevelCount);
+                CakesManager.instance.levelManager.GetLevel(PlayerPrefs.GetInt("Levels"));
             }
         }
         

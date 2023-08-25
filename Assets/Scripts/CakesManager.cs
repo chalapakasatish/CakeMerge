@@ -31,7 +31,7 @@ public class CakesManager : MonoBehaviour
     [SerializeField] private int cakeNumber = 0;
     public int[] targetClicks;
     public bool serveStarted;
-
+    public LevelManager levelManager;
     public int Price { get => price; set => price = value; }
     public int CakePriceChange { get => cakePriceChange; set => cakePriceChange = value; }
     public int CakeNumber { get => cakeNumber; set => cakeNumber = value; }
