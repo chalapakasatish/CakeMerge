@@ -270,4 +270,12 @@ public class CakesManager : MonoBehaviour
             }
         }
     }
+    public void GameContinueButton()
+    {
+        continueButton.gameObject.SetActive(false);
+        CakesManager.instance.levelManager.GetLevel(PlayerPrefs.GetInt("Levels"));
+        cameraController.isBackwardMove = true;
+        cameraController.isForwardMove = false;
+        points.SetActive(true);
+    }
 }

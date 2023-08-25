@@ -2583,7 +2583,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2059588640}
         m_TargetAssemblyTypeName: CakesManager, Assembly-CSharp
-        m_MethodName: CameraresetPosition
+        m_MethodName: GameContinueButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11938,7 +11938,7 @@ MonoBehaviour:
   points: {fileID: 339410312}
   price: 10
   cakePriceChange: 1
-  cakeNumber: 0
+  cakeNumber: 5
   targetClicks: 2d0000005a00000087000000b4000000e1000000
   serveStarted: 0
   levelManager: {fileID: 491266103}
