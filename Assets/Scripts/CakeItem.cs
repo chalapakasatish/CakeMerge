@@ -127,6 +127,7 @@ public class CakeItem : MonoBehaviour
             
         }
         CakesManager.instance.CheckTargetClicks();
+        CakesManager.instance.SavedGame();
     }
 
 

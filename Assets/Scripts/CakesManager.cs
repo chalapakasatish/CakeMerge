@@ -272,6 +272,11 @@ public class CakesManager : MonoBehaviour
     }
     public void GameContinueButton()
     {
+        foreach (var item in cameraController.go)
+        {
+            Destroy(item.gameObject);
+        }
+        
         continueButton.gameObject.SetActive(false);
         CakesManager.instance.levelManager.GetLevel(PlayerPrefs.GetInt("Levels"));
         cameraController.isBackwardMove = true;
