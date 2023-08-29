@@ -35,6 +35,8 @@ public class CakesManager : MonoBehaviour
     public int Price { get => price; set => price = value; }
     public int CakePriceChange { get => cakePriceChange; set => cakePriceChange = value; }
     public int CakeNumber { get => cakeNumber; set => cakeNumber = value; }
+    public GameObject cakeReferenceImage;
+    public Image[] cakeResourceImage;
 
     private void Awake()
     {
@@ -83,28 +85,28 @@ public class CakesManager : MonoBehaviour
                 PlayerPrefs.SetInt("TargetClicks", targetClicks[0]);
                 PlayerPrefs.SetInt("CakeNumber", cakeNumber);
                 break;
-            case 45:
+            case 40:
                 cakeNumber = 1;
                 CakePriceChange = 2;
                 CurrencyManager.Instance.HowManyClicksTextRep = targetClicks[1];
                 PlayerPrefs.SetInt("TargetClicks", CurrencyManager.Instance.HowManyClicksTextRep);
                 PlayerPrefs.SetInt("CakeNumber", cakeNumber);
                 break;
-            case 90:
+            case 80:
                 cakeNumber = 2;
                 CakePriceChange = 3;
                 CurrencyManager.Instance.HowManyClicksTextRep = targetClicks[2];
                 PlayerPrefs.SetInt("TargetClicks", CurrencyManager.Instance.HowManyClicksTextRep);
                 PlayerPrefs.SetInt("CakeNumber", cakeNumber);
                 break;
-            case 135:
+            case 120:
                 cakeNumber = 3;
                 CakePriceChange = 4;
                 CurrencyManager.Instance.HowManyClicksTextRep = targetClicks[3];
                 PlayerPrefs.SetInt("TargetClicks", CurrencyManager.Instance.HowManyClicksTextRep);
                 PlayerPrefs.SetInt("CakeNumber", cakeNumber);
                 break;
-            case 180:
+            case 160:
                 cakeNumber = 4;
                 CakePriceChange = 5;
                 CurrencyManager.Instance.HowManyClicksTextRep = targetClicks[4];
@@ -113,6 +115,14 @@ public class CakesManager : MonoBehaviour
                 break;
         }
         CurrencyManager.Instance.howManyClicksText.text = number + "/" + PlayerPrefs.GetInt("TargetClicks").ToString();
+
+        for (int i = 0; i < cakeResourceImage.Length; i++)
+        {
+            if (i == PlayerPrefs.GetInt("CakeNumber"))
+            {
+                cakeReferenceImage.GetComponent<Image>().sprite = cakeResourceImage[i].sprite;
+            }
+        }
     }
     public void SpawnCake()
     {
@@ -276,7 +286,8 @@ public class CakesManager : MonoBehaviour
         {
             Destroy(item.gameObject);
         }
-        
+        CakesManager.instance.levelManager.LevelCount += 1;
+        PlayerPrefs.SetInt("Levels", CakesManager.instance.levelManager.LevelCount);
         continueButton.gameObject.SetActive(false);
         CakesManager.instance.levelManager.GetLevel(PlayerPrefs.GetInt("Levels"));
         cameraController.isBackwardMove = true;

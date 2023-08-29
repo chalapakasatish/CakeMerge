@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
     public GameObject[] levels;
     [SerializeField]private int levelCount;
+    public TMP_Text levelText;
 
     public int LevelCount { get => levelCount; set => levelCount = value; }
 
@@ -27,5 +29,6 @@ public class LevelManager : MonoBehaviour
                 levels[i].SetActive(false);
             }
         }
+        levelText.text = "Level: " + (levelCount + 1);
     }
 }
