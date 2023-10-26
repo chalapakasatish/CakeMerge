@@ -23,6 +23,7 @@ public class CakesManager : MonoBehaviour
     public GameObject emojis;
     public Belt belt1,belt2,belt3;
     public Button spawnCakeButton,continueButton,serveButton;
+    public GameObject howManyCakesButton;
     public List<GameObject> cakesInstantiate = new List<GameObject>();
     public List<int> cakeNumberRemember = new List<int>();
     public GameObject points;
@@ -57,6 +58,8 @@ public class CakesManager : MonoBehaviour
     }
     public void CheckTargetClicks()
     {
+        //howManyCakesButton.SetActive(true);
+        //serveButton.gameObject.SetActive(true);
         if (PlayerPrefs.GetInt("HowManyClicks") >= 1)
         {
             serveButton.GetComponent<Button>().interactable = true;
@@ -204,7 +207,8 @@ public class CakesManager : MonoBehaviour
 
     public void ServeCakes()
     {
-        
+        howManyCakesButton.SetActive(false);
+        serveButton.gameObject.SetActive(false);
         for (int i = 0; i < spawnPoints.Count; i++)
         {
             cakesInstantiate.Add(gameObject);
@@ -232,6 +236,7 @@ public class CakesManager : MonoBehaviour
         serveButton.gameObject.GetComponent<Button>().interactable = true;
         spawnCakeButton.GetComponent<Button>().interactable = true;
         points.gameObject.SetActive(true);
+        
         //cameraController.StartDestination();
         DeactivateCakesInstantiate();
     }

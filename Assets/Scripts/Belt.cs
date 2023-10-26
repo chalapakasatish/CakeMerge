@@ -5,7 +5,7 @@ using UnityEngine;
 public class Belt : MonoBehaviour
 {
 
-    private float scrollSpeed = -0.2f;
+    private float scrollSpeed = 0.2f;
     Renderer rend;
    public bool isServe;
     void Start()

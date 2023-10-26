@@ -37,16 +37,16 @@ public class Holder : MonoBehaviour
             switch (typeOfRow)
             {
                 case TypeOfRow.first:
-                    tweenSpeed = 0.5f;
-                    tweenEndSpeed = 1f;
+                    tweenSpeed = 0.3f;
+                    //tweenEndSpeed = 1f;
                     break;
                 case TypeOfRow.second:
-                    tweenSpeed = 1f;
-                    tweenEndSpeed = 4f;
+                    tweenSpeed = 0.8f;
+                    //tweenEndSpeed = 4f;
                     break;
                 case TypeOfRow.third:
                     tweenSpeed = 1.5f;
-                    tweenEndSpeed = 7f;
+                    //tweenEndSpeed = 7f;
                     break;
             }
             CakesManager.instance.belt1.isServe = true;

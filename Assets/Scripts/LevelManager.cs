@@ -29,6 +29,6 @@ public class LevelManager : MonoBehaviour
                 levels[i].SetActive(false);
             }
         }
-        levelText.text = "Level: " + (levelCount + 1);
+        levelText.text = "LEVEL " + (levelCount + 1);
     }
 }
