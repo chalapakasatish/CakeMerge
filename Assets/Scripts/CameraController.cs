@@ -51,6 +51,8 @@ public class CameraController : MonoBehaviour
             transform.position = Vector3.Lerp(transform.position, new Vector3(startPosition.position.x, startPosition.position.y, startPosition.position.z), 3f * Time.deltaTime);
             CakesManager.instance.CheckTargetClicks();
         }
+
+
         if (CakesManager.instance.serveStarted == true)
         {
             go = GameObject.FindGameObjectsWithTag("Plate");

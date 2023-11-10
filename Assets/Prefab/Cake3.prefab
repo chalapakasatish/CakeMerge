@@ -169,7 +169,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2559426850768055657}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7659676791650786164
 MeshFilter:
@@ -254,7 +254,7 @@ RectTransform:
   m_Children:
   - {fileID: 6448896751702222209}
   m_Father: {fileID: 2559426850768055657}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -353,9 +353,9 @@ Transform:
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 6684983364250619079}
   - {fileID: 7964637567240498516}
   - {fileID: 6765383972242920657}
-  - {fileID: 6684983364250619079}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -374,7 +374,7 @@ MonoBehaviour:
   id: 2
   holder: 0
   offset: {x: -1, y: -10, z: 0}
-  speed: 80
+  speed: 60
   lastPos: {x: 0, y: 0, z: 0}
   cakePieces:
   - {fileID: 8743786060820490478}
@@ -505,7 +505,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: c93157df7582475448fdd80bd01a74bf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c93157df7582475448fdd80bd01a74bf,
         type: 3}

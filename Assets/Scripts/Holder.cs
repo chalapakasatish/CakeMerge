@@ -16,7 +16,7 @@ public class Holder : MonoBehaviour
     [SerializeField]
     private Transform beltPoint;
     [SerializeField]
-    private Transform endPoint;
+    public Transform endPoint;
     [SerializeField]
     private float tweenSpeed;
     private float tweenEndSpeed;

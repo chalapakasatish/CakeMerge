@@ -146,14 +146,6 @@ public class CakesManager : MonoBehaviour
 
     public void GetCake(int num)
     {
-        //if (IsAvailableHolders() && CurrencyManager.Instance.Coins >= price)
-        //{
-        //    spawnCakeButton.GetComponent<Button>().interactable = true;
-        //}
-        //else
-        //{
-        //    spawnCakeButton.GetComponent<Button>().interactable = false;
-        //}
         CurrencyManager.Instance.AddHowManyClicks(1);
         CurrencyManager.Instance.RemoveCurrency(price);
         Price += CakePriceChange;
@@ -218,6 +210,10 @@ public class CakesManager : MonoBehaviour
         for (int i = 0; i < spawnPoints.Count; i++)
         {
             cakesInstantiate[i] = Instantiate(spawnPoints[i]);
+            for (int j = 0; j < cakesInstantiate[i].gameObject.transform.childCount; j++)
+            {
+                cakesInstantiate[i].transform.GetChild(0).GetChild(0).gameObject.SetActive(false);
+            }
             cakesInstantiate[i].GetComponent<Holder>().MoveToBelt();
             points.gameObject.SetActive(false);
         }
@@ -287,10 +283,11 @@ public class CakesManager : MonoBehaviour
     }
     public void GameContinueButton()
     {
-        foreach (var item in cameraController.go)
+        foreach (var item in CakesManager.instance.cameraController.go)
         {
             Destroy(item.gameObject);
         }
+        DeactivateCakesInstantiate();
         CakesManager.instance.levelManager.LevelCount += 1;
         PlayerPrefs.SetInt("Levels", CakesManager.instance.levelManager.LevelCount);
         continueButton.gameObject.SetActive(false);
@@ -298,5 +295,7 @@ public class CakesManager : MonoBehaviour
         cameraController.isBackwardMove = true;
         cameraController.isForwardMove = false;
         points.SetActive(true);
+        CakesManager.instance.howManyCakesButton.SetActive(true);
+        CakesManager.instance.serveButton.gameObject.SetActive(true);
     }
 }

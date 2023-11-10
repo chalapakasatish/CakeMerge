@@ -25,7 +25,7 @@ public class Emojis : MonoBehaviour
             }
         }
 
-        Destroy(gameObject, 2f);
+        Destroy(gameObject, 1f);
 
     }
 

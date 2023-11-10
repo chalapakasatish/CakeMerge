@@ -13,6 +13,7 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
+        Application.targetFrameRate = 300;
         levelCount = PlayerPrefs.GetInt("Levels");
         GetLevel(levelCount);
     }

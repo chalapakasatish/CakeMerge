@@ -117,7 +117,7 @@ Transform:
   - {fileID: 1104947141476945568}
   - {fileID: 5481147790046671318}
   m_Father: {fileID: 1071300447446436306}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2035247470502425975
 GameObject:
@@ -152,7 +152,7 @@ RectTransform:
   m_Children:
   - {fileID: 2372716466302312992}
   m_Father: {fileID: 1071300447446436306}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -328,7 +328,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1071300447446436306}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2454394628366372452
 MeshFilter:
@@ -496,11 +496,11 @@ Transform:
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 6460086159436725124}
   - {fileID: 5993792618264162351}
   - {fileID: 1039737981671021574}
   - {fileID: 7273907211367840301}
   - {fileID: 2734305199249953453}
-  - {fileID: 6460086159436725124}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -569,7 +569,7 @@ MonoBehaviour:
   id: 6
   holder: 0
   offset: {x: -1, y: -10, z: 0}
-  speed: 80
+  speed: 60
   lastPos: {x: 0, y: 0, z: 0}
   cakePieces:
   - {fileID: 8797897519586390054}
@@ -1019,7 +1019,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a86ac3f5dd98e6349a52b89a57490c04,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a86ac3f5dd98e6349a52b89a57490c04,
         type: 3}
@@ -1214,7 +1214,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 9bdbcefa78147744abbf781bdc3f9d7b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9bdbcefa78147744abbf781bdc3f9d7b,
         type: 3}

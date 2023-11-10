@@ -412,7 +412,7 @@ MonoBehaviour:
   id: 1
   holder: 0
   offset: {x: -1, y: -10, z: 0}
-  speed: 80
+  speed: 60
   lastPos: {x: 0, y: 0, z: 0}
   cakePieces:
   - {fileID: 8737304727873920232}

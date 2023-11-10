@@ -4,6 +4,7 @@ using UnityEngine;
 using DG.Tweening;
 using Unity.VisualScripting;
 using TMPro;
+using System.Net;
 
 public class CakeItem : MonoBehaviour
 {
@@ -33,7 +34,52 @@ public class CakeItem : MonoBehaviour
         transform.DOScale(2.5f, .1f);
         countText.text = cakePieces.Count.ToString();
     }
-    
+    //private float dist;
+    //private bool dragging = false;
+    //private Vector3 offset1;
+    //private Transform toDrag;
+    //// Update is called once per frame
+    //void Update()
+    //{
+    //    Vector3 v3;
+    //    if (Input.touchCount != 1)
+    //    {
+    //        dragging = false;
+    //        return;
+    //    }
+    //    Touch touch = Input.touches[0];
+    //    Vector3 pos = touch.position;
+    //    if (touch.phase == TouchPhase.Began)
+    //    {
+    //        Ray ray = Camera.main.ScreenPointToRay(pos);
+    //        RaycastHit hit;
+    //        if (Physics.Raycast(ray, out hit))
+    //        {
+    //            if (hit.collider.tag == "cake")
+    //            {
+    //                toDrag = hit.transform;
+    //                dist = hit.transform.position.z - Camera.main.transform.position.z;
+    //                v3 = new Vector3(pos.x, pos.y, dist);
+    //                v3 = Camera.main.ScreenToWorldPoint(v3);
+    //                offset1 = toDrag.position - v3;
+    //                dragging = true;
+    //            }
+    //        }
+    //    }
+    //    if (dragging && touch.phase == TouchPhase.Moved)
+    //    {
+    //        v3 = new Vector3(Input.mousePosition.x, Input.mousePosition.y, dist);
+    //        v3 = Camera.main.ScreenToWorldPoint(v3);
+    //        toDrag.position = v3 + offset1;
+    //    }
+    //    if (dragging && (touch.phase == TouchPhase.Ended || touch.phase == TouchPhase.Canceled))
+    //    {
+    //        dragging = false;
+    //        MergePart();
+    //        transform.DOMove(lastPos, .1f);
+    //        //CakesManager.instance.SpawnEffect(CakesManager.instance.holderEffect, transform);
+    //    }
+    //}
     //private void Update()
     //{
     //    //Touch Controls
@@ -42,7 +88,7 @@ public class CakeItem : MonoBehaviour
     //        touch = Input.GetTouch(0);
     //        if (touch.phase == TouchPhase.Began)
     //        {
-    //            offset = gameObject.transform.position - GetMouseWorldPos();
+    //            offset = gameObject.transform.position;
     //            isDragging = true;
     //        }
     //        else if (touch.phase == TouchPhase.Moved)
@@ -73,8 +119,8 @@ public class CakeItem : MonoBehaviour
     private void OnMouseUp()
     {
         MergePart();
-        transform.DOMove(lastPos, .2f);
-        CakesManager.instance.SpawnEffect(CakesManager.instance.holderEffect, transform);
+        transform.DOMove(lastPos, .1f);
+        //CakesManager.instance.SpawnEffect(CakesManager.instance.holderEffect, transform);
         isDragging = false;
     }
 
@@ -85,7 +131,7 @@ public class CakeItem : MonoBehaviour
         {
             float dis = Vector3.Distance(CakesManager.instance.spawnPoints[i].transform.position, transform.position);
             
-            if (dis <= .8f && i != holder)
+            if (dis <= 0.8f && i != holder)
             {
                 if (CakesManager.instance.spawnPoints[i].GetComponent<Holder>().cake)
                 {
@@ -145,6 +191,8 @@ public class CakeItem : MonoBehaviour
 
 
     public List<bool> completedPieces = new List<bool>();
+    private Touch touch;
+
     IEnumerator DistributePieces(Collider other, int wantCakes)
     {
         for (int i = 0; i < wantCakes; i++)
@@ -162,6 +210,8 @@ public class CakeItem : MonoBehaviour
             if (other.GetComponent<Person>().Ate <= 0)
             {
                 other.GetComponent<Collider>().enabled = false;
+                GameObject emoji = Instantiate(CakesManager.instance.emojis);
+                emoji.transform.position = other.GetComponent<Person>().mouthPoint[0].transform.position + new Vector3(0, 1, 0);
             }
             if (cakePieces.Count <= 0)
             {
@@ -172,10 +222,6 @@ public class CakeItem : MonoBehaviour
         }
         CakesManager.instance.serveStarted = true;
         yield return new WaitForSeconds(0);
-        //other.GetComponent<Collider>().enabled = true;
-        //other.GetComponent<Person>().Ate = other.GetComponent<Person>().count;
-        //other.GetComponent<Person>().countText.text = other.GetComponent<Person>().Ate.ToString();
-        //countText.text = cakePieces.Count.ToString();
     }
     public void MoveAllPieces(GameObject other)
     {
@@ -183,7 +229,7 @@ public class CakeItem : MonoBehaviour
         for(int i = 0; i < num; i++)
         {
             cakePieces[0].AddComponent<PieceMove>();
-            cakePieces[0].GetComponent<PieceMove>().MovePiece(other.GetComponent<StageTrigger>().person[0].transform);
+            cakePieces[0].GetComponent<PieceMove>().MovePieceFinal(other.GetComponent<StageTrigger>().person[0].transform);
             cakePieces.RemoveAt(0);
             if (cakePieces.Count <= 0)
             {
@@ -191,8 +237,11 @@ public class CakeItem : MonoBehaviour
                 canvas.gameObject.SetActive(false);
                 //Invoke("DeativatePlate", 0.2f);
                 plate.GetComponent<MeshRenderer>().enabled = false;
+                GameObject emoji = Instantiate(CakesManager.instance.emojis);
+                emoji.transform.position = other.GetComponent<StageTrigger>().person[0].transform.position + new Vector3(0, 2, 0);
             }
         }
+        
         CakesManager.instance.continueButton.gameObject.SetActive(true);
     }
 
@@ -224,7 +273,8 @@ public class CakeItem : MonoBehaviour
                 mObject.transform.SetParent(transform.parent);
                 mObject.transform.localRotation = Quaternion.Euler(transform.localEulerAngles);
                 //mObject.transform.localRotation = Quaternion.Euler(0, 0, 0);
-                mObject.transform.DOMoveZ(CakesManager.instance.destination.transform.localPosition.z, 5);
+                //mObject.transform.DOMoveZ(CakesManager.instance.destination.transform.localPosition.z, 5);
+                mObject.transform.DOMove(mObject.transform.root.gameObject.GetComponent<Holder>().endPoint.position, 7f);
                 break;
 
         }

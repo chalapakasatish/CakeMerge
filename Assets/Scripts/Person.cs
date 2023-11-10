@@ -10,10 +10,13 @@ public class Person : MonoBehaviour
     public int count;
     [SerializeField] private int ate;
     private float countdown = 2f;
+    //private Renderer mr;
 
     public int Ate { get { return ate; } set { ate = value; } }
     private void Awake()
     {
+        //mr = transform.GetChild(0).GetChild(0).GetChild(0).transform.GetComponent<Renderer>();
+        //mr.material.color = new Color(0f, 1f, 1f, 1f);
         ate = count;
         countText.text = ate.ToString();
     }
