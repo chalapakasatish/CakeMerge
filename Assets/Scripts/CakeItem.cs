@@ -26,10 +26,12 @@ public class CakeItem : MonoBehaviour
     public TMP_Text countText;
     public GameObject canvas;
 
+    Vector3 lastCurrentPos;
 
     // Start is called before the first frame update
     void Start()
     {
+        lastCurrentPos = transform.position;
         lastPos = transform.position;
         transform.DOScale(2.5f, .1f);
         countText.text = cakePieces.Count.ToString();
@@ -124,7 +126,7 @@ public class CakeItem : MonoBehaviour
         isDragging = false;
     }
 
-    int otherId;
+    public int otherId;
     public void MergePart()
     {
         for(int i = 0; i < CakesManager.instance.spawnPoints.Count; i++)
@@ -175,9 +177,45 @@ public class CakeItem : MonoBehaviour
         CakesManager.instance.CheckTargetClicks();
         CakesManager.instance.SavedGame();
     }
+    public void NewMergePart(int i)
+    {
+        if (CakesManager.instance.spawnPoints[i].GetComponent<Holder>().cake)
+        {
 
+            lastPos = CakesManager.instance.spawnPoints[i].transform.position;
+            CakesManager.instance.cakeExists[holder] = false;
+            PlayerPrefs.DeleteKey("Holder" + holder);
+            CakesManager.instance.cakeExists[i] = true;
+            transform.SetParent(CakesManager.instance.spawnPoints[i].transform);
+            CakesManager.instance.spawnPoints[holder].GetComponent<Holder>().cake = null;
+            CakesManager.instance.spawnPoints[i].GetComponent<Holder>().cake = gameObject;
+            holder = i;
+            int mNum = id + 1;
+            PlayerPrefs.SetInt("CakeNumberRemember" + i, mNum);
+            CakesManager.instance.SpawnNextCake(mNum, CakesManager.instance.spawnPoints[holder].transform, holder);
+            Destroy(CakesManager.instance.spawnPoints[i].transform.GetChild(0).gameObject);
+            Destroy(CakesManager.instance.spawnPoints[i].transform.GetChild(1).gameObject);
+            PlayerPrefs.SetString("Holder" + i, "Holder" + i.ToString());
+            CakesManager.instance.IsAvailableHolders();
 
+        }
+        else
+        {
+            lastPos = CakesManager.instance.spawnPoints[i].transform.position;
+            CakesManager.instance.cakeExists[holder] = false;
+            PlayerPrefs.DeleteKey("Holder" + holder);
+            CakesManager.instance.cakeExists[i] = true;
+            transform.SetParent(CakesManager.instance.spawnPoints[i].transform);
+            CakesManager.instance.spawnPoints[holder].GetComponent<Holder>().cake = null;
+            CakesManager.instance.spawnPoints[i].GetComponent<Holder>().cake = gameObject;
+            holder = i;
+            PlayerPrefs.SetString("Holder" + i, "Holder" + i.ToString());
+        }
 
+        transform.DOMove(lastPos, .1f);
+    }
+
+    
     private Vector3 GetMouseWorldPos()
     {
         Vector3 mousePos = Input.mousePosition * speed;
@@ -256,6 +294,29 @@ public class CakeItem : MonoBehaviour
     {
         switch (other.gameObject.tag)
         {
+            case "cake":
+
+                //int otherId = other.GetComponent<CakeItem>().id;
+                
+                //if (id == otherId)
+                //{
+                //    PlayerPrefs.DeleteKey("Holder" + holder);
+                //    transform.SetParent(CakesManager.instance.spawnPoints[other.GetComponent<CakeItem>().otherId].transform);
+                //    CakesManager.instance.spawnPoints[holder].GetComponent<Holder>().cake = null;
+                //    CakesManager.instance.spawnPoints[id].GetComponent<Holder>().cake = gameObject;
+                //    int mNum = id + 1;
+                //    PlayerPrefs.SetInt("CakeNumberRemember" + otherId, mNum);
+                //    CakesManager.instance.SpawnNextCake(mNum, CakesManager.instance.spawnPoints[mNum].transform, mNum);
+                //    Destroy(CakesManager.instance.spawnPoints[mNum].transform.GetChild(0).gameObject);
+                //    Destroy(CakesManager.instance.spawnPoints[id].transform.GetChild(0).gameObject);
+                //    PlayerPrefs.SetString("Holder" + otherId, "Holder" + otherId.ToString());
+                //    CakesManager.instance.cakeExists[id] = false;
+                //}
+                //else
+                //{
+                //    //transform.DOMove(lastCurrentPos,1f);
+                //}
+                break;
             case "Person":
                 StartCoroutine(DistributePieces(other, other.GetComponent<Person>().Ate));
                 break;

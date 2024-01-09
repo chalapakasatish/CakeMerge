@@ -1,9 +1,11 @@
+using DG.Tweening;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.WSA;
 
 public class CakesManager : MonoBehaviour
 {
@@ -22,7 +24,7 @@ public class CakesManager : MonoBehaviour
 
     public GameObject emojis;
     public Belt belt1,belt2,belt3;
-    public Button spawnCakeButton,continueButton,serveButton;
+    public Button spawnCakeButton,continueButton,serveButton,autoMergeButton;
     public GameObject howManyCakesButton;
     public List<GameObject> cakesInstantiate = new List<GameObject>();
     public List<int> cakeNumberRemember = new List<int>();
@@ -53,7 +55,7 @@ public class CakesManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Backspace))
         {
-            Application.Quit();
+            //Application.Quit();
         }
     }
     public void CheckTargetClicks()
@@ -78,6 +80,8 @@ public class CakesManager : MonoBehaviour
             spawnCakeButton.GetComponent<Button>().interactable = false;
         }
         int number = PlayerPrefs.GetInt("HowManyClicks");
+        // Testing Cakenumber
+        //number = 40;
         CurrencyManager.Instance.howManyClicksText.text = number + "/" + PlayerPrefs.GetInt("TargetClicks").ToString();
         switch (number)
         {
@@ -222,6 +226,92 @@ public class CakesManager : MonoBehaviour
         //StartCoroutine(WaitForEnableCakes());
         
     }
+    int rememberNumber;
+
+    public List<GameObject> spawnedCakes = new List<GameObject>();
+    GameObject element1;
+    GameObject element2;
+    public void AutoMergeCakes()
+    {
+        // //for (int i = 0;i < spawnPoints.Count;i++)
+        // //{
+        // //    if(i == spawnPoints[i].transform.GetChild(0).transform.GetComponent<CakeItem>().id)
+        // //    {
+        //         spawnPoints[0].transform.GetChild(0).transform.GetComponent<CakeItem>().transform.DOMove(
+        //             spawnPoints[1].transform.GetChild(0).transform.GetComponent<CakeItem>().transform.position,1f);
+        ////spawnPoints[0].transform.GetChild(0).transform.GetComponent<CakeItem>().GetComponent<BoxCollider>().isTrigger = false;
+        // //spawnPoints[1].transform.GetChild(0).transform.GetComponent<CakeItem>().otherId = 1;
+        // //spawnPoints[0].transform.GetChild(0).transform.GetComponent<CakeItem>().NewMergePart(0);
+        // //    }
+        // //}
+
+
+
+        Debug.Log("Auto Merge");
+
+
+        spawnedCakes.Clear();
+        //for(int i = 0; i < spawnPoints.Count; i++)
+        //{
+        //    if (spawnPoints[i].GetComponent<Holder>().cake)
+        //    {
+        //        spawnedCakes.Add(spawnPoints[i].GetComponent<Holder>().cake);
+        //    }
+
+        //}
+        for (int i = 0; i < spawnPoints.Count; i++)
+        {
+            spawnedCakes.Add(spawnPoints[i]);
+        }
+
+        StartCoroutine("AutoMergeRoutine");
+
+
+    }
+
+    IEnumerator AutoMergeRoutine()
+    {
+        for (int i = 0; i < spawnedCakes.Count; i++)
+        {
+            for (int j = i + 1; j < spawnedCakes.Count; j++)
+            {
+                
+                if (spawnedCakes[j].GetComponent<Holder>().cake)
+                {
+                    element1 = spawnedCakes[j].GetComponent<Holder>().cake;
+                }
+
+                if (spawnedCakes[i].GetComponent<Holder>().cake)
+                {
+                    element2 = spawnedCakes[i].GetComponent<Holder>().cake;
+                }
+                if(element1 == element2)
+                {
+
+                }
+                else if (element1 && element2 && element1.GetComponent<CakeItem>().id == element2.GetComponent<CakeItem>().id)
+                {
+                    element1.transform.DOMove(element2.transform.position, .5f);
+                    yield return new WaitForSeconds(.5f);
+                    cakeExists[element1.GetComponent<CakeItem>().holder] = false;
+                    IsAvailableHolders();
+                    int mNum = element1.GetComponent<CakeItem>().id + 1;
+                    PlayerPrefs.SetInt("CakeNumberRemember" + i, mNum);
+                    SpawnNextCake(mNum, spawnPoints[i].transform, element2.GetComponent<CakeItem>().holder);
+                    Destroy(element1);
+                    Destroy(element2);
+                    Debug.Log(i);
+                }
+                else
+                {
+                    Debug.Log("Else");
+                }
+            }
+            yield return new WaitForSeconds(0f);
+        }
+    }
+
+
     public void CameraresetPosition()
     {
         belt1.isServe = false;
@@ -231,6 +321,7 @@ public class CakesManager : MonoBehaviour
         continueButton.gameObject.SetActive(false);
         serveButton.gameObject.GetComponent<Button>().interactable = true;
         spawnCakeButton.GetComponent<Button>().interactable = true;
+        
         points.gameObject.SetActive(true);
         
         //cameraController.StartDestination();
