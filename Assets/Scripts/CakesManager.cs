@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.WSA;
+//using UnityEngine.WSA;
 
 public class CakesManager : MonoBehaviour
 {
@@ -294,13 +294,14 @@ public class CakesManager : MonoBehaviour
                     element1.transform.DOMove(element2.transform.position, .5f);
                     yield return new WaitForSeconds(.5f);
                     cakeExists[element1.GetComponent<CakeItem>().holder] = false;
-                    IsAvailableHolders();
+                    PlayerPrefs.DeleteKey("Holder" + element1.GetComponent<CakeItem>().holder);
                     int mNum = element1.GetComponent<CakeItem>().id + 1;
                     PlayerPrefs.SetInt("CakeNumberRemember" + i, mNum);
                     SpawnNextCake(mNum, spawnPoints[i].transform, element2.GetComponent<CakeItem>().holder);
                     Destroy(element1);
                     Destroy(element2);
                     Debug.Log(i);
+                    IsAvailableHolders();
                 }
                 else
                 {

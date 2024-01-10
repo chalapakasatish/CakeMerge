@@ -156,7 +156,6 @@ public class CakeItem : MonoBehaviour
                         Destroy(CakesManager.instance.spawnPoints[i].transform.GetChild(1).gameObject);
                         PlayerPrefs.SetString("Holder" + i, "Holder" + i.ToString());
                         CakesManager.instance.IsAvailableHolders();
-
                     }
                 }
                 else
