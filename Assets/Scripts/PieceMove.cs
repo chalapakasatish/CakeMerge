@@ -17,7 +17,7 @@ public class PieceMove : MonoBehaviour
     {
         Destroy(gameObject,3f);
         CakesManager.instance.SpawnEffect(CakesManager.instance.dollerEffect, transform);
-        CurrencyManager.Instance.AddCurrency(10);
+        CurrencyManager.Instance.AddCurrency(20);
         //GameObject emoji = Instantiate(CakesManager.instance.emojis);
         //emoji.transform.position = transform.position + new Vector3(0, 1, 0);
 

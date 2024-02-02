@@ -205,6 +205,7 @@ public class CakesManager : MonoBehaviour
     {
         howManyCakesButton.SetActive(false);
         serveButton.gameObject.SetActive(false);
+        autoMergeButton.gameObject.SetActive(false);
         for (int i = 0; i < spawnPoints.Count; i++)
         {
             cakesInstantiate.Add(gameObject);
@@ -245,7 +246,7 @@ public class CakesManager : MonoBehaviour
         // //    }
         // //}
 
-
+       CakesManager.instance.autoMergeButton.GetComponent<Button>().interactable = false;
 
         Debug.Log("Auto Merge");
 
@@ -310,6 +311,7 @@ public class CakesManager : MonoBehaviour
             }
             yield return new WaitForSeconds(0f);
         }
+        CakesManager.instance.autoMergeButton.GetComponent<Button>().interactable = true;
     }
 
 
