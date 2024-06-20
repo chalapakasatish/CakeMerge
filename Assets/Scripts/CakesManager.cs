@@ -392,4 +392,21 @@ public class CakesManager : MonoBehaviour
         CakesManager.instance.howManyCakesButton.SetActive(true);
         CakesManager.instance.serveButton.gameObject.SetActive(true);
     }
+    public void ReplayButton()
+    {
+        foreach (var item in CakesManager.instance.cameraController.go)
+        {
+            Destroy(item.gameObject);
+        }
+        DeactivateCakesInstantiate();
+        CakesManager.instance.levelManager.LevelCount += 0;
+        PlayerPrefs.SetInt("Levels", CakesManager.instance.levelManager.LevelCount);
+        continueButton.gameObject.SetActive(false);
+        CakesManager.instance.levelManager.GetLevel(PlayerPrefs.GetInt("Levels"));
+        cameraController.isBackwardMove = true;
+        cameraController.isForwardMove = false;
+        points.SetActive(true);
+        CakesManager.instance.howManyCakesButton.SetActive(true);
+        CakesManager.instance.serveButton.gameObject.SetActive(true);
+    }
 }

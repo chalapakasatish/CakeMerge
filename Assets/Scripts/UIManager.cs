@@ -19,6 +19,7 @@ public class UIManager : MonoBehaviour, IGameStateListner
                 break;
             case GameState.GAME:
                 ShowPanel(gamePanel);
+                CakesManager.instance.ReplayButton();
                 break;
             case GameState.SHOP:
                 ShowPanel(shopPanel);

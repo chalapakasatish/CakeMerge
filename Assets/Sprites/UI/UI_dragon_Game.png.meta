@@ -1,0 +1,1187 @@
+fileFormatVersion: 2
+guid: 466aa475c33fefa468038a0a1e3b5f28
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UI_dragon_Game_1
+      rect:
+        serializedVersion: 2
+        x: 4493
+        y: 2049
+        width: 969
+        height: 623
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7feb7bfbb3f78ca4a90e93b7b232e222
+      internalID: 1599821257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_3
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 2520
+        width: 392
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 190, y: 0, z: 190, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e72b3ba588ed1504498769210ec50bd9
+      internalID: -270645894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_4
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 2492
+        width: 254
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a73199834d5252041991cdc2f71850cb
+      internalID: 2143672524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_5
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 2492
+        width: 275
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ade6277121f66754e80c28057a717592
+      internalID: 2146708625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_6
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 2508
+        width: 213
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb7d02541153a0c4f80a355195df0d96
+      internalID: -831941092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_7
+      rect:
+        serializedVersion: 2
+        x: 1613
+        y: 2508
+        width: 215
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b837416d4360e1a4f9a34689cac10e4d
+      internalID: -1418848436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_8
+      rect:
+        serializedVersion: 2
+        x: 1871
+        y: 2509
+        width: 478
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3477a303701c1541b281889dd13332f
+      internalID: -1068637932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_9
+      rect:
+        serializedVersion: 2
+        x: 2386
+        y: 2496
+        width: 561
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 422ef63ed8a786540aa26fdc04cca7fb
+      internalID: 1067162273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_10
+      rect:
+        serializedVersion: 2
+        x: 3650
+        y: 1550
+        width: 697
+        height: 1111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b8064ae63753884da3ea1f6d2d77994
+      internalID: 1106958679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_11
+      rect:
+        serializedVersion: 2
+        x: 5615
+        y: 1823
+        width: 537
+        height: 837
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b629a355a669ad841ab49d1350b4c438
+      internalID: -1122133915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_12
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 2431
+        width: 1099
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3714d08a8b79304b88a1710b4e0543f
+      internalID: 1606068924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_14
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 2251
+        width: 817
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 905a079d25929fc4a94aca724c090665
+      internalID: 2120969129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_15
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 2251
+        width: 1085
+        height: 149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd102684cb1bb044b79f245933f6e6e
+      internalID: -1849908291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_17
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 1979
+        width: 186
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43057f9af1f4a7046aa7f32d203b0bdb
+      internalID: 1159676679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_24
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 2031
+        width: 136
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f852e3d2869287f43a3f4f793c3aaaed
+      internalID: 643586015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_26
+      rect:
+        serializedVersion: 2
+        x: 2167
+        y: 1979
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b8be8d3ffc83b64abf593620079abe3
+      internalID: -2132381403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_30
+      rect:
+        serializedVersion: 2
+        x: 2493
+        y: 2004
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a09947174121854d8cc9707904f8d68
+      internalID: 1825564202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_31
+      rect:
+        serializedVersion: 2
+        x: 2802
+        y: 2002
+        width: 112
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e939cd8a1c8fa0448e9ed537b40146a
+      internalID: 1309807779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_36
+      rect:
+        serializedVersion: 2
+        x: 1473
+        y: 1988
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a99833dbde99721418100d97629d3214
+      internalID: 308342444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_39
+      rect:
+        serializedVersion: 2
+        x: 3034
+        y: 2009
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6bba303191608c44afa7ec9e27ee8b9
+      internalID: -575108798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_40
+      rect:
+        serializedVersion: 2
+        x: 3289
+        y: 1990
+        width: 200
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52aa05a0de1851c4e884491cb23cd23c
+      internalID: -1343428031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_41
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 2035
+        width: 189
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f38fa65b58c3664e8278eb1bc9efc7b
+      internalID: 164801131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_42
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 2005
+        width: 111
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8db771d592e4d3f4f87252acbec5b07f
+      internalID: -930733439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_44
+      rect:
+        serializedVersion: 2
+        x: 1705
+        y: 2003
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b9b9957ecbbe7641885f1adbbe3ee02
+      internalID: 1867395343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_45
+      rect:
+        serializedVersion: 2
+        x: 1888
+        y: 1992
+        width: 127
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26ca03589ef75ce478a2721b74078958
+      internalID: 1040497527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_71
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 1789
+        width: 143
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 234dfdabb90a9f040afd537a28fc75ca
+      internalID: 132710363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_74
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 1787
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d55a2cd15b295ab4b90e01fcd021e68b
+      internalID: -544619690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_75
+      rect:
+        serializedVersion: 2
+        x: 4493
+        y: 1310
+        width: 970
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c9b1d1dd705e2342b4f8daaf8efca7b
+      internalID: -786231622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_77
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 1764
+        width: 150
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efaf904308f13b44c9593854999da703
+      internalID: -1232628077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_78
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 1778
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da8fd358334aaca4fb4aecd254342b4b
+      internalID: -916464404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_79
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 1792
+        width: 137
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ca811ff24cd6154488fa285bab6d0f1
+      internalID: 1406674982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_80
+      rect:
+        serializedVersion: 2
+        x: 1862
+        y: 1764
+        width: 199
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4380b075edd13ba4db6bef88815240ce
+      internalID: 1782104283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_81
+      rect:
+        serializedVersion: 2
+        x: 5491
+        y: 1921
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 973f2fc40fbbe78409de2b481ae6651e
+      internalID: 532495212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_85
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 1796
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a8c0b7626e002649bbe8c4ba497b2e1
+      internalID: -2145059508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_97
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 1469
+        width: 232
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 894674e51564e2145be8f4629384e814
+      internalID: -338144423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_99
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 1528
+        width: 127
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ea9beda12869e640af949c825a7f39f
+      internalID: 1989771361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_102
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 1456
+        width: 189
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ed8af3df3ff4924c8b73d08609d12bc
+      internalID: 1356508292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_103
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 1541
+        width: 109
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71d4689852fb1b74bb0ce089ebbebc4a
+      internalID: 1705187863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_109
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 1168
+        width: 284
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7376929c8ed939245aa23c0717bceb39
+      internalID: 2086572427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_111
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 1155
+        width: 258
+        height: 239
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8d5be2814298274c8432d2122da0252
+      internalID: -1711356723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_120
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 835
+        width: 206
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffe8fcbeb630c3d419fa72ff94b650cf
+      internalID: 695565660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_121
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 815
+        width: 278
+        height: 196
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebc03a37348ed5c41a45daacd4e5aabe
+      internalID: 1243528653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_122
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 430
+        width: 327
+        height: 323
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1f90d3efcab518479e898ff5746971a
+      internalID: 1925924453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_dragon_Game_126
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 430
+        width: 281
+        height: 274
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c2ad9b8e0dc40f488d2e75ba9d2897c
+      internalID: -93771194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 01e6bdf8da3f3804291d7bdecdc150e2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      UI_dragon_Game_4: 2143672524
+      UI_dragon_Game_128: 905213899
+      UI_dragon_Game_2: 51837486
+      UI_dragon_Game_55: 1235459532
+      UI_dragon_Game_99: 1989771361
+      UI_dragon_Game_74: -544619690
+      UI_dragon_Game_53: -1463641929
+      UI_dragon_Game_78: -916464404
+      UI_dragon_Game_18: 849097145
+      UI_dragon_Game_6: -831941092
+      UI_dragon_Game_3: -270645894
+      UI_dragon_Game_86: -200344300
+      UI_dragon_Game_47: 378739532
+      UI_dragon_Game_70: -2118924520
+      UI_dragon_Game_69: -281373101
+      UI_dragon_Game_77: -1232628077
+      UI_dragon_Game_76: 293479139
+      UI_dragon_Game_67: 1354606362
+      UI_dragon_Game_15: -1849908291
+      UI_dragon_Game_107: -1139762574
+      UI_dragon_Game_10: 1106958679
+      UI_dragon_Game_68: 1117392672
+      UI_dragon_Game_30: 1825564202
+      UI_dragon_Game_38: -453106785
+      UI_dragon_Game_35: 2123134976
+      UI_dragon_Game_59: 1374632490
+      UI_dragon_Game_73: 711939328
+      UI_dragon_Game_108: 979864860
+      UI_dragon_Game_113: -1935886282
+      UI_dragon_Game_46: -910740995
+      UI_dragon_Game_127: 1665088419
+      UI_dragon_Game_125: 219581188
+      UI_dragon_Game_106: 1188186634
+      UI_dragon_Game_48: -318605969
+      UI_dragon_Game_22: -1088374398
+      UI_dragon_Game_112: -1790980187
+      UI_dragon_Game_7: -1418848436
+      UI_dragon_Game_52: -1776940771
+      UI_dragon_Game_93: -938871607
+      UI_dragon_Game_44: 1867395343
+      UI_dragon_Game_123: 1163397613
+      UI_dragon_Game_118: 502234468
+      UI_dragon_Game_50: -786821718
+      UI_dragon_Game_104: -1836651784
+      UI_dragon_Game_39: -575108798
+      UI_dragon_Game_17: 1159676679
+      UI_dragon_Game_120: 695565660
+      UI_dragon_Game_109: 2086572427
+      UI_dragon_Game_33: 777110963
+      UI_dragon_Game_95: -560420730
+      UI_dragon_Game_25: -25400855
+      UI_dragon_Game_9: 1067162273
+      UI_dragon_Game_75: -786231622
+      UI_dragon_Game_54: 1111437480
+      UI_dragon_Game_91: 660354003
+      UI_dragon_Game_63: -245180542
+      UI_dragon_Game_94: -1278660549
+      UI_dragon_Game_58: -1223727522
+      UI_dragon_Game_43: -1767500998
+      UI_dragon_Game_32: -1092958307
+      UI_dragon_Game_119: 1400384425
+      UI_dragon_Game_28: 426712848
+      UI_dragon_Game_66: 13630480
+      UI_dragon_Game_103: 1705187863
+      UI_dragon_Game_1: 1599821257
+      UI_dragon_Game_101: 1477152504
+      UI_dragon_Game_51: -40231115
+      UI_dragon_Game_117: -1964647317
+      UI_dragon_Game_96: 1354172246
+      UI_dragon_Game_80: 1782104283
+      UI_dragon_Game_72: 1668642233
+      UI_dragon_Game_20: 532405953
+      UI_dragon_Game_24: 643586015
+      UI_dragon_Game_126: -93771194
+      UI_dragon_Game_11: -1122133915
+      UI_dragon_Game_90: -16680456
+      UI_dragon_Game_111: -1711356723
+      UI_dragon_Game_5: 2146708625
+      UI_dragon_Game_82: -223040403
+      UI_dragon_Game_21: 1589173151
+      UI_dragon_Game_71: 132710363
+      UI_dragon_Game_83: 1430229521
+      UI_dragon_Game_8: -1068637932
+      UI_dragon_Game_0: 969791502
+      UI_dragon_Game_34: 1986931372
+      UI_dragon_Game_45: 1040497527
+      UI_dragon_Game_92: -134138623
+      UI_dragon_Game_85: -2145059508
+      UI_dragon_Game_81: 532495212
+      UI_dragon_Game_26: -2132381403
+      UI_dragon_Game_36: 308342444
+      UI_dragon_Game_100: 1418418439
+      UI_dragon_Game_114: -1733752653
+      UI_dragon_Game_115: 28798908
+      UI_dragon_Game_29: -306835362
+      UI_dragon_Game_37: 786620027
+      UI_dragon_Game_40: -1343428031
+      UI_dragon_Game_23: 324328859
+      UI_dragon_Game_122: 1925924453
+      UI_dragon_Game_27: 1921859823
+      UI_dragon_Game_116: 303715090
+      UI_dragon_Game_41: 164801131
+      UI_dragon_Game_61: 205707038
+      UI_dragon_Game_124: -203177797
+      UI_dragon_Game_102: 1356508292
+      UI_dragon_Game_49: 40475255
+      UI_dragon_Game_79: 1406674982
+      UI_dragon_Game_19: -955792386
+      UI_dragon_Game_42: -930733439
+      UI_dragon_Game_60: 269846526
+      UI_dragon_Game_16: 198806326
+      UI_dragon_Game_87: -875183903
+      UI_dragon_Game_84: 924637207
+      UI_dragon_Game_64: 1289218546
+      UI_dragon_Game_88: -1806383313
+      UI_dragon_Game_31: 1309807779
+      UI_dragon_Game_62: -616238827
+      UI_dragon_Game_56: -1213092687
+      UI_dragon_Game_13: -14171854
+      UI_dragon_Game_65: 90739949
+      UI_dragon_Game_97: -338144423
+      UI_dragon_Game_12: 1606068924
+      UI_dragon_Game_98: -1570304942
+      UI_dragon_Game_89: -507407461
+      UI_dragon_Game_121: 1243528653
+      UI_dragon_Game_14: 2120969129
+      UI_dragon_Game_57: -1362028231
+      UI_dragon_Game_110: 898223991
+      UI_dragon_Game_105: -1776872940
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

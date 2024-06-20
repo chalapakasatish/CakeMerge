@@ -3,18 +3,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     public UIManager uiManager;
-
+    public CurrencyManager currencyManager;
+    public Button watchAdButton, levelCompleteWatchAdButton;
     private void Awake()
     {
         if (instance == null)
             instance = this;
         else
             Destroy(gameObject);
+
+        GameManager.instance.watchAdButton.onClick.AddListener(() => AdsInitializer.instance.rewardedAdsButton.ShowAd());
+        GameManager.instance.levelCompleteWatchAdButton.onClick.AddListener(() => AdsInitializer.instance.rewardedAdsButton.ShowAd("_2XCoins"));
     }
     // Start is called before the first frame update
     void Start()
@@ -53,6 +58,18 @@ public class GameManager : MonoBehaviour
         //{
         //    SetGameState(GameState.SHOP);
         //}
+    }
+    private void OnApplicationQuit()
+    {
+        PlayerPrefs.SetInt("GameOpened", 0);
+    }
+    public void PrivacyPolicy()
+    {
+        Application.OpenURL("https://www.runelordegamesstudios.com/privacy-policy");
+    }
+    public void RateUs()
+    {
+        Application.OpenURL("https://www.runelordegamesstudios.com/privacy-policy");
     }
 }
 public interface IGameStateListner
