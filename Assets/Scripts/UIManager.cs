@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour, IGameStateListner
 {
-    [SerializeField] private GameObject menuPanel, gamePanel, shopPanel;
+    [SerializeField] private GameObject menuPanel, gamePanel, shopPanel, gameoverPanel;
     List<GameObject> panels = new List<GameObject>();
     private void Awake()
     {
-        panels.AddRange(new GameObject[] { menuPanel, gamePanel, shopPanel });
+        panels.AddRange(new GameObject[] { menuPanel, gamePanel, shopPanel , gameoverPanel });
     }
     public void GameStateChangedCallback(GameState gameState)
     {
@@ -19,10 +19,12 @@ public class UIManager : MonoBehaviour, IGameStateListner
                 break;
             case GameState.GAME:
                 ShowPanel(gamePanel);
-                CakesManager.instance.ReplayButton();
                 break;
             case GameState.SHOP:
                 ShowPanel(shopPanel);
+                break;
+            case GameState.GAMEOVER:
+                ShowPanel(gameoverPanel);
                 break;
         }
     }

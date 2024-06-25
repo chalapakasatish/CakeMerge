@@ -10,17 +10,15 @@ public class CurrencyManager : MonoBehaviour
     public static CurrencyManager Instance;
     [SerializeField]private int coins;
     public TMP_Text currencytext;
-    public TMP_Text howManyClicksText;
+    public TMP_Text howManyClicksText,howManyChancesText;
     public TMP_Text PriceCakeText;
-    [SerializeField] private int howManyClicks;
+    [SerializeField] private int howManyClicks,howManyChances;
     [SerializeField] private int howManyClicksTextRep;
+    public LevelManager levelManager;
 
-    public int Coins 
-    {
-        get => coins; 
-        set => coins = value; 
-    }
+    public int Coins { get => coins; set => coins = value; }
     public int HowManyClicks { get => howManyClicks; set => howManyClicks = value; }
+    public int HowManyChances { get => howManyChances; set => howManyChances = value; }
     public int HowManyClicksTextRep { get => howManyClicksTextRep; set => howManyClicksTextRep = value; }
 
     private void Awake()
@@ -31,8 +29,11 @@ public class CurrencyManager : MonoBehaviour
     {
         coins = PlayerPrefs.GetInt("Coins",coins);
         howManyClicks = PlayerPrefs.GetInt("HowManyClicks",howManyClicks);
+        howManyChances = PlayerPrefs.GetInt("HowManyChances", levelManager.howManyChances[levelManager.LevelCount].howmanyChances);
         currencytext.text = Coins.ToString();
         PriceCakeText.text = PlayerPrefs.GetInt("PriceCake",CakesManager.instance.Price).ToString();
+        //howManyChancesText.text = howManyChances.ToString();
+        RemoveHowManyChances(0);
     }
     public void AddCurrency(int num)
     {
@@ -61,5 +62,19 @@ public class CurrencyManager : MonoBehaviour
         PlayerPrefs.SetInt("HowManyClicks", howManyClicks);
         howManyClicksText.text = PlayerPrefs.GetInt("HowManyClicks").ToString() + "/" + PlayerPrefs.GetInt("TargetClicks").ToString();
         CakesManager.instance.CheckTargetClicks();
+    }
+    public void RemoveHowManyChances(int num)
+    {
+        howManyChances -= num;
+        PlayerPrefs.SetInt("HowManyChances", howManyChances);
+        howManyChancesText.text = PlayerPrefs.GetInt("HowManyChances").ToString();
+        CakesManager.instance.CheckTargetClicks();
+        
+    }
+    public void GetHowManyChances()
+    {
+        howManyChances = levelManager.howManyChances[levelManager.LevelCount].howmanyChances;
+        PlayerPrefs.SetInt("HowManyChances", howManyChances);
+        howManyChancesText.text = PlayerPrefs.GetInt("HowManyChances").ToString();
     }
 }

@@ -203,6 +203,9 @@ public class CakesManager : MonoBehaviour
 
     public void ServeCakes()
     {
+        //CurrencyManager.Instance.HowManyChances += 1;
+        CurrencyManager.Instance.RemoveHowManyChances(1);
+        //CurrencyManager.Instance.howManyChancesText.text = CurrencyManager.Instance.HowManyChances + "/" + levelManager.howManyChances[0].howmanyChances;
         howManyCakesButton.SetActive(false);
         serveButton.gameObject.SetActive(false);
         autoMergeButton.gameObject.SetActive(false);
@@ -329,6 +332,7 @@ public class CakesManager : MonoBehaviour
         
         //cameraController.StartDestination();
         DeactivateCakesInstantiate();
+        
     }
     public void DeactivateCakesInstantiate()
     {
@@ -392,8 +396,28 @@ public class CakesManager : MonoBehaviour
         CakesManager.instance.howManyCakesButton.SetActive(true);
         CakesManager.instance.serveButton.gameObject.SetActive(true);
     }
+    public void PlayButton()
+    {
+        GameManager.instance.uiManager.GameStateChangedCallback(GameState.GAME);
+        foreach (var item in CakesManager.instance.cameraController.go)
+        {
+            Destroy(item.gameObject);
+        }
+        DeactivateCakesInstantiate();
+        CakesManager.instance.levelManager.LevelCount += 0;
+        PlayerPrefs.SetInt("Levels", CakesManager.instance.levelManager.LevelCount);
+        continueButton.gameObject.SetActive(false);
+        CakesManager.instance.levelManager.GetLevel(PlayerPrefs.GetInt("Levels"));
+        cameraController.isBackwardMove = true;
+        cameraController.isForwardMove = false;
+        points.SetActive(true);
+        CakesManager.instance.howManyCakesButton.SetActive(true);
+        CakesManager.instance.serveButton.gameObject.SetActive(true);
+    }
     public void ReplayButton()
     {
+        GameManager.instance.uiManager.GameStateChangedCallback(GameState.GAME);
+        CurrencyManager.Instance.GetHowManyChances();
         foreach (var item in CakesManager.instance.cameraController.go)
         {
             Destroy(item.gameObject);

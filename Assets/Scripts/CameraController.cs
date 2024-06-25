@@ -8,7 +8,8 @@ public class CameraController : MonoBehaviour
 {
     public Transform destination;
     public Transform startPosition;
-    public bool isForwardMove = false,isBackwardMove = false;
+    public bool isForwardMove = false,
+                isBackwardMove = false;
     public void MoveDestination()
     {
         StartCoroutine(WaitForCameraMovementStart());
@@ -42,6 +43,7 @@ public class CameraController : MonoBehaviour
     }
     private void Update()
     {
+        
         if (isForwardMove)
         {
             transform.position = Vector3.Lerp(transform.position, new Vector3(destination.position.x, destination.position.y, destination.position.z), 0.1f * Time.deltaTime);
@@ -50,6 +52,7 @@ public class CameraController : MonoBehaviour
         {
             transform.position = Vector3.Lerp(transform.position, new Vector3(startPosition.position.x, startPosition.position.y, startPosition.position.z), 3f * Time.deltaTime);
             CakesManager.instance.CheckTargetClicks();
+            StartCoroutine(WaitForGameoverPanel());
         }
 
 
@@ -92,8 +95,13 @@ public class CameraController : MonoBehaviour
         }
 
         targetCamera.fieldOfView = targetFOV; // Ensure the final FOV value is set accurately
-
-        
+    }
+    public IEnumerator WaitForGameoverPanel() {
+        yield return new WaitForSeconds(10f);
+        if (CurrencyManager.Instance.HowManyChances <= 0)
+        {
+            GameManager.instance.uiManager.GameStateChangedCallback(GameState.GAMEOVER);
+        }
     }
 }
 

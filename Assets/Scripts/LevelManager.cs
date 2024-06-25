@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -8,7 +9,7 @@ public class LevelManager : MonoBehaviour
     public GameObject[] levels;
     [SerializeField]private int levelCount;
     public TMP_Text levelText;
-
+    public List<HowManyChances> howManyChances = new List<HowManyChances>();
     public int LevelCount { get => levelCount; set => levelCount = value; }
 
     private void Start()
@@ -32,4 +33,9 @@ public class LevelManager : MonoBehaviour
         }
         levelText.text = "LEVEL " + (levelCount + 1);
     }
+}
+[Serializable]
+public struct HowManyChances
+{
+    public int howmanyChances;
 }
