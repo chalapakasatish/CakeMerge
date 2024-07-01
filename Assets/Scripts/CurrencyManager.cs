@@ -69,7 +69,13 @@ public class CurrencyManager : MonoBehaviour
         PlayerPrefs.SetInt("HowManyChances", howManyChances);
         howManyChancesText.text = PlayerPrefs.GetInt("HowManyChances").ToString();
         CakesManager.instance.CheckTargetClicks();
-        
+    }
+    public void AddHowManyChances(int num)
+    {
+        howManyChances += num;
+        PlayerPrefs.SetInt("HowManyChances", howManyChances);
+        howManyChancesText.text = PlayerPrefs.GetInt("HowManyChances").ToString();
+        CakesManager.instance.CheckTargetClicks();
     }
     public void GetHowManyChances()
     {

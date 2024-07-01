@@ -18,8 +18,8 @@ public class GameManager : MonoBehaviour
         else
             Destroy(gameObject);
 
-        GameManager.instance.watchAdButton.onClick.AddListener(() => AdsInitializer.instance.rewardedAdsButton.ShowAd());
-        GameManager.instance.levelCompleteWatchAdButton.onClick.AddListener(() => AdsInitializer.instance.rewardedAdsButton.ShowAd("_2XCoins"));
+        //GameManager.instance.watchAdButton.onClick.AddListener(() => AdsInitializer.instance.rewardedAdsButton.ShowAd());
+        //GameManager.instance.levelCompleteWatchAdButton.onClick.AddListener(() => AdsInitializer.instance.rewardedAdsButton.ShowAd("_2XCoins"));
     }
     // Start is called before the first frame update
     void Start()

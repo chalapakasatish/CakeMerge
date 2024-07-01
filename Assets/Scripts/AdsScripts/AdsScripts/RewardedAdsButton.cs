@@ -49,6 +49,7 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
     }
     public string rewardName;
     // Implement a method to execute when the user clicks the button:
+    /*
     public void ShowAd()
     {
         // Disable the button:
@@ -73,10 +74,11 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
         // Load another ad:
         Advertisement.Load(_adUnitId, this);
     }
+    */
     
-    public void ShowAd(string _2XCoins)
+    public void ShowAd(string rewardType)
     {
-        rewardName = "_2XCoins";
+        rewardName = rewardType;
         Advertisement.Show(_adUnitId, this);
         Debug.Log("Unity Ads Rewarded Ad Completed");
         // Grant a reward.
@@ -84,10 +86,12 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
         {
             case "FreeCoins":
                 //ScoreManager.instance.WatchAddCoinBalance(100);
+                GameManager.instance.currencyManager.AddCurrency(100);
                 Debug.Log("You have gained 100 coins");
                 break;
-            case "_2XCoins":
+            case "AddHowManyChances":
                 //ScoreManager.instance.Add2XCoinBalance(2);
+                CurrencyManager.Instance.AddHowManyChances(5);
                 Debug.Log("You have gained 2X coins");
                 break;
         }
