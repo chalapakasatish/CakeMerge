@@ -155,8 +155,7 @@ public class CakesManager : MonoBehaviour
         Price += CakePriceChange;
         PlayerPrefs.SetInt("PriceCake", Price);
         CurrencyManager.Instance.PriceCakeText.text = PlayerPrefs.GetInt("PriceCake").ToString();
-       
-
+        
         for (int i = 0; i < spawnPoints.Count; i++)
         {
             if(spawnPoints[i] && !cakeExists[i])
@@ -199,8 +198,6 @@ public class CakesManager : MonoBehaviour
         mObject.GetComponent<CakeItem>().holder = holder;
         cakeExists[holder] = true;
     }
-
-
     public void ServeCakes()
     {
         //CurrencyManager.Instance.HowManyChances += 1;
@@ -228,7 +225,6 @@ public class CakesManager : MonoBehaviour
         
         cameraController.MoveDestination();
         //StartCoroutine(WaitForEnableCakes());
-        
     }
     int rememberNumber;
 

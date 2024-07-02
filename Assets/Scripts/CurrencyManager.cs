@@ -32,7 +32,6 @@ public class CurrencyManager : MonoBehaviour
         howManyChances = PlayerPrefs.GetInt("HowManyChances", levelManager.howManyChances[levelManager.LevelCount].howmanyChances);
         currencytext.text = Coins.ToString();
         PriceCakeText.text = PlayerPrefs.GetInt("PriceCake",CakesManager.instance.Price).ToString();
-        //howManyChancesText.text = howManyChances.ToString();
         RemoveHowManyChances(0);
     }
     public void AddCurrency(int num)

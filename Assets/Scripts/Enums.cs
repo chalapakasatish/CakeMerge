@@ -2,7 +2,7 @@ public enum GameState
 {
     MENU,
     GAME,
-    WAVETRANSITION,
     SHOP,
+    WATCHADPOPUPPANEL,
     GAMEOVER
 }

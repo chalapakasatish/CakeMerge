@@ -38,6 +38,12 @@ public class GameManager : MonoBehaviour
         uiManager.GameStateChangedCallback(GameState.SHOP);
         //SetGameState(GameState.SHOP);
     }
+    public void WatchAdPopupCloseButton()
+    {
+        uiManager.GameStateChangedCallback(GameState.GAMEOVER);
+        Debug.Log("WatchAdPopupCloseButton");
+        //SetGameState(GameState.SHOP);
+    }
     public void SetGameState(GameState gameState)
     {
         //IEnumerable<IGameStateListner> gameStateListners =

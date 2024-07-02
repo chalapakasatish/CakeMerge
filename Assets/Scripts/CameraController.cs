@@ -10,6 +10,7 @@ public class CameraController : MonoBehaviour
     public Transform startPosition;
     public bool isForwardMove = false,
                 isBackwardMove = false;
+
     public void MoveDestination()
     {
         StartCoroutine(WaitForCameraMovementStart());
@@ -37,45 +38,53 @@ public class CameraController : MonoBehaviour
 
     private float initialFOV;
     public GameObject[] go;
+
     private void Start()
     {
         initialFOV = targetCamera.fieldOfView;
     }
     private void Update()
     {
-        
-        if (isForwardMove)
+        if (GameState.GAMEOVER != GameManager.instance.uiManager.gameState)
         {
-            transform.position = Vector3.Lerp(transform.position, new Vector3(destination.position.x, destination.position.y, destination.position.z), 0.1f * Time.deltaTime);
-        }
-        else if(isBackwardMove)
-        {
-            transform.position = Vector3.Lerp(transform.position, new Vector3(startPosition.position.x, startPosition.position.y, startPosition.position.z), 3f * Time.deltaTime);
-            CakesManager.instance.CheckTargetClicks();
-            StartCoroutine(WaitForGameoverPanel());
-        }
-
-
-        if (CakesManager.instance.serveStarted == true)
-        {
-            go = GameObject.FindGameObjectsWithTag("Plate");
-            for (int i = 0; i <= go.Length; i++)
+            if (isForwardMove)
             {
-                if (go.Length == 0)
+                transform.position = Vector3.Lerp(transform.position, new Vector3(destination.position.x, destination.position.y, destination.position.z), 0.1f * Time.deltaTime);
+            }
+            else if (isBackwardMove)
+            {
+                CakesManager.instance.CheckTargetClicks();
+                transform.position = Vector3.Lerp(transform.position, new Vector3(startPosition.position.x, startPosition.position.y, startPosition.position.z), 3f * Time.deltaTime);
+                //StartCoroutine(WaitForGameoverPanel());
+            }
+
+
+            if (CakesManager.instance.serveStarted == true)
+            {
+                go = GameObject.FindGameObjectsWithTag("Plate");
+                for (int i = 0; i <= go.Length; i++)
                 {
-                    CakesManager.instance.belt1.isServe = false;
-                    CakesManager.instance.belt2.isServe = false;
-                    CakesManager.instance.belt3.isServe = false;
-                    CakesManager.instance.serveButton.gameObject.GetComponent<Button>().interactable = true;
-                    CakesManager.instance.spawnCakeButton.GetComponent<Button>().interactable = true;
-                    CakesManager.instance.points.gameObject.SetActive(true);
-                    CakesManager.instance.DeactivateCakesInstantiate();
-                    CakesManager.instance.serveStarted = false;
-                    isForwardMove = false;
-                    isBackwardMove = true;
-                    CakesManager.instance.howManyCakesButton.SetActive(true);
-                    CakesManager.instance.serveButton.gameObject.SetActive(true);
-                    //CakesManager.instance.autoMergeButton.gameObject.SetActive(true);
+                    if (go.Length == 0)
+                    {
+                        CakesManager.instance.belt1.isServe = false;
+                        CakesManager.instance.belt2.isServe = false;
+                        CakesManager.instance.belt3.isServe = false;
+                        CakesManager.instance.serveButton.gameObject.GetComponent<Button>().interactable = true;
+                        CakesManager.instance.spawnCakeButton.GetComponent<Button>().interactable = true;
+                        CakesManager.instance.points.gameObject.SetActive(true);
+                        CakesManager.instance.DeactivateCakesInstantiate();
+                        CakesManager.instance.serveStarted = false;
+                        isForwardMove = false;
+                        isBackwardMove = true;
+                        CakesManager.instance.howManyCakesButton.SetActive(true);
+                        CakesManager.instance.serveButton.gameObject.SetActive(true);
+                        if (CurrencyManager.Instance.HowManyChances <= 0)
+                        {
+                            GameManager.instance.uiManager.gameState = GameState.GAMEOVER;
+                            GameManager.instance.uiManager.GameStateChangedCallback(GameState.WATCHADPOPUPPANEL);
+                        }
+                        //CakesManager.instance.autoMergeButton.gameObject.SetActive(true);
+                    }
                 }
             }
         }
@@ -97,11 +106,12 @@ public class CameraController : MonoBehaviour
         targetCamera.fieldOfView = targetFOV; // Ensure the final FOV value is set accurately
     }
     public IEnumerator WaitForGameoverPanel() {
-        yield return new WaitForSeconds(10f);
-        if (CurrencyManager.Instance.HowManyChances <= 0)
-        {
-            GameManager.instance.uiManager.GameStateChangedCallback(GameState.GAMEOVER);
-        }
+        yield return new WaitForSeconds(7f);
+        //GameManager.instance.uiManager.gameState = GameState.GAMEOVER;
+        //if (CurrencyManager.Instance.HowManyChances <= 0)
+        //{
+        //    GameManager.instance.uiManager.GameStateChangedCallback(GameState.WATCHADPOPUPPANEL);
+        //}
     }
 }
 
