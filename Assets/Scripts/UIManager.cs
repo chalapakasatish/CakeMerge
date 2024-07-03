@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour, IGameStateListner
 {
-    [SerializeField] private GameObject menuPanel, gamePanel, shopPanel, watchAdPopUpPanel, gameoverPanel;
+    [SerializeField] private GameObject menuPanel, gamePanel, shopPanel, pausePanel, watchAdPopUpPanel, gameoverPanel;
     List<GameObject> panels = new List<GameObject>();
     public GameState gameState;
     private void Awake()
     {
-        panels.AddRange(new GameObject[] { menuPanel, gamePanel, shopPanel , watchAdPopUpPanel, gameoverPanel });
+        panels.AddRange(new GameObject[] { menuPanel, gamePanel, shopPanel , pausePanel, watchAdPopUpPanel, gameoverPanel });
     }
     public void GameStateChangedCallback(GameState _gameState)
     {
@@ -20,6 +20,9 @@ public class UIManager : MonoBehaviour, IGameStateListner
                 break;
             case GameState.GAME:
                 ShowPanel(gamePanel);
+                break;
+            case GameState.PAUSE:
+                ShowPanel(pausePanel);
                 break;
             case GameState.SHOP:
                 ShowPanel(shopPanel);

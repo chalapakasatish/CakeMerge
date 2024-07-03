@@ -28,6 +28,17 @@ public class GameManager : MonoBehaviour
         uiManager.GameStateChangedCallback(GameState.MENU);
         //SetGameState(GameState.MENU);
     }
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            if(GameManager.instance.uiManager.gameState == GameState.GAME)
+            {
+                uiManager.GameStateChangedCallback(GameState.PAUSE);
+                PauseButton();
+            }
+        }
+    }
     public void StartGame()
     {
         uiManager.GameStateChangedCallback(GameState.GAME);
@@ -37,6 +48,20 @@ public class GameManager : MonoBehaviour
     {
         uiManager.GameStateChangedCallback(GameState.SHOP);
         //SetGameState(GameState.SHOP);
+    }
+    public void PauseButton()
+    {
+        Time.timeScale = 0;
+    }
+    public void ResumeButton()
+    {
+        Time.timeScale = 1;
+        uiManager.GameStateChangedCallback(GameState.GAME);
+    }
+    public void HomeButton()
+    {
+        Time.timeScale = 1;
+        uiManager.GameStateChangedCallback(GameState.MENU);
     }
     public void WatchAdPopupCloseButton()
     {
