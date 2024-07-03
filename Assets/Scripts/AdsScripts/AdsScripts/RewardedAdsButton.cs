@@ -45,6 +45,7 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
             //GameManager.instance.watchAdButton.onClick.AddListener(ShowAd);
             // Enable the button for users to click:
             //GameManager.instance.watchAdButton.interactable = true;
+            Debug.Log("OnUnityAdsAdLoaded");
         }
     }
     public string rewardName;
@@ -109,11 +110,11 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
             {
                 case "FreeCoins":
                     //ScoreManager.instance.WatchAddCoinBalance(100);
-                    Debug.Log("You have gained 100 coins");
+                    Debug.Log(" OnUnityAdsShowComplete You have gained 100 coins");
                     break;
                 case "_2XCoins":
                     //ScoreManager.instance.Add2XCoinBalance(2);
-                    Debug.Log("You have gained 2X coins");
+                    Debug.Log(" OnUnityAdsShowCompleteYou have gained 2X coins");
                     break;
             }
             // Load another ad:
