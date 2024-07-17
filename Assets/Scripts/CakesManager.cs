@@ -51,13 +51,6 @@ public class CakesManager : MonoBehaviour
         cakeNumber = PlayerPrefs.GetInt("CakeNumber", cakeNumber);
         CheckTargetClicks();
     }
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Backspace))
-        {
-            //Application.Quit();
-        }
-    }
     public void CheckTargetClicks()
     {
         //howManyCakesButton.SetActive(true);
@@ -203,9 +196,12 @@ public class CakesManager : MonoBehaviour
         //CurrencyManager.Instance.HowManyChances += 1;
         CurrencyManager.Instance.RemoveHowManyChances(1);
         //CurrencyManager.Instance.howManyChancesText.text = CurrencyManager.Instance.HowManyChances + "/" + levelManager.howManyChances[0].howmanyChances;
-        howManyCakesButton.SetActive(false);
+        //howManyCakesButton.SetActive(false);
         serveButton.gameObject.SetActive(false);
-        autoMergeButton.gameObject.SetActive(false);
+        spawnCakeButton.gameObject.SetActive(false);
+        //autoMergeButton.gameObject.SetActive(false);
+        //serveButton.GetComponent<Button>().interactable = false;
+        //spawnCakeButton.GetComponent<Button>().interactable = false;
         for (int i = 0; i < spawnPoints.Count; i++)
         {
             cakesInstantiate.Add(gameObject);
@@ -391,10 +387,11 @@ public class CakesManager : MonoBehaviour
         points.SetActive(true);
         CakesManager.instance.howManyCakesButton.SetActive(true);
         CakesManager.instance.serveButton.gameObject.SetActive(true);
+        CakesManager.instance.spawnCakeButton.gameObject.SetActive(true);
     }
     public void PlayButton()
     {
-        GameManager.instance.uiManager.GameStateChangedCallback(GameState.GAME);
+        //GameManager.instance.uiManager.GameStateChangedCallback(GameState.GAME);
         foreach (var item in CakesManager.instance.cameraController.go)
         {
             Destroy(item.gameObject);
@@ -409,6 +406,8 @@ public class CakesManager : MonoBehaviour
         points.SetActive(true);
         CakesManager.instance.howManyCakesButton.SetActive(true);
         CakesManager.instance.serveButton.gameObject.SetActive(true);
+        CakesManager.instance.spawnCakeButton.gameObject.SetActive(true);
+
     }
     public void ReplayButton()
     {
@@ -428,5 +427,7 @@ public class CakesManager : MonoBehaviour
         points.SetActive(true);
         CakesManager.instance.howManyCakesButton.SetActive(true);
         CakesManager.instance.serveButton.gameObject.SetActive(true);
+        CakesManager.instance.spawnCakeButton.gameObject.SetActive(true);
+
     }
 }

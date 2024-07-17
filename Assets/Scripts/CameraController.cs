@@ -78,6 +78,8 @@ public class CameraController : MonoBehaviour
                         isBackwardMove = true;
                         CakesManager.instance.howManyCakesButton.SetActive(true);
                         CakesManager.instance.serveButton.gameObject.SetActive(true);
+                        CakesManager.instance.spawnCakeButton.gameObject.SetActive(true);
+
                         if (CurrencyManager.Instance.HowManyChances <= 0)
                         {
                             GameManager.instance.uiManager.gameState = GameState.GAMEOVER;

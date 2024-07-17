@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     public UIManager uiManager;
     public CurrencyManager currencyManager;
     public Button watchAdButton, levelCompleteWatchAdButton;
+    public GameObject particleCamera;
+    public Canvas mainCanvas;
     private void Awake()
     {
         if (instance == null)
@@ -42,11 +44,18 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         uiManager.GameStateChangedCallback(GameState.GAME);
+        particleCamera.SetActive(false);
+        mainCanvas.renderMode = RenderMode.ScreenSpaceOverlay;
         //SetGameState(GameState.GAME);
     }
     public void StartShop()
     {
         uiManager.GameStateChangedCallback(GameState.SHOP);
+        //SetGameState(GameState.SHOP);
+    }
+    public void SettingsButton()
+    {
+        uiManager.GameStateChangedCallback(GameState.SETTINGS);
         //SetGameState(GameState.SHOP);
     }
     public void PauseButton()
@@ -62,6 +71,8 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1;
         uiManager.GameStateChangedCallback(GameState.MENU);
+        mainCanvas.renderMode = RenderMode.ScreenSpaceCamera;
+        particleCamera.SetActive(true);
     }
     public void WatchAdPopupCloseButton()
     {
