@@ -320,6 +320,7 @@ UnityEngine.Canvas::get_renderingDisplaySize_Injected
 UnityEngine.Canvas::set_additionalShaderChannels
 UnityEngine.Canvas::set_overrideSorting
 UnityEngine.Canvas::set_referencePixelsPerUnit
+UnityEngine.Canvas::set_renderMode
 UnityEngine.Canvas::set_scaleFactor
 UnityEngine.Canvas::set_sortingLayerID
 UnityEngine.Canvas::set_sortingOrder

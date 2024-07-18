@@ -290,170 +290,170 @@ extern void CakesManager_set_CakeNumber_m72E88DBB7DD887315FA57547CE257D926E0E802
 extern void CakesManager_Awake_mE1B24E27A00767A5F151EB8483330C7E521AFE2F (void);
 // 0x0000008B System.Void CakesManager::Start()
 extern void CakesManager_Start_m17A076B740E366A3334A708F60DC458E4F243F58 (void);
-// 0x0000008C System.Void CakesManager::Update()
-extern void CakesManager_Update_m28CCE4C9FDE1261FC86EB8D457D58936A0CB596A (void);
-// 0x0000008D System.Void CakesManager::CheckTargetClicks()
+// 0x0000008C System.Void CakesManager::CheckTargetClicks()
 extern void CakesManager_CheckTargetClicks_m2332EF5B1DDF353466A4E7742A06A0A20FD104A9 (void);
-// 0x0000008E System.Void CakesManager::SpawnCake()
+// 0x0000008D System.Void CakesManager::SpawnCake()
 extern void CakesManager_SpawnCake_mEB3113F3FFCBC75F95B4CFDA7F26B9854346F815 (void);
-// 0x0000008F System.Boolean CakesManager::IsAvailableHolders()
+// 0x0000008E System.Boolean CakesManager::IsAvailableHolders()
 extern void CakesManager_IsAvailableHolders_m1212BBD09ED2D5501B8F4834C7F77673AA22D5AF (void);
-// 0x00000090 System.Void CakesManager::GetCake(System.Int32)
+// 0x0000008F System.Void CakesManager::GetCake(System.Int32)
 extern void CakesManager_GetCake_mD6B4514699F95492317818DD818B8CADA1C60759 (void);
-// 0x00000091 System.Void CakesManager::SpawnNextCake(System.Int32,UnityEngine.Transform,System.Int32)
+// 0x00000090 System.Void CakesManager::SpawnNextCake(System.Int32,UnityEngine.Transform,System.Int32)
 extern void CakesManager_SpawnNextCake_mD11F597F69C1EC0C1184078776909051110B316D (void);
-// 0x00000092 System.Void CakesManager::ServeCakes()
+// 0x00000091 System.Void CakesManager::ServeCakes()
 extern void CakesManager_ServeCakes_mB4C3D1691E78B0BDCC729D6AFD27DC3A82090992 (void);
-// 0x00000093 System.Void CakesManager::AutoMergeCakes()
+// 0x00000092 System.Void CakesManager::AutoMergeCakes()
 extern void CakesManager_AutoMergeCakes_m88588CB18156B22723028098A2EEF3835879DCC4 (void);
-// 0x00000094 System.Collections.IEnumerator CakesManager::AutoMergeRoutine()
+// 0x00000093 System.Collections.IEnumerator CakesManager::AutoMergeRoutine()
 extern void CakesManager_AutoMergeRoutine_m8F101C8E647343EE9BB74A10CD4F6D4A993FCE25 (void);
-// 0x00000095 System.Void CakesManager::CameraresetPosition()
+// 0x00000094 System.Void CakesManager::CameraresetPosition()
 extern void CakesManager_CameraresetPosition_m13A291C4625C6DEC0A402691276B3C1F5D1B7371 (void);
-// 0x00000096 System.Void CakesManager::DeactivateCakesInstantiate()
+// 0x00000095 System.Void CakesManager::DeactivateCakesInstantiate()
 extern void CakesManager_DeactivateCakesInstantiate_m2C6D032AE0387F5571E78AFADF08B0AC7E008487 (void);
-// 0x00000097 System.Void CakesManager::SpawnEffect(UnityEngine.GameObject,UnityEngine.Transform)
+// 0x00000096 System.Void CakesManager::SpawnEffect(UnityEngine.GameObject,UnityEngine.Transform)
 extern void CakesManager_SpawnEffect_m40D262C17EC800BD74C8880F9218FAEA23A71CE0 (void);
-// 0x00000098 System.Collections.IEnumerator CakesManager::WaitForEnableCakes()
+// 0x00000097 System.Collections.IEnumerator CakesManager::WaitForEnableCakes()
 extern void CakesManager_WaitForEnableCakes_m35FDE4AB764337A3E7C8233C391A3D50B28DDA1C (void);
-// 0x00000099 System.Void CakesManager::OnApplicationQuit()
+// 0x00000098 System.Void CakesManager::OnApplicationQuit()
 extern void CakesManager_OnApplicationQuit_m99524C8B30CAEB261122F1D340757AF16738A5CE (void);
-// 0x0000009A System.Void CakesManager::OnApplicationFocus()
+// 0x00000099 System.Void CakesManager::OnApplicationFocus()
 extern void CakesManager_OnApplicationFocus_mF9BD13665BCD6AB6AD5C247277F4E4A65D0C7AF1 (void);
-// 0x0000009B System.Void CakesManager::SavedGame()
+// 0x0000009A System.Void CakesManager::SavedGame()
 extern void CakesManager_SavedGame_m6356D38B6C8AA7E08461399E4816174B17EE162F (void);
-// 0x0000009C System.Void CakesManager::GameContinueButton()
+// 0x0000009B System.Void CakesManager::GameContinueButton()
 extern void CakesManager_GameContinueButton_m4402B16082B479558A0CDC9BEDD620946C7B142B (void);
-// 0x0000009D System.Void CakesManager::PlayButton()
+// 0x0000009C System.Void CakesManager::PlayButton()
 extern void CakesManager_PlayButton_mA67A367131B74E78ED5BB128D925467B7537A371 (void);
-// 0x0000009E System.Void CakesManager::ReplayButton()
+// 0x0000009D System.Void CakesManager::ReplayButton()
 extern void CakesManager_ReplayButton_m80EFECCB4DD55EB3BAF4D157F44474BF3635FA88 (void);
-// 0x0000009F System.Void CakesManager::.ctor()
+// 0x0000009E System.Void CakesManager::.ctor()
 extern void CakesManager__ctor_mB39A233D190BCF7E96A6FF8C1793AD1F167727E4 (void);
-// 0x000000A0 System.Void CakesManager/<AutoMergeRoutine>d__53::.ctor(System.Int32)
-extern void U3CAutoMergeRoutineU3Ed__53__ctor_mE7BDC8759B7466EAE0AAB6AB729A372405404B5D (void);
-// 0x000000A1 System.Void CakesManager/<AutoMergeRoutine>d__53::System.IDisposable.Dispose()
-extern void U3CAutoMergeRoutineU3Ed__53_System_IDisposable_Dispose_m5F874944D2704EDE3479A94FB9BB86E2192F550C (void);
-// 0x000000A2 System.Boolean CakesManager/<AutoMergeRoutine>d__53::MoveNext()
-extern void U3CAutoMergeRoutineU3Ed__53_MoveNext_mA861337DB63249DCCF8678DC67E70B353E93E560 (void);
-// 0x000000A3 System.Object CakesManager/<AutoMergeRoutine>d__53::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CAutoMergeRoutineU3Ed__53_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mEB2A4BB406285CAF3F57824BF98DC3A9DF123278 (void);
-// 0x000000A4 System.Void CakesManager/<AutoMergeRoutine>d__53::System.Collections.IEnumerator.Reset()
-extern void U3CAutoMergeRoutineU3Ed__53_System_Collections_IEnumerator_Reset_m489C424896E6423859FF19332A0857E8274C006A (void);
-// 0x000000A5 System.Object CakesManager/<AutoMergeRoutine>d__53::System.Collections.IEnumerator.get_Current()
-extern void U3CAutoMergeRoutineU3Ed__53_System_Collections_IEnumerator_get_Current_m1F646BF90E7278D0DE3D3BF8DD493803EA05564A (void);
-// 0x000000A6 System.Void CakesManager/<WaitForEnableCakes>d__57::.ctor(System.Int32)
-extern void U3CWaitForEnableCakesU3Ed__57__ctor_m5996E2419A37333212298DDFD141D78A880D0C22 (void);
-// 0x000000A7 System.Void CakesManager/<WaitForEnableCakes>d__57::System.IDisposable.Dispose()
-extern void U3CWaitForEnableCakesU3Ed__57_System_IDisposable_Dispose_m0A594C5F4D4DB71345AE653B7990DCB84C34BB9C (void);
-// 0x000000A8 System.Boolean CakesManager/<WaitForEnableCakes>d__57::MoveNext()
-extern void U3CWaitForEnableCakesU3Ed__57_MoveNext_mAD2C5F6F4B0AB1793CF51F0A6B97423AEC5FF485 (void);
-// 0x000000A9 System.Object CakesManager/<WaitForEnableCakes>d__57::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CWaitForEnableCakesU3Ed__57_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m2A9D2630527EC8778D918C080C90C1C4DBEBEE3A (void);
-// 0x000000AA System.Void CakesManager/<WaitForEnableCakes>d__57::System.Collections.IEnumerator.Reset()
-extern void U3CWaitForEnableCakesU3Ed__57_System_Collections_IEnumerator_Reset_m20D114D44F52A29DA67E4259EC54D952E63B296E (void);
-// 0x000000AB System.Object CakesManager/<WaitForEnableCakes>d__57::System.Collections.IEnumerator.get_Current()
-extern void U3CWaitForEnableCakesU3Ed__57_System_Collections_IEnumerator_get_Current_m785F547798CCDA3F40308537E6FF11A2887257B4 (void);
-// 0x000000AC System.Void CameraController::MoveDestination()
+// 0x0000009F System.Void CakesManager/<AutoMergeRoutine>d__52::.ctor(System.Int32)
+extern void U3CAutoMergeRoutineU3Ed__52__ctor_m0E994C240CD6985935810A28D38FEB439578EFB6 (void);
+// 0x000000A0 System.Void CakesManager/<AutoMergeRoutine>d__52::System.IDisposable.Dispose()
+extern void U3CAutoMergeRoutineU3Ed__52_System_IDisposable_Dispose_m64D000DDB718B87FE70BB4C843ACD7EAF41EA0D9 (void);
+// 0x000000A1 System.Boolean CakesManager/<AutoMergeRoutine>d__52::MoveNext()
+extern void U3CAutoMergeRoutineU3Ed__52_MoveNext_m178CCDA5659F5C6CE3BAF47E6BE768FF5112F71F (void);
+// 0x000000A2 System.Object CakesManager/<AutoMergeRoutine>d__52::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CAutoMergeRoutineU3Ed__52_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD0189F9C90C7B7F9667AA63A8D9889AB9A35379E (void);
+// 0x000000A3 System.Void CakesManager/<AutoMergeRoutine>d__52::System.Collections.IEnumerator.Reset()
+extern void U3CAutoMergeRoutineU3Ed__52_System_Collections_IEnumerator_Reset_m8CC9B4424DC9EFBC1D849C684C4751A6DC09326E (void);
+// 0x000000A4 System.Object CakesManager/<AutoMergeRoutine>d__52::System.Collections.IEnumerator.get_Current()
+extern void U3CAutoMergeRoutineU3Ed__52_System_Collections_IEnumerator_get_Current_mBB5ABA9A49B28717D115F496A1C4136C1E246E0C (void);
+// 0x000000A5 System.Void CakesManager/<WaitForEnableCakes>d__56::.ctor(System.Int32)
+extern void U3CWaitForEnableCakesU3Ed__56__ctor_m0E819F504CF9FE41E8089CE699598DE9230203A8 (void);
+// 0x000000A6 System.Void CakesManager/<WaitForEnableCakes>d__56::System.IDisposable.Dispose()
+extern void U3CWaitForEnableCakesU3Ed__56_System_IDisposable_Dispose_m4101DBE97400C795984CE9AF0040217671591A56 (void);
+// 0x000000A7 System.Boolean CakesManager/<WaitForEnableCakes>d__56::MoveNext()
+extern void U3CWaitForEnableCakesU3Ed__56_MoveNext_m1D6B9B6061124D4A1B6CE245D40F4C56E4CE737F (void);
+// 0x000000A8 System.Object CakesManager/<WaitForEnableCakes>d__56::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CWaitForEnableCakesU3Ed__56_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m2B8A589BD83F66FA0E80EE431803E508FEEE59E7 (void);
+// 0x000000A9 System.Void CakesManager/<WaitForEnableCakes>d__56::System.Collections.IEnumerator.Reset()
+extern void U3CWaitForEnableCakesU3Ed__56_System_Collections_IEnumerator_Reset_mC0861749482C983F59DB85692521D18FFCBAF8C0 (void);
+// 0x000000AA System.Object CakesManager/<WaitForEnableCakes>d__56::System.Collections.IEnumerator.get_Current()
+extern void U3CWaitForEnableCakesU3Ed__56_System_Collections_IEnumerator_get_Current_mB8D6745EE2B97CB12F9CF65A979DEC381E8000E5 (void);
+// 0x000000AB System.Void CameraController::MoveDestination()
 extern void CameraController_MoveDestination_m23DD030FF2D528D378CF4541BA7188174A0A71F7 (void);
-// 0x000000AD System.Collections.IEnumerator CameraController::WaitForCameraMovementStart()
+// 0x000000AC System.Collections.IEnumerator CameraController::WaitForCameraMovementStart()
 extern void CameraController_WaitForCameraMovementStart_m5B644D96023F818BEAEC27A043DCE4F0DEC01B46 (void);
-// 0x000000AE System.Void CameraController::StartDestination()
+// 0x000000AD System.Void CameraController::StartDestination()
 extern void CameraController_StartDestination_m409D233308E73948E0088C6749D3735A0B3C3453 (void);
-// 0x000000AF System.Void CameraController::Start()
+// 0x000000AE System.Void CameraController::Start()
 extern void CameraController_Start_m8EAAC188934ECCBD009EC00751280DCFF4D96C71 (void);
-// 0x000000B0 System.Void CameraController::Update()
+// 0x000000AF System.Void CameraController::Update()
 extern void CameraController_Update_mBCB871B23DBA60444D43AB56D780478BA3D355E6 (void);
-// 0x000000B1 System.Collections.IEnumerator CameraController::ChangeCameraFOV(System.Single,System.Single)
+// 0x000000B0 System.Collections.IEnumerator CameraController::ChangeCameraFOV(System.Single,System.Single)
 extern void CameraController_ChangeCameraFOV_m1A4F421F1D31299B162FB0C4AE962BD96AAA52A4 (void);
-// 0x000000B2 System.Collections.IEnumerator CameraController::WaitForGameoverPanel()
+// 0x000000B1 System.Collections.IEnumerator CameraController::WaitForGameoverPanel()
 extern void CameraController_WaitForGameoverPanel_mA827E38722502F9C64CC63BDE792968756ADABBD (void);
-// 0x000000B3 System.Void CameraController::.ctor()
+// 0x000000B2 System.Void CameraController::.ctor()
 extern void CameraController__ctor_mE196A6332BDDED632D6F9DB6260E424594598950 (void);
-// 0x000000B4 System.Void CameraController/<WaitForCameraMovementStart>d__5::.ctor(System.Int32)
+// 0x000000B3 System.Void CameraController/<WaitForCameraMovementStart>d__5::.ctor(System.Int32)
 extern void U3CWaitForCameraMovementStartU3Ed__5__ctor_mD861C9BBD872D593326F00C4026AA4F6CACF484E (void);
-// 0x000000B5 System.Void CameraController/<WaitForCameraMovementStart>d__5::System.IDisposable.Dispose()
+// 0x000000B4 System.Void CameraController/<WaitForCameraMovementStart>d__5::System.IDisposable.Dispose()
 extern void U3CWaitForCameraMovementStartU3Ed__5_System_IDisposable_Dispose_m4CDDEF2AE046070D31DB3F5120D5381AAE716D1C (void);
-// 0x000000B6 System.Boolean CameraController/<WaitForCameraMovementStart>d__5::MoveNext()
+// 0x000000B5 System.Boolean CameraController/<WaitForCameraMovementStart>d__5::MoveNext()
 extern void U3CWaitForCameraMovementStartU3Ed__5_MoveNext_m94C76878F28EABED9A9B462DC4FD5BD69D4865BF (void);
-// 0x000000B7 System.Object CameraController/<WaitForCameraMovementStart>d__5::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x000000B6 System.Object CameraController/<WaitForCameraMovementStart>d__5::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CWaitForCameraMovementStartU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m12FFCFF74DC6DA0552B7595F9C4C1874C6E180F9 (void);
-// 0x000000B8 System.Void CameraController/<WaitForCameraMovementStart>d__5::System.Collections.IEnumerator.Reset()
+// 0x000000B7 System.Void CameraController/<WaitForCameraMovementStart>d__5::System.Collections.IEnumerator.Reset()
 extern void U3CWaitForCameraMovementStartU3Ed__5_System_Collections_IEnumerator_Reset_mFB111A320813299D7FC1EB7E012FE8678DC31FBE (void);
-// 0x000000B9 System.Object CameraController/<WaitForCameraMovementStart>d__5::System.Collections.IEnumerator.get_Current()
+// 0x000000B8 System.Object CameraController/<WaitForCameraMovementStart>d__5::System.Collections.IEnumerator.get_Current()
 extern void U3CWaitForCameraMovementStartU3Ed__5_System_Collections_IEnumerator_get_Current_m9D4D207E715B739D026FBAA8AD68C4620E595C37 (void);
-// 0x000000BA System.Void CameraController/<ChangeCameraFOV>d__14::.ctor(System.Int32)
+// 0x000000B9 System.Void CameraController/<ChangeCameraFOV>d__14::.ctor(System.Int32)
 extern void U3CChangeCameraFOVU3Ed__14__ctor_m081C216FF1687B65D8BA7AE3C337AEC4BEEEF22F (void);
-// 0x000000BB System.Void CameraController/<ChangeCameraFOV>d__14::System.IDisposable.Dispose()
+// 0x000000BA System.Void CameraController/<ChangeCameraFOV>d__14::System.IDisposable.Dispose()
 extern void U3CChangeCameraFOVU3Ed__14_System_IDisposable_Dispose_m4067BE886157A2C1FBA8D17C7DBA4B6874DA71CD (void);
-// 0x000000BC System.Boolean CameraController/<ChangeCameraFOV>d__14::MoveNext()
+// 0x000000BB System.Boolean CameraController/<ChangeCameraFOV>d__14::MoveNext()
 extern void U3CChangeCameraFOVU3Ed__14_MoveNext_mC6CE6EF87561C88197C25DD8232F18B401BB10D6 (void);
-// 0x000000BD System.Object CameraController/<ChangeCameraFOV>d__14::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x000000BC System.Object CameraController/<ChangeCameraFOV>d__14::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CChangeCameraFOVU3Ed__14_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m507B4EBB5714E4EFD975F797B8DB78C36A1B7699 (void);
-// 0x000000BE System.Void CameraController/<ChangeCameraFOV>d__14::System.Collections.IEnumerator.Reset()
+// 0x000000BD System.Void CameraController/<ChangeCameraFOV>d__14::System.Collections.IEnumerator.Reset()
 extern void U3CChangeCameraFOVU3Ed__14_System_Collections_IEnumerator_Reset_mB15ECA53E775B73BA30CC0D7DB010F5D9F888E4A (void);
-// 0x000000BF System.Object CameraController/<ChangeCameraFOV>d__14::System.Collections.IEnumerator.get_Current()
+// 0x000000BE System.Object CameraController/<ChangeCameraFOV>d__14::System.Collections.IEnumerator.get_Current()
 extern void U3CChangeCameraFOVU3Ed__14_System_Collections_IEnumerator_get_Current_m23C558D69E8B7B7505EB3AF727DE871F4EDEBF0A (void);
-// 0x000000C0 System.Void CameraController/<WaitForGameoverPanel>d__15::.ctor(System.Int32)
+// 0x000000BF System.Void CameraController/<WaitForGameoverPanel>d__15::.ctor(System.Int32)
 extern void U3CWaitForGameoverPanelU3Ed__15__ctor_m4F9D58F4FB978AEF56915E52970B7ADD9C590254 (void);
-// 0x000000C1 System.Void CameraController/<WaitForGameoverPanel>d__15::System.IDisposable.Dispose()
+// 0x000000C0 System.Void CameraController/<WaitForGameoverPanel>d__15::System.IDisposable.Dispose()
 extern void U3CWaitForGameoverPanelU3Ed__15_System_IDisposable_Dispose_m1BF349988F41E9BFE4EB61C9DCC5B5681EAFC262 (void);
-// 0x000000C2 System.Boolean CameraController/<WaitForGameoverPanel>d__15::MoveNext()
+// 0x000000C1 System.Boolean CameraController/<WaitForGameoverPanel>d__15::MoveNext()
 extern void U3CWaitForGameoverPanelU3Ed__15_MoveNext_m0F1400919265FC83E198CBB1DEDA72B9370CB0A9 (void);
-// 0x000000C3 System.Object CameraController/<WaitForGameoverPanel>d__15::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x000000C2 System.Object CameraController/<WaitForGameoverPanel>d__15::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CWaitForGameoverPanelU3Ed__15_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mC19519266AD33DD8731B9F9A3D3D5B096B8CC610 (void);
-// 0x000000C4 System.Void CameraController/<WaitForGameoverPanel>d__15::System.Collections.IEnumerator.Reset()
+// 0x000000C3 System.Void CameraController/<WaitForGameoverPanel>d__15::System.Collections.IEnumerator.Reset()
 extern void U3CWaitForGameoverPanelU3Ed__15_System_Collections_IEnumerator_Reset_m28EB7463324F0961291B2037388E31C0AA030DB5 (void);
-// 0x000000C5 System.Object CameraController/<WaitForGameoverPanel>d__15::System.Collections.IEnumerator.get_Current()
+// 0x000000C4 System.Object CameraController/<WaitForGameoverPanel>d__15::System.Collections.IEnumerator.get_Current()
 extern void U3CWaitForGameoverPanelU3Ed__15_System_Collections_IEnumerator_get_Current_m3C72BEEAEC86D4FBDD9FED8FB7EC8DDD2E1889CA (void);
-// 0x000000C6 System.Int32 CurrencyManager::get_Coins()
+// 0x000000C5 System.Int32 CurrencyManager::get_Coins()
 extern void CurrencyManager_get_Coins_m9075D87CD7482A517E2B7A4C836F683D01E27B5E (void);
-// 0x000000C7 System.Void CurrencyManager::set_Coins(System.Int32)
+// 0x000000C6 System.Void CurrencyManager::set_Coins(System.Int32)
 extern void CurrencyManager_set_Coins_m01440ABA7CF0742C58EB6BB34434E9C8E5974047 (void);
-// 0x000000C8 System.Int32 CurrencyManager::get_HowManyClicks()
+// 0x000000C7 System.Int32 CurrencyManager::get_HowManyClicks()
 extern void CurrencyManager_get_HowManyClicks_m8FB3D6743E2C05196ACC3EA930682ADCADF3A86F (void);
-// 0x000000C9 System.Void CurrencyManager::set_HowManyClicks(System.Int32)
+// 0x000000C8 System.Void CurrencyManager::set_HowManyClicks(System.Int32)
 extern void CurrencyManager_set_HowManyClicks_m38D5213C9E7AF2627C27D9EECB4C02521B1749E3 (void);
-// 0x000000CA System.Int32 CurrencyManager::get_HowManyChances()
+// 0x000000C9 System.Int32 CurrencyManager::get_HowManyChances()
 extern void CurrencyManager_get_HowManyChances_mB3EA925C9666F08451B50AE2107D4CF7FBB582BE (void);
-// 0x000000CB System.Void CurrencyManager::set_HowManyChances(System.Int32)
+// 0x000000CA System.Void CurrencyManager::set_HowManyChances(System.Int32)
 extern void CurrencyManager_set_HowManyChances_m06F2F4B34C92BAEBC03A2493C00753A1078157E8 (void);
-// 0x000000CC System.Int32 CurrencyManager::get_HowManyClicksTextRep()
+// 0x000000CB System.Int32 CurrencyManager::get_HowManyClicksTextRep()
 extern void CurrencyManager_get_HowManyClicksTextRep_m07D4775318AD9F24D6F10825ECBC47027FFC5C43 (void);
-// 0x000000CD System.Void CurrencyManager::set_HowManyClicksTextRep(System.Int32)
+// 0x000000CC System.Void CurrencyManager::set_HowManyClicksTextRep(System.Int32)
 extern void CurrencyManager_set_HowManyClicksTextRep_m8D57F3A5FED5655082AF97D1875FC926FA8A7AE6 (void);
-// 0x000000CE System.Void CurrencyManager::Awake()
+// 0x000000CD System.Void CurrencyManager::Awake()
 extern void CurrencyManager_Awake_m28A9DE923071B95D4A0390A21A63E19F01EF0FB9 (void);
-// 0x000000CF System.Void CurrencyManager::Start()
+// 0x000000CE System.Void CurrencyManager::Start()
 extern void CurrencyManager_Start_m3D24CB07F136252F5B41B36F12509CFCB78C514C (void);
-// 0x000000D0 System.Void CurrencyManager::AddCurrency(System.Int32)
+// 0x000000CF System.Void CurrencyManager::AddCurrency(System.Int32)
 extern void CurrencyManager_AddCurrency_mE8CC714B6322C8E0FECE2483196242672E789811 (void);
-// 0x000000D1 System.Void CurrencyManager::RemoveCurrency(System.Int32)
+// 0x000000D0 System.Void CurrencyManager::RemoveCurrency(System.Int32)
 extern void CurrencyManager_RemoveCurrency_mBB1A30415E7BDE17BB688562795926F5442D0ECF (void);
-// 0x000000D2 System.Void CurrencyManager::AddHowManyClicks(System.Int32)
+// 0x000000D1 System.Void CurrencyManager::AddHowManyClicks(System.Int32)
 extern void CurrencyManager_AddHowManyClicks_m6864D4C9090E96F84FEA79972150260268003C28 (void);
-// 0x000000D3 System.Void CurrencyManager::RemoveHowManyChances(System.Int32)
+// 0x000000D2 System.Void CurrencyManager::RemoveHowManyChances(System.Int32)
 extern void CurrencyManager_RemoveHowManyChances_m94D5ACEB09947349595EB2BCA2A411092E576E5A (void);
-// 0x000000D4 System.Void CurrencyManager::AddHowManyChances(System.Int32)
+// 0x000000D3 System.Void CurrencyManager::AddHowManyChances(System.Int32)
 extern void CurrencyManager_AddHowManyChances_m726F652D25E34AF753C2C41292014A68966C7904 (void);
-// 0x000000D5 System.Void CurrencyManager::GetHowManyChances()
+// 0x000000D4 System.Void CurrencyManager::GetHowManyChances()
 extern void CurrencyManager_GetHowManyChances_mB712B7654BF49870FDF6AC755D4357DF1BD4745D (void);
-// 0x000000D6 System.Void CurrencyManager::.ctor()
+// 0x000000D5 System.Void CurrencyManager::.ctor()
 extern void CurrencyManager__ctor_m45759E61CCF16B2128541735C7C0C01FE6BF692C (void);
-// 0x000000D7 System.Void Emojis::Start()
+// 0x000000D6 System.Void Emojis::Start()
 extern void Emojis_Start_m95A2A8396647928BC8E45C4BD8C670D362C6CC12 (void);
-// 0x000000D8 System.Void Emojis::.ctor()
+// 0x000000D7 System.Void Emojis::.ctor()
 extern void Emojis__ctor_m30A73FD1F0BF3AD90DC19B982F6AD7C51F4EA929 (void);
-// 0x000000D9 System.Void GameManager::Awake()
+// 0x000000D8 System.Void GameManager::Awake()
 extern void GameManager_Awake_m4B6E8E2AF58C95C9A2A0C4637A34AE0892CB637F (void);
-// 0x000000DA System.Void GameManager::Start()
+// 0x000000D9 System.Void GameManager::Start()
 extern void GameManager_Start_m87A71D65F3171A58DBDDBFB03832ADA65643D0E2 (void);
-// 0x000000DB System.Void GameManager::Update()
+// 0x000000DA System.Void GameManager::Update()
 extern void GameManager_Update_m7F29D8E933B8D21D2E67507979C0F12ACF87BB41 (void);
-// 0x000000DC System.Void GameManager::StartGame()
+// 0x000000DB System.Void GameManager::StartGame()
 extern void GameManager_StartGame_m2CAC97E2C33DD5FF5CF10FAF17313080A85464B7 (void);
-// 0x000000DD System.Void GameManager::StartShop()
+// 0x000000DC System.Void GameManager::StartShop()
 extern void GameManager_StartShop_m30E75E8E273D767951090A68530A0C11341F196A (void);
+// 0x000000DD System.Void GameManager::SettingsButton()
+extern void GameManager_SettingsButton_mF3A11F34667B9C5DEFFA021787AC287334761712 (void);
 // 0x000000DE System.Void GameManager::PauseButton()
 extern void GameManager_PauseButton_mC4F13CCD1BFBDD8408B8F6077658ADCE89538543 (void);
 // 0x000000DF System.Void GameManager::ResumeButton()
@@ -1537,7 +1537,6 @@ static Il2CppMethodPointer s_methodPointers[693] =
 	CakesManager_set_CakeNumber_m72E88DBB7DD887315FA57547CE257D926E0E802A,
 	CakesManager_Awake_mE1B24E27A00767A5F151EB8483330C7E521AFE2F,
 	CakesManager_Start_m17A076B740E366A3334A708F60DC458E4F243F58,
-	CakesManager_Update_m28CCE4C9FDE1261FC86EB8D457D58936A0CB596A,
 	CakesManager_CheckTargetClicks_m2332EF5B1DDF353466A4E7742A06A0A20FD104A9,
 	CakesManager_SpawnCake_mEB3113F3FFCBC75F95B4CFDA7F26B9854346F815,
 	CakesManager_IsAvailableHolders_m1212BBD09ED2D5501B8F4834C7F77673AA22D5AF,
@@ -1557,18 +1556,18 @@ static Il2CppMethodPointer s_methodPointers[693] =
 	CakesManager_PlayButton_mA67A367131B74E78ED5BB128D925467B7537A371,
 	CakesManager_ReplayButton_m80EFECCB4DD55EB3BAF4D157F44474BF3635FA88,
 	CakesManager__ctor_mB39A233D190BCF7E96A6FF8C1793AD1F167727E4,
-	U3CAutoMergeRoutineU3Ed__53__ctor_mE7BDC8759B7466EAE0AAB6AB729A372405404B5D,
-	U3CAutoMergeRoutineU3Ed__53_System_IDisposable_Dispose_m5F874944D2704EDE3479A94FB9BB86E2192F550C,
-	U3CAutoMergeRoutineU3Ed__53_MoveNext_mA861337DB63249DCCF8678DC67E70B353E93E560,
-	U3CAutoMergeRoutineU3Ed__53_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mEB2A4BB406285CAF3F57824BF98DC3A9DF123278,
-	U3CAutoMergeRoutineU3Ed__53_System_Collections_IEnumerator_Reset_m489C424896E6423859FF19332A0857E8274C006A,
-	U3CAutoMergeRoutineU3Ed__53_System_Collections_IEnumerator_get_Current_m1F646BF90E7278D0DE3D3BF8DD493803EA05564A,
-	U3CWaitForEnableCakesU3Ed__57__ctor_m5996E2419A37333212298DDFD141D78A880D0C22,
-	U3CWaitForEnableCakesU3Ed__57_System_IDisposable_Dispose_m0A594C5F4D4DB71345AE653B7990DCB84C34BB9C,
-	U3CWaitForEnableCakesU3Ed__57_MoveNext_mAD2C5F6F4B0AB1793CF51F0A6B97423AEC5FF485,
-	U3CWaitForEnableCakesU3Ed__57_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m2A9D2630527EC8778D918C080C90C1C4DBEBEE3A,
-	U3CWaitForEnableCakesU3Ed__57_System_Collections_IEnumerator_Reset_m20D114D44F52A29DA67E4259EC54D952E63B296E,
-	U3CWaitForEnableCakesU3Ed__57_System_Collections_IEnumerator_get_Current_m785F547798CCDA3F40308537E6FF11A2887257B4,
+	U3CAutoMergeRoutineU3Ed__52__ctor_m0E994C240CD6985935810A28D38FEB439578EFB6,
+	U3CAutoMergeRoutineU3Ed__52_System_IDisposable_Dispose_m64D000DDB718B87FE70BB4C843ACD7EAF41EA0D9,
+	U3CAutoMergeRoutineU3Ed__52_MoveNext_m178CCDA5659F5C6CE3BAF47E6BE768FF5112F71F,
+	U3CAutoMergeRoutineU3Ed__52_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD0189F9C90C7B7F9667AA63A8D9889AB9A35379E,
+	U3CAutoMergeRoutineU3Ed__52_System_Collections_IEnumerator_Reset_m8CC9B4424DC9EFBC1D849C684C4751A6DC09326E,
+	U3CAutoMergeRoutineU3Ed__52_System_Collections_IEnumerator_get_Current_mBB5ABA9A49B28717D115F496A1C4136C1E246E0C,
+	U3CWaitForEnableCakesU3Ed__56__ctor_m0E819F504CF9FE41E8089CE699598DE9230203A8,
+	U3CWaitForEnableCakesU3Ed__56_System_IDisposable_Dispose_m4101DBE97400C795984CE9AF0040217671591A56,
+	U3CWaitForEnableCakesU3Ed__56_MoveNext_m1D6B9B6061124D4A1B6CE245D40F4C56E4CE737F,
+	U3CWaitForEnableCakesU3Ed__56_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m2B8A589BD83F66FA0E80EE431803E508FEEE59E7,
+	U3CWaitForEnableCakesU3Ed__56_System_Collections_IEnumerator_Reset_mC0861749482C983F59DB85692521D18FFCBAF8C0,
+	U3CWaitForEnableCakesU3Ed__56_System_Collections_IEnumerator_get_Current_mB8D6745EE2B97CB12F9CF65A979DEC381E8000E5,
 	CameraController_MoveDestination_m23DD030FF2D528D378CF4541BA7188174A0A71F7,
 	CameraController_WaitForCameraMovementStart_m5B644D96023F818BEAEC27A043DCE4F0DEC01B46,
 	CameraController_StartDestination_m409D233308E73948E0088C6749D3735A0B3C3453,
@@ -1619,6 +1618,7 @@ static Il2CppMethodPointer s_methodPointers[693] =
 	GameManager_Update_m7F29D8E933B8D21D2E67507979C0F12ACF87BB41,
 	GameManager_StartGame_m2CAC97E2C33DD5FF5CF10FAF17313080A85464B7,
 	GameManager_StartShop_m30E75E8E273D767951090A68530A0C11341F196A,
+	GameManager_SettingsButton_mF3A11F34667B9C5DEFFA021787AC287334761712,
 	GameManager_PauseButton_mC4F13CCD1BFBDD8408B8F6077658ADCE89538543,
 	GameManager_ResumeButton_m4BEE2CC7FAF1CD50CD60C2F4433DC4FB7F338167,
 	GameManager_HomeButton_m861F71857FA5948221F4F3BF532A574C06353CD1,
@@ -2235,7 +2235,6 @@ static const int32_t s_InvokerIndices[693] =
 	7048,
 	7048,
 	7048,
-	7048,
 	6808,
 	5644,
 	1708,
@@ -2306,6 +2305,7 @@ static const int32_t s_InvokerIndices[693] =
 	5644,
 	5644,
 	5644,
+	7048,
 	7048,
 	7048,
 	7048,
