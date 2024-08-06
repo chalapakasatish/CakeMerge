@@ -21,7 +21,7 @@ public class CakesManager : MonoBehaviour
     public GameObject holderEffect;
 
     public GameObject destination;
-
+    public GameObject bottomBar;
     public GameObject emojis;
     public Belt belt1,belt2,belt3;
     public Button spawnCakeButton,continueButton,serveButton,autoMergeButton;
@@ -193,12 +193,14 @@ public class CakesManager : MonoBehaviour
     }
     public void ServeCakes()
     {
+        bottomBar.transform.DOMoveY(-300f, 0.7f);
         //CurrencyManager.Instance.HowManyChances += 1;
         CurrencyManager.Instance.RemoveHowManyChances(1);
         //CurrencyManager.Instance.howManyChancesText.text = CurrencyManager.Instance.HowManyChances + "/" + levelManager.howManyChances[0].howmanyChances;
         //howManyCakesButton.SetActive(false);
-        serveButton.gameObject.SetActive(false);
-        spawnCakeButton.gameObject.SetActive(false);
+        //serveButton.GetComponent<Button>().interactable = false;
+        //serveButton.gameObject.SetActive(false);
+        //spawnCakeButton.gameObject.SetActive(false);
         //autoMergeButton.gameObject.SetActive(false);
         //serveButton.GetComponent<Button>().interactable = false;
         //spawnCakeButton.GetComponent<Button>().interactable = false;
@@ -206,8 +208,6 @@ public class CakesManager : MonoBehaviour
         {
             cakesInstantiate.Add(gameObject);
         }
-        serveButton.gameObject.GetComponent<Button>().interactable = false;
-        spawnCakeButton.GetComponent<Button>().interactable = false;
         for (int i = 0; i < spawnPoints.Count; i++)
         {
             cakesInstantiate[i] = Instantiate(spawnPoints[i]);

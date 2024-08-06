@@ -50,6 +50,9 @@ public class CameraController : MonoBehaviour
             if (isForwardMove)
             {
                 transform.position = Vector3.Lerp(transform.position, new Vector3(destination.position.x, destination.position.y, destination.position.z), 0.1f * Time.deltaTime);
+                //CakesManager.instance.bottomBar.transform.DOMoveY(0f, 0.5f);
+                CakesManager.instance.serveButton.GetComponent<Button>().interactable = false;
+                CakesManager.instance.spawnCakeButton.GetComponent<Button>().interactable = false;
             }
             else if (isBackwardMove)
             {
@@ -69,8 +72,8 @@ public class CameraController : MonoBehaviour
                         CakesManager.instance.belt1.isServe = false;
                         CakesManager.instance.belt2.isServe = false;
                         CakesManager.instance.belt3.isServe = false;
-                        CakesManager.instance.serveButton.gameObject.GetComponent<Button>().interactable = true;
-                        CakesManager.instance.spawnCakeButton.GetComponent<Button>().interactable = true;
+                        //CakesManager.instance.serveButton.gameObject.GetComponent<Button>().interactable = true;
+                        //CakesManager.instance.spawnCakeButton.GetComponent<Button>().interactable = true;
                         CakesManager.instance.points.gameObject.SetActive(true);
                         CakesManager.instance.DeactivateCakesInstantiate();
                         CakesManager.instance.serveStarted = false;
@@ -79,7 +82,7 @@ public class CameraController : MonoBehaviour
                         CakesManager.instance.howManyCakesButton.SetActive(true);
                         CakesManager.instance.serveButton.gameObject.SetActive(true);
                         CakesManager.instance.spawnCakeButton.gameObject.SetActive(true);
-
+                        CakesManager.instance.bottomBar.transform.DOMoveY(0f, 1f);
                         if (CurrencyManager.Instance.HowManyChances <= 0)
                         {
                             GameManager.instance.uiManager.gameState = GameState.GAMEOVER;
